@@ -108,6 +108,35 @@ def art(seed, problem="urban-waste", label=""):
             f'<circle cx="{cx:.0f}" cy="{cy:.0f}" r="7" fill="{ink}"/></svg>')
 
 
+from urllib.parse import quote as _q
+
+
+def photo_url(file, w=960):
+    return f"https://commons.wikimedia.org/wiki/Special:FilePath/{_q(file)}?width={w}"
+
+
+def hero_of(x):
+    return next((i for i in x.get("images", []) if i.get("role") == "hero"), None)
+
+
+def credit(im):
+    lic = f'<a href="{e(im["license_url"])}" rel="license noopener">{e(im["license"])}</a>' if im.get("license_url") else e(im["license"])
+    return f'<span class="credit">Photo: {e(im["author"])} · {lic} · <a href="{e(im["source_url"])}" rel="noopener">{e(im["source"])}</a></span>'
+
+
+def figure(im, cls="photo", sizes="(max-width: 900px) 100vw, 800px", eager=False):
+    return (f'<figure class="{cls}"><img src="{photo_url(im["file"], 960)}" srcset="{photo_url(im["file"], 500)} 500w, {photo_url(im["file"], 960)} 960w, {photo_url(im["file"], 1280)} 1280w" '
+            f'sizes="{sizes}" alt="{e(im["alt"])}" style="object-position:{e(im.get("focus", "50% 30%"))}" {"fetchpriority=high" if eager else "loading=lazy"} decoding="async">'
+            f'<figcaption>{e(im["caption"])} {credit(im)}</figcaption></figure>')
+
+
+def card_visual(x, problem):
+    im = hero_of(x)
+    if im:
+        return f'<img class="art" src="{photo_url(im["file"], 500)}" alt="{e(im["alt"])}" style="object-position:{e(im.get("focus", "50% 30%"))}" loading="lazy" decoding="async" width="500" height="250">'
+    return art(x["slug"], problem)
+
+
 LOGO = ('<svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" stroke-width="2"/>'
         '<path d="M9 22c4-1 6-6 11-6s7 5 11 6" fill="none" stroke="#a8492a" stroke-width="2.4" stroke-linecap="round"/>'
         '<circle cx="20" cy="12" r="2.6" fill="#b9871f"/><path d="M12 28c3 2 13 2 16 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>')
@@ -133,7 +162,7 @@ def av(u):
 GC = (f'<script src="https://gc.zgo.at/count.js" data-goatcounter="https://{SITE["goatcounter"]}.goatcounter.com/count" async></script>' if SITE.get("goatcounter") else "")
 
 
-def layout(path, title, desc, body, *, jsonld=None, head_extra="", scripts=None, og_type="website", zone=""):
+def layout(path, title, desc, body, *, jsonld=None, head_extra="", scripts=None, og_type="website", zone="", og_image=None):
     full_title = title if title == SITE["name"] else f"{title} · {SITE['name']}"
     nav = "".join(f'<a href="{u}"{" aria-current=\"page\"" if path.startswith(u) else ""}>{t}</a>' for u, t in NAV)
     ld = ""
@@ -152,7 +181,7 @@ def layout(path, title, desc, body, *, jsonld=None, head_extra="", scripts=None,
 <meta property="og:title" content="{e(title)}">
 <meta property="og:description" content="{e(desc)}">
 <meta property="og:url" content="{BASE}{path}">
-<meta property="og:image" content="{BASE}/assets/og.png">
+<meta property="og:image" content="{e(og_image or BASE + '/assets/og.png')}">
 <meta property="og:site_name" content="{SITE['name']}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#f7f2e8">
@@ -241,7 +270,7 @@ def story_card(s, show_summary=True):
             f'data-scale="{e(s["scale"])}" data-actor="{e(s["actor_type"])}" data-status="{e(s["status"])}" '
             f'data-sdgs="{e(" ".join(str(x) for x in s.get("sdgs", [])))}"')
     return f"""<article class="card story-card" {data}>
- <a href="/stories/{s['slug']}/" tabindex="-1" aria-hidden="true">{art(s['slug'], s['problem'])}</a>
+ <a href="/stories/{s['slug']}/" tabindex="-1" aria-hidden="true">{card_visual(s, s['problem'])}</a>
  <div class="body">
   <div class="meta"><span class="place">{e(place(s))}</span><span>Since {e(s['started_year'])}</span></div>
   <h3><a href="/stories/{s['slug']}/">{e(s['title'])}</a></h3>
@@ -251,9 +280,16 @@ def story_card(s, show_summary=True):
 </article>"""
 
 
+def portrait(m, big=False):
+    im = hero_of(m)
+    if im:
+        return f'<img class="portrait" src="{photo_url(im["file"], 330 if big else 250)}" alt="" style="object-position:{e(im.get("focus", "50% 25%"))}" loading="lazy" decoding="async">'
+    return f'<div class="portrait" aria-hidden="true">{e(initials(m["name"]))}</div>'
+
+
 def mem_card(m):
     return f"""<article class="card">
- <div class="portrait" aria-hidden="true">{e(initials(m['name']))}</div>
+ {portrait(m)}
  <div class="body">
   <div class="meta"><span class="place">{e(m['country'])}</span><span class="dates">{e(year(m['born']))}–{e(year(m['died']))}</span></div>
   <h3><a href="/legacy/{m['slug']}/">{e(m['name'])}</a></h3>
@@ -371,7 +407,7 @@ def page_home():
 </div></section>
 
 <section class="block"><div class="wrap feature">
- <a href="/stories/{feat['slug']}/" class="art" tabindex="-1" aria-hidden="true">{art(feat['slug'], feat['problem'])}</a>
+ <a href="/stories/{feat['slug']}/" class="art" tabindex="-1" aria-hidden="true">{card_visual(feat, feat['problem'])}</a>
  <div>
   <span class="eyebrow">This week's small thing</span>
   <h2><a href="/stories/{feat['slug']}/" style="color:inherit;text-decoration:none">{e(feat['title'])}</a></h2>
@@ -463,7 +499,7 @@ def page_story(s):
  <h1>{e(s['title'])}</h1>
  <p class="lede">{e(s['summary'])}</p>
  <div class="meta" style="margin-top:14px">{ev_badge(s['evidence'])}<span>{e(PROBLEMS[s['problem']]['label'])}</span><span>{"Ongoing" if s['status'] == "ongoing" else "Completed"} · since {e(s['started_year'])}</span></div>
- <div class="story-art">{art(s['slug'], s['problem'], "Decorative contour drawing for this story")}</div>
+ {figure(hero_of(s), "photo hero", "(max-width: 1180px) 100vw, 1150px", True) if hero_of(s) else '<div class="story-art">' + art(s['slug'], s['problem'], "Decorative contour drawing for this story") + '</div>'}
 </div>
 <div class="wrap story-layout">
  <div class="story-body">
@@ -471,7 +507,7 @@ def page_story(s):
   <section><h2>The problem</h2>{paras(s['problem_text'])}</section>
   <section><h2>Why {e(first_name(s))} started</h2>{paras(s['why_started'])}</section>
   <section><h2>What they did</h2>{paras(s['what_they_did'])}</section>
-  <section><h2>What changed</h2>{paras(s['what_changed'])}</section>
+  <section><h2>What changed</h2>{paras(s['what_changed'])}{"".join(figure(i) for i in s.get("images", []) if i.get("role") == "inline")}</section>
   <section><h2>What they learned</h2>{paras(s['what_they_learned'])}{quote_html}</section>
   {copy_html}
   <section style="margin-top:34px"><h2>Why it matters</h2><div class="why">{paras(s['why_it_matters'])}</div></section>
@@ -511,7 +547,10 @@ def page_story(s):
                               "geo": {"@type": "GeoCoordinates", "latitude": s["lat"], "longitude": s["lng"]}},
           "keywords": ", ".join(TOPICS.get(t, t) for t in s["topics"]),
           "citation": [x.get("url") for x in s["sources"] if x.get("url")]}
-    write(f"/stories/{s['slug']}/", layout(f"/stories/{s['slug']}/", s["title"], s["summary"], body, jsonld=ld, og_type="article"))
+    hi = hero_of(s)
+    if hi:
+        ld["image"] = photo_url(hi["file"], 1280)
+    write(f"/stories/{s['slug']}/", layout(f"/stories/{s['slug']}/", s["title"], s["summary"], body, jsonld=ld, og_type="article", og_image=photo_url(hi["file"], 1280) if hi else None))
 
 
 def filter_bar(items):
@@ -625,12 +664,13 @@ def mem_page(m):
 <div class="wrap story-head">
  <nav class="breadcrumb" aria-label="Breadcrumb"><a href="/legacy/">Legacy</a> / <a href="{section[0]}">{section[1]}</a></nav>
  <div style="display:flex;gap:22px;align-items:center;flex-wrap:wrap">
-  <div class="portrait" aria-hidden="true">{e(initials(m['name']))}</div>
+  {portrait(m, True)}
   <div><span class="eyebrow">{"Remembering an environmental defender" if is_def else "The footprint they left"}</span>
   <h1 style="margin:0">{e(m['name'])}</h1>
   <p class="dates" style="margin:.3em 0 0">{e(fmt_date(m['born']))} – {e(fmt_date(m['died']))} · {e(m['place'])}, {e(m['country'])}</p></div>
  </div>
  <p class="lede" style="margin-top:22px">{e(m['summary'])}</p>
+ {figure(hero_of(m), "photo mem-photo", "(max-width: 760px) 100vw, 720px") if hero_of(m) else ""}
 </div>
 <div class="wrap story-layout">
  <div class="lwe">
@@ -652,7 +692,10 @@ def mem_page(m):
 </article>"""
     ld = {"@context": "https://schema.org", "@type": "Person", "name": m["name"], "birthDate": m["born"], "deathDate": m["died"],
           "nationality": m["country"], "jobTitle": m["occupation"], "description": m["summary"], "url": f"{BASE}/legacy/{m['slug']}/"}
-    write(f"/legacy/{m['slug']}/", layout(f"/legacy/{m['slug']}/", f"{m['name']} ({year(m['born'])}–{year(m['died'])})", m["summary"], body, jsonld=ld, og_type="profile", zone="memorial-zone"))
+    hi = hero_of(m)
+    if hi:
+        ld["image"] = photo_url(hi["file"], 1280)
+    write(f"/legacy/{m['slug']}/", layout(f"/legacy/{m['slug']}/", f"{m['name']} ({year(m['born'])}–{year(m['died'])})", m["summary"], body, jsonld=ld, og_type="profile", zone="memorial-zone", og_image=photo_url(hi["file"], 1280) if hi else None))
 
 
 def page_legacy():
@@ -814,7 +857,7 @@ def page_about():
 <h2>What we hope you feel</h2>
 <p><strong>Inspired:</strong> “I didn't know people were doing this.” <strong>Capable:</strong> “I could do something like this.” <strong>Connected:</strong> “I'm not the only one trying.”</p>
 <h2>Images</h2>
-<p>We only publish photographs we have permission to use. Until contributors share their own, each story is shown with a unique contour drawing instead of stock photography.</p>
+<p>We only publish photographs we have permission to use. Photos currently come from Wikimedia Commons under free licences or the public domain, and each one is credited with its photographer, licence and source. We never use stock images of people who are not in the story. Where no freely licensed photo exists, the story is shown with its own contour drawing until the people in it share their own.</p>
 <h2>Contact</h2>
 <p>To share a story, use <a href="/submit/">Tell your story</a>. To correct something, use <a href="/corrections/">Report a correction</a>.</p>
 </div>"""
