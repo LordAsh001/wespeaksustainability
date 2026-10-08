@@ -20,7 +20,15 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: Restore cached photos
+        uses: actions/cache@v4
+        with:
+          path: .photo-cache
+          key: photos-${{ hashFiles('data/stories.json', 'data/legacy.json') }}
+          restore-keys: photos-
       - run: python build.py
+        env:
+          WSS_FETCH_PHOTOS: "1"
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
