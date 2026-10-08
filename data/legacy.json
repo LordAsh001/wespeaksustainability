@@ -1,0 +1,943 @@
+[
+ {
+  "slug": "chico-mendes",
+  "name": "Chico Mendes",
+  "category": "defender",
+  "country": "Brazil",
+  "country_code": "BR",
+  "region": "Latin America & Caribbean",
+  "place": "Xapuri, Acre",
+  "lat": -10.65,
+  "lng": -68.5,
+  "born": "1944-12-15",
+  "died": "1988-12-22",
+  "occupation": "Rubber tapper and rural trade union leader",
+  "earth": "Deforestation of the Amazon rainforest; forest livelihoods of rubber-tapping communities",
+  "summary": "Amazon rubber tapper and union leader who organised peaceful stand-offs against forest clearance and championed extractive reserves. He was shot dead at his home in Xapuri in 1988.",
+  "life": "Chico Mendes was born on 15 December 1944 in Xapuri, in the Brazilian state of Acre, into a community of seringueiros (rubber tappers) who made their living from the standing forest. In the early 1970s he helped to organise the Xapuri Rural Workers' Union and later became its president, according to Encyclopaedia Britannica.",
+  "work": "As cattle ranching and land clearance spread across Acre, Mendes and fellow union members used the empate, or 'stand-off': groups of rubber tappers placed themselves peacefully in front of chainsaws and tractors to stop forest being cleared. He argued for forest reserves in which local people could earn a living sustainably from the forest, and worked with Brazilian and international allies to win support for the idea. In 1987 he received the UN Environment Programme's Global 500 award for his environmental activism.",
+  "impact": "According to Encyclopaedia Britannica, Brazil created its first extractive reserve in 1988 under international pressure, a model Mendes had promoted. NBC News, marking the 20th anniversary of his death, described how he worked with environmental groups and the Brazilian government to create reserves where people could live from the forest, while noting that killings linked to land conflict in the Amazon continued.",
+  "legacy": "In April 2007 the Brazilian government created the federal biodiversity conservation agency, the Instituto Chico Mendes de Conservação da Biodiversidade (ICMBio), named in his honour. The extractive-reserve model he advocated remains part of Brazil's protected-area system, and his story continues to be cited in discussions of forest communities' rights.",
+  "death_label": "Confirmed killing",
+  "death_note": "On 22 December 1988 Chico Mendes was shot dead outside his home in Xapuri; NBC News reported that two gunmen had waited in his backyard. In December 1990 a seven-person jury in Xapuri convicted local rancher Darly Alves da Silva and his son Darci Alves (reported as having fired the shot) of the murder, and each was sentenced to 19 years in prison (Christian Science Monitor). By 2008 NBC News reported that both men were free, having served about a third of their sentences. Britannica states that local ranchers who opposed his activism arranged the killing.",
+  "topics": [
+   "forests",
+   "conservation",
+   "environmental-activism",
+   "environmental-justice",
+   "community-action",
+   "biodiversity"
+  ],
+  "sdgs": [
+   15,
+   13,
+   8,
+   16
+  ],
+  "timeline": [
+   {
+    "year": "1944",
+    "event": "Born in Xapuri, Acre, Brazil."
+   },
+   {
+    "year": "1970s",
+    "event": "Helps organise the Xapuri Rural Workers' Union, later becoming its president."
+   },
+   {
+    "year": "1987",
+    "event": "Receives the UNEP Global 500 award."
+   },
+   {
+    "year": "1988",
+    "event": "Brazil creates its first extractive reserve."
+   },
+   {
+    "year": "1988",
+    "event": "Shot dead at his home in Xapuri on 22 December."
+   },
+   {
+    "year": "1990",
+    "event": "Rancher Darly Alves da Silva and his son Darci convicted of the murder; each sentenced to 19 years."
+   },
+   {
+    "year": "2007",
+    "event": "Brazil creates the Instituto Chico Mendes de Conservação da Biodiversidade (ICMBio)."
+   }
+  ],
+  "sources": [
+   {
+    "title": "Chico Mendes",
+    "publisher": "Encyclopaedia Britannica",
+    "author": "",
+    "date": "",
+    "url": "https://www.britannica.com/print/article/1956330",
+    "type": "book",
+    "claim": "Birth and death dates and place; union organising; empates; extractive reserves and first reserve in 1988; 1987 UNEP Global 500 award; ranchers arranged his murder."
+   },
+   {
+    "title": "Brazilian Murder Conviction Elates Rain-Forest Activists",
+    "publisher": "Christian Science Monitor",
+    "author": "",
+    "date": "1990-12-17",
+    "url": "https://www.csmonitor.com/layout/set/amphtml/1990/1217/ochico.html",
+    "type": "reputable-journalism",
+    "claim": "Jury in Xapuri convicted Darly Alves da Silva and his son Darci; 19-year sentences each."
+   },
+   {
+    "title": "Amazon killings go on despite Mendes' legacy",
+    "publisher": "NBC News / Associated Press",
+    "author": "",
+    "date": "2008",
+    "url": "https://www.nbcnews.com/id/wbna28337919",
+    "type": "reputable-journalism",
+    "claim": "Shot dead at home on 22 December 1988 by gunmen waiting in backyard; Darci fired the shot; both men later freed after serving about a third of sentences; reserves legacy."
+   },
+   {
+    "title": "Medida Provisória nº 366, de 26 de abril de 2007 (criação do Instituto Chico Mendes)",
+    "publisher": "Presidência da República, Brazil",
+    "author": "",
+    "date": "2007-04-26",
+    "url": "https://planalto.gov.br/ccivil_03/_ato2007-2010/2007/Mpv/366.htm",
+    "type": "government",
+    "claim": "Creation of the Instituto Chico Mendes de Conservação da Biodiversidade."
+   }
+  ],
+  "editorial_status": "published"
+ },
+ {
+  "slug": "berta-caceres",
+  "name": "Berta Cáceres",
+  "category": "defender",
+  "country": "Honduras",
+  "country_code": "HN",
+  "region": "Latin America & Caribbean",
+  "place": "La Esperanza, Intibucá",
+  "lat": 14.31,
+  "lng": -88.18,
+  "born": "1972",
+  "died": "2016-03-03",
+  "occupation": "Indigenous Lenca leader; co-founder and coordinator of COPINH",
+  "earth": "Large dam construction on the Gualcarque River; Indigenous land and river rights; illegal logging",
+  "summary": "Lenca leader who co-founded COPINH and led the campaign against the Agua Zarca dam on the Gualcarque River. She was shot dead at her home in 2016.",
+  "life": "Berta Isabel Cáceres Flores was a Lenca Indigenous leader from western Honduras and a mother of four. Honduran newspaper La Prensa gives her date of birth as 4 March 1972 (other sources differ on the year). In 1993 she co-founded the National Council of Popular and Indigenous Organisations of Honduras (COPINH) to respond to threats from illegal logging and to defend Lenca territorial rights, according to the Goldman Environmental Prize.",
+  "work": "From 2006, residents of Río Blanco raised concerns about construction of the Agua Zarca hydroelectric dam on the Gualcarque River. The Goldman Prize records that Cáceres filed complaints with the authorities, organised a community assembly against the dam and took the case to the Inter-American Commission on Human Rights. From April 2013 she helped organise a peaceful road blockade that held for more than a year.",
+  "impact": "According to the Goldman Environmental Prize, in late 2013 the Chinese contractor Sinohydro ended its contract with the developer DESA, citing community resistance, and the World Bank's International Finance Corporation withdrew its funding, citing concerns about human rights violations. She received the Goldman Environmental Prize in 2015.",
+  "legacy": "COPINH continues her work and continues to campaign for those it believes planned the killing to be brought to justice. Her case has become one of the most widely cited examples of the risks faced by Indigenous and environmental defenders in Latin America.",
+  "death_label": "Confirmed killing",
+  "death_note": "Berta Cáceres was shot dead by gunmen at her home in La Esperanza in the early hours of 3 March 2016. Gustavo Castro, who was in the house, survived, and the later convictions also covered his attempted murder (COPINH). On 29 November 2018 a Honduran court convicted seven men, and on 2 December 2019 they were sentenced to between 30 and 50 years in prison (WOLA). On 5 July 2021 Roberto David Castillo, the former president of DESA, the company building the Agua Zarca dam, was convicted as a co-author of the murder, and on 20 June 2022 he was sentenced to 22 years and six months (WOLA; National Catholic Reporter). According to COPINH, in November 2024 the Criminal Chamber of Honduras's Supreme Court upheld the convictions of the seven men and confirmed Castillo's conviction while reducing his sentence. COPINH maintains that other alleged planners of the crime have not been brought to justice; this is the organisation's position rather than a court finding.",
+  "topics": [
+   "water",
+   "environmental-justice",
+   "indigenous-knowledge",
+   "environmental-activism",
+   "community-action",
+   "biodiversity"
+  ],
+  "sdgs": [
+   6,
+   15,
+   16,
+   5
+  ],
+  "timeline": [
+   {
+    "year": "1993",
+    "event": "Co-founds COPINH."
+   },
+   {
+    "year": "2006",
+    "event": "Río Blanco residents raise concerns over the Agua Zarca dam on the Gualcarque River."
+   },
+   {
+    "year": "2013",
+    "event": "Peaceful road blockade begins in April; Sinohydro withdraws later that year and the IFC withdraws funding."
+   },
+   {
+    "year": "2015",
+    "event": "Receives the Goldman Environmental Prize."
+   },
+   {
+    "year": "2016",
+    "event": "Shot dead at her home in La Esperanza on 3 March."
+   },
+   {
+    "year": "2018",
+    "event": "Seven men convicted on 29 November; sentenced in December 2019 to 30–50 years."
+   },
+   {
+    "year": "2021",
+    "event": "Former DESA president Roberto David Castillo convicted as co-author; sentenced in June 2022 to 22 years and six months."
+   },
+   {
+    "year": "2024",
+    "event": "Supreme Court's Criminal Chamber upholds convictions (as reported by COPINH)."
+   }
+  ],
+  "sources": [
+   {
+    "title": "Berta Cáceres — 2015 Goldman Prize Recipient, Central and South America",
+    "publisher": "Goldman Environmental Prize",
+    "author": "",
+    "date": "2015",
+    "url": "https://www.goldmanprize.org/recipient/berta-caceres/",
+    "type": "award-body",
+    "claim": "COPINH co-founded 1993; Agua Zarca campaign, blockade, Sinohydro and IFC withdrawal; Goldman Prize 2015; killed 3 March 2016 at her home in La Esperanza."
+   },
+   {
+    "title": "Call on Honduran authorities to bring justice for Berta Cáceres's murder",
+    "publisher": "Washington Office on Latin America (WOLA)",
+    "author": "",
+    "date": "2024-06",
+    "url": "https://www.wola.org/2024/06/call-on-honduran-authorities-to-bring-justice-for-berta-caceress-murder/",
+    "type": "organisational",
+    "claim": "Dates of 2018 convictions and 2019 sentences; Castillo convicted 5 July 2021 and sentenced 20 June 2022 to 22 years 6 months; appeals pending at that time."
+   },
+   {
+    "title": "Former business exec gets 22.5 years for role in Berta Cáceres murder",
+    "publisher": "National Catholic Reporter (EarthBeat)",
+    "author": "",
+    "date": "2022-06",
+    "url": "https://www.ncronline.org/news/earthbeat/former-business-exec-gets-225-years-role-berta-c-ceres-murder",
+    "type": "reputable-journalism",
+    "claim": "Castillo, president of DESA, sentenced on 20 June 2022 to 22 years and six months; killed at home in March 2016."
+   },
+   {
+    "title": "Press Release No. 5/2025",
+    "publisher": "COPINH",
+    "author": "",
+    "date": "2025-03-02",
+    "url": "https://copinh.org/2025/03/press-release-no-5-2025/",
+    "type": "organisational",
+    "claim": "COPINH's account: November 2024 Supreme Court ruling upheld the convictions, reduced Castillo's sentence; organisation's position on unpunished planners."
+   },
+   {
+    "title": "Berta Cáceres, hondureña que entregó su vida en defensa del ambiente",
+    "publisher": "La Prensa (Honduras)",
+    "author": "",
+    "date": "2016-03",
+    "url": "https://www.laprensa.hn/honduras/berta-caceres-hondurena-que-entrego-su-vida-en-defensa-del-ambiente-AWLP936006",
+    "type": "reputable-journalism",
+    "claim": "Date of birth reported as 4 March 1972; mother of four; gunmen entered her home in La Esperanza at night."
+   }
+  ],
+  "editorial_status": "published"
+ },
+ {
+  "slug": "dorothy-stang",
+  "name": "Sister Dorothy Stang",
+  "category": "defender",
+  "country": "Brazil",
+  "country_code": "BR",
+  "region": "Latin America & Caribbean",
+  "place": "Anapu, Pará",
+  "lat": -3.47,
+  "lng": -51.2,
+  "born": "1931",
+  "died": "2005-02-12",
+  "occupation": "Catholic nun (Sisters of Notre Dame de Namur) and community organiser",
+  "earth": "Illegal land seizure and logging in the Amazon; land rights of small farmers; sustainable forest farming",
+  "summary": "US-born Catholic sister who spent decades supporting small farmers and sustainable land use in the Brazilian Amazon. She was shot dead near Anapu in 2005.",
+  "life": "Dorothy Stang was born in 1931 in Dayton, Ohio, one of nine children, and joined the Sisters of Notre Dame de Namur at the age of 17. She went to Brazil in 1966 and spent decades serving rural communities, latterly in Anapu, in the state of Pará, according to the Sisters of Notre Dame de Namur Ohio Province.",
+  "work": "According to her congregation's account, Sister Dorothy and fellow sisters helped found Christian communities and literacy schools, taught health and nutrition, and supported small businesses. She worked with a government-backed sustainable development programme and taught farmers which crops grew best in the forest. The Human Rights Defenders Memorial records that she worked with the Catholic Church's Land Pastoral Commission (CPT) on reforestation of degraded land and on reducing land conflicts, and that she had reported threats against her for several years before her death.",
+  "impact": "Her killing, and the trials that followed, drew international attention to violent land disputes in Pará. Five men were eventually convicted, including two ranchers convicted of ordering the killing (NBC News).",
+  "legacy": "She is remembered by her congregation and by rural communities in the Amazon as a defender of small farmers and the forest; her congregation's archive records a phrase attributed to her: 'It is not my safety, but that of the people which matters.'",
+  "death_label": "Confirmed killing",
+  "death_note": "On 12 February 2005, aged 73, Dorothy Stang was shot six times at close range by hired gunmen on a rural road near Anapu (Sisters of Notre Dame de Namur; NBC News). Gunman Rayfran das Neves Sales was sentenced to 27 years and his accomplice Clodoaldo Carlos Batista to 17 years; intermediary Amair Feijoli da Cunha confessed and was convicted. Rancher Vitalmiro Bastos de Moura was convicted in 2007 of hiring the gunmen, acquitted at a 2008 retrial that was later annulled, and convicted again in 2010 with a 30-year sentence. Rancher Regivaldo Galvão was convicted by a jury in Belém in 2010 of ordering the murder and sentenced to 30 years (NBC News; Human Rights Defenders Memorial). The masterminds' cases went through further appeals in the Brazilian courts.",
+  "topics": [
+   "forests",
+   "environmental-justice",
+   "community-action",
+   "agriculture",
+   "environmental-activism"
+  ],
+  "sdgs": [
+   15,
+   1,
+   2,
+   16
+  ],
+  "timeline": [
+   {
+    "year": "1931",
+    "event": "Born in Dayton, Ohio, USA."
+   },
+   {
+    "year": "1966",
+    "event": "Goes to Brazil as a Sister of Notre Dame de Namur."
+   },
+   {
+    "year": "2005",
+    "event": "Shot dead by hired gunmen near Anapu on 12 February."
+   },
+   {
+    "year": "2005",
+    "event": "Gunman Rayfran das Neves Sales sentenced to 27 years."
+   },
+   {
+    "year": "2007",
+    "event": "Rancher Vitalmiro Bastos de Moura first convicted; acquitted in 2008 retrial that was later annulled."
+   },
+   {
+    "year": "2010",
+    "event": "Moura convicted again (30 years); rancher Regivaldo Galvão convicted of ordering the murder (30 years)."
+   }
+  ],
+  "sources": [
+   {
+    "title": "Sister Dorothy Stang, SNDdeN: Her One and Only Life",
+    "publisher": "Sisters of Notre Dame de Namur, Ohio Province",
+    "author": "",
+    "date": "",
+    "url": "https://sndohio.org/sister-dorothy/blog/1633842/sister-dorothy-stang-sndden-her-one-and-only-life",
+    "type": "organisational",
+    "claim": "Congregation's account: born 1931 in Dayton; went to Brazil 1966; work in Anapu; shot six times by hired gunmen on 12 February 2005; quote."
+   },
+   {
+    "title": "Sr Dorothy Stang",
+    "publisher": "Human Rights Defenders Memorial",
+    "author": "",
+    "date": "",
+    "url": "https://hrdmemorial.org/pt/?p=2886",
+    "type": "organisational",
+    "claim": "Date of death; work with CPT; threats; sentences of gunmen, intermediary and alleged masterminds; Moura's retrial history."
+   },
+   {
+    "title": "Brazilian gets 30 years for U.S. nun's murder",
+    "publisher": "NBC News / Associated Press",
+    "author": "",
+    "date": "2010-05",
+    "url": "https://www.nbcnews.com/id/wbna36884426",
+    "type": "reputable-journalism",
+    "claim": "Shot six times in Anapu in February 2005, aged 73; Regivaldo Galvão convicted in Belém, 30 years; Moura convicted at retrial, 30 years; gunmen's sentences; five defendants tried."
+   }
+  ],
+  "editorial_status": "published"
+ },
+ {
+  "slug": "ken-saro-wiwa",
+  "name": "Ken Saro-Wiwa",
+  "category": "defender",
+  "country": "Nigeria",
+  "country_code": "NG",
+  "region": "Africa",
+  "place": "Bori, Ogoniland, Rivers State",
+  "lat": 4.68,
+  "lng": 7.36,
+  "born": "1941-10-10",
+  "died": "1995-11-10",
+  "occupation": "Writer, television producer and leader of the Movement for the Survival of the Ogoni People (MOSOP)",
+  "earth": "Oil pollution in the Niger Delta; environmental and civil rights of the Ogoni people",
+  "summary": "Ogoni writer and MOSOP leader who campaigned non-violently against oil pollution in the Niger Delta. He was hanged by Nigeria's military government in 1995 after a widely condemned tribunal.",
+  "life": "Ken Saro-Wiwa was born on 10 October 1941 in Bori, near Port Harcourt, in Ogoniland. He became a well-known writer: his novel Sozaboy (1985), written in pidgin English, satirised corruption, and he created the long-running television comedy Basi and Company, according to Encyclopaedia Britannica.",
+  "work": "Oil was struck on Ogoni land in 1958, and the Goldman Environmental Prize records contamination of farmland by spills and the loss of fish and wildlife. Saro-Wiwa led the Movement for the Survival of the Ogoni People (MOSOP), founded in 1990, which drafted the Ogoni Bill of Rights that year (Right Livelihood). In January 1993 he helped organise a peaceful march of some 300,000 Ogoni people demanding a share of oil revenues, political autonomy, environmental clean-up and compensation (Goldman Prize).",
+  "impact": "MOSOP and Saro-Wiwa received the Right Livelihood Award in 1994 'for their exemplary courage in striving non-violently for the civil, economic and environmental rights of their people'. He received the Goldman Environmental Prize in 1995. His case brought international attention to oil pollution and human rights in the Niger Delta.",
+  "legacy": "In 2009 Shell agreed a US$15.5 million out-of-court settlement with the families of the Ogoni Nine in a US lawsuit, without admitting wrongdoing; the settlement included a trust for the benefit of the Ogoni people (Inside Climate News). In June 2025 President Bola Tinubu granted the Ogoni Nine posthumous pardons and made Saro-Wiwa a Commander of the Order of the Niger. Amnesty International said the pardon fell short of justice and called for the men to be fully exonerated.",
+  "death_label": "Executed by the state",
+  "death_note": "Saro-Wiwa was not killed in an attack: he was executed by the state. In May 1994 he was seized from his home and detained with other MOSOP leaders after four Ogoni leaders were killed at a political gathering; Amnesty International adopted him as a prisoner of conscience (Goldman Prize). In October 1995 a special tribunal appointed by the military government convicted him of complicity in the murders. On 10 November 1995 he and eight co-defendants, the 'Ogoni Nine', were hanged in Port Harcourt (Britannica). Governments and civil society groups worldwide condemned the trial; Amnesty International describes it as 'blatantly unfair' and says the men were in effect tried for challenging oil production in Ogoniland. Nigeria was suspended from the Commonwealth the day after the executions. In 2009 Shell settled a US lawsuit brought by the families for US$15.5 million without admitting liability, maintaining it had no part in the violence. In June 2025 the Nigerian government granted posthumous pardons; Amnesty International continues to call for the convictions to be formally recognised as unjust and the men declared innocent.",
+  "topics": [
+   "pollution",
+   "environmental-justice",
+   "environmental-activism",
+   "indigenous-knowledge",
+   "community-action",
+   "environmental-health"
+  ],
+  "sdgs": [
+   16,
+   14,
+   15,
+   3,
+   6
+  ],
+  "timeline": [
+   {
+    "year": "1941",
+    "event": "Born in Bori, Ogoniland."
+   },
+   {
+    "year": "1985",
+    "event": "Publishes the novel Sozaboy."
+   },
+   {
+    "year": "1990",
+    "event": "MOSOP founded; Ogoni Bill of Rights drafted."
+   },
+   {
+    "year": "1993",
+    "event": "Peaceful march of some 300,000 Ogoni people in January."
+   },
+   {
+    "year": "1994",
+    "event": "Detained in May; MOSOP and Saro-Wiwa receive the Right Livelihood Award."
+   },
+   {
+    "year": "1995",
+    "event": "Receives the Goldman Environmental Prize; convicted by a military-appointed tribunal in October; hanged with eight others on 10 November."
+   },
+   {
+    "year": "2009",
+    "event": "Shell settles US lawsuit by the Ogoni Nine families for US$15.5 million without admitting liability."
+   },
+   {
+    "year": "2025",
+    "event": "Posthumous presidential pardon and national honour; Amnesty calls for full exoneration."
+   }
+  ],
+  "sources": [
+   {
+    "title": "Ken Saro-Wiwa",
+    "publisher": "Encyclopaedia Britannica",
+    "author": "",
+    "date": "",
+    "url": "https://www.britannica.com/biography/Ken-Saro-Wiwa",
+    "type": "book",
+    "claim": "Birth date and place; writing career; arrest after deaths of four Ogoni chiefs; military-appointed tribunal; hanged in Port Harcourt 10 November 1995; Commonwealth suspension; 2025 pardon and CON."
+   },
+   {
+    "title": "Ken Saro-Wiwa — 1995 Goldman Prize Recipient, Africa",
+    "publisher": "Goldman Environmental Prize",
+    "author": "",
+    "date": "1995",
+    "url": "https://www.goldmanprize.org/recipient/ken-saro-wiwa/",
+    "type": "award-body",
+    "claim": "Oil pollution in Ogoniland; 1993 march; May 1994 arrest; Amnesty prisoner of conscience; October 1995 conviction by military tribunal condemned worldwide; hanged with eight co-defendants."
+   },
+   {
+    "title": "Ken Saro-Wiwa / Movement for the Survival of the Ogoni People",
+    "publisher": "Right Livelihood",
+    "author": "",
+    "date": "1994",
+    "url": "https://rightlivelihood.org/the-change-makers/find-a-laureate/ken-saro-wiwa-movement-for-the-survival-of-the-ogoni-people/",
+    "type": "award-body",
+    "claim": "1994 award and citation; MOSOP founded 1990; Ogoni Bill of Rights 1990; execution date."
+   },
+   {
+    "title": "Nigeria: Pardon of executed Ogoni Nine activists falls far short of real justice",
+    "publisher": "Amnesty International UK",
+    "author": "",
+    "date": "2025-06-13",
+    "url": "https://www.amnesty.org.uk/latest/nigeria-pardon-executed-ogoni-nine-activists-falls-far-short-real-justice/",
+    "type": "organisational",
+    "claim": "2025 pardon; Amnesty describes 'blatantly unfair trial'; calls for full exoneration; execution date."
+   },
+   {
+    "title": "Shell Settles Human Rights Case in Nigeria for $15.5 Million",
+    "publisher": "Inside Climate News",
+    "author": "",
+    "date": "2009-06-09",
+    "url": "https://insideclimatenews.org/news/09062009/shell-settles-human-rights-case-nigeria-155-million/",
+    "type": "reputable-journalism",
+    "claim": "US$15.5m settlement including trust for Ogoni people; Shell did not admit wrongdoing and said it had no part in the violence."
+   }
+  ],
+  "editorial_status": "published"
+ },
+ {
+  "slug": "isidro-baldenegro-lopez",
+  "name": "Isidro Baldenegro López",
+  "category": "defender",
+  "country": "Mexico",
+  "country_code": "MX",
+  "region": "Latin America & Caribbean",
+  "place": "Coloradas de la Virgen, Guadalupe y Calvo municipality, Chihuahua",
+  "lat": 26.09,
+  "lng": -106.96,
+  "born": "c. 1965 (aged 51 at his death)",
+  "died": "2017-01-15",
+  "occupation": "Subsistence farmer and Tarahumara (Rarámuri) community leader",
+  "earth": "Illegal logging and deforestation of old-growth forests in the Sierra Madre; Indigenous land rights",
+  "summary": "Tarahumara farmer and community leader who led non-violent resistance to logging in the Sierra Madre, winning the Goldman Prize in 2005. He was shot dead in 2017.",
+  "life": "Isidro Baldenegro López was a subsistence farmer and community leader of the Indigenous Tarahumara (Rarámuri) people in the Sierra Madre of Chihuahua, Mexico. As a child he saw his father, Julio, killed for opposing logging; Sierra magazine reports that no one was arrested for that killing.",
+  "work": "In 1993 he started a non-violent grassroots movement against logging. Sit-ins and marches in 2002 led the government to suspend logging temporarily, and in 2003 a large human blockade, joined mostly by women whose husbands had been murdered, led to a court order banning logging in the area, according to the Goldman Environmental Prize. After the blockade he was jailed on arms and drugs charges that were later shown to be false; Amnesty International named him a prisoner of conscience, and he was released in June 2004 after 15 months.",
+  "impact": "He received the Goldman Environmental Prize in 2005 for his non-violent campaign to protect ancient forests. The court-ordered halt to logging that his community's blockade helped secure is the most concrete documented outcome of his campaigning.",
+  "legacy": "His death prompted a joint statement from Mexico's National Human Rights Commission (CNDH) and the UN Human Rights Office in Mexico calling for protection of defenders in Coloradas de la Virgen and for the killing to be clarified and punished. His case is frequently cited in reporting on the dangers facing Indigenous forest defenders in Mexico.",
+  "death_label": "Confirmed killing",
+  "death_note": "On 15 January 2017 Isidro Baldenegro López was shot several times at a relative's home in Coloradas de la Virgen, in the municipality of Guadalupe y Calvo, Chihuahua; he had returned to visit a sick relative after a long period away because of threats (CNDH; Human Rights Defenders Memorial). He died of his wounds in the early hours of the following day (Sierra). Chihuahua state prosecutors said they had identified a suspect, a 25-year-old man, and were searching for him; a motive was not officially established. We were unable to confirm from reliable sources whether anyone has since been convicted. The CNDH and the UN Human Rights Office in Mexico called for the killing to be clarified and punished.",
+  "topics": [
+   "forests",
+   "indigenous-knowledge",
+   "environmental-justice",
+   "environmental-activism",
+   "community-action",
+   "biodiversity"
+  ],
+  "sdgs": [
+   15,
+   16,
+   13
+  ],
+  "timeline": [
+   {
+    "year": "1986",
+    "event": "His father, Julio Baldenegro, is killed for opposing illegal logging."
+   },
+   {
+    "year": "1993",
+    "event": "Starts a non-violent grassroots movement against logging."
+   },
+   {
+    "year": "2002",
+    "event": "Sit-ins and marches lead to a temporary suspension of logging."
+   },
+   {
+    "year": "2003",
+    "event": "Human blockade leads to a court order banning logging; he is jailed on charges later shown to be false."
+   },
+   {
+    "year": "2004",
+    "event": "Released in June after 15 months; Amnesty International had named him a prisoner of conscience."
+   },
+   {
+    "year": "2005",
+    "event": "Receives the Goldman Environmental Prize."
+   },
+   {
+    "year": "2017",
+    "event": "Shot dead in Coloradas de la Virgen on 15 January."
+   }
+  ],
+  "sources": [
+   {
+    "title": "Isidro Baldenegro López — 2005 Goldman Prize Recipient, North America",
+    "publisher": "Goldman Environmental Prize",
+    "author": "",
+    "date": "2005",
+    "url": "https://www.goldmanprize.org/recipient/isidro-baldenegro/",
+    "type": "award-body",
+    "claim": "Tarahumara farmer and leader; father's killing; 1993 movement; 2002 and 2003 actions; false charges and 2004 release; Amnesty prisoner of conscience; 2005 prize; killed January 2017."
+   },
+   {
+    "title": "Comunicado conjunto CNDH y ONU-DH sobre el homicidio de Isidro Baldenegro López",
+    "publisher": "Comisión Nacional de los Derechos Humanos (CNDH), Mexico, with UN Human Rights Office in Mexico",
+    "author": "",
+    "date": "2017-01-20",
+    "url": "https://www.cndh.org.mx/sites/default/files/doc/Comunicados/2017/Com_2017_028.pdf",
+    "type": "government",
+    "claim": "Killed 15 January 2017 in Coloradas de la Virgen, Guadalupe y Calvo; calls for protection and for the killing to be clarified and punished."
+   },
+   {
+    "title": "Murder of Mexican Environmental Activist Isidro Baldenegro Occurred Amid an Atmosphere of Impunity",
+    "publisher": "Sierra (Sierra Club)",
+    "author": "",
+    "date": "2017",
+    "url": "https://sierraclub.org/sierra/green-life/murder-mexican-environmental-activist-isidro-baldenegro-occurred-amid-atmosphere",
+    "type": "reputable-journalism",
+    "claim": "Circumstances of the shooting; suspect identified by state officials; father killed in 1986 with no arrests; regional impunity."
+   },
+   {
+    "title": "Decorated activist slain in northern Mexican state of Chihuahua",
+    "publisher": "El Universal",
+    "author": "",
+    "date": "2017-01-18",
+    "url": "https://eluniversal.com.mx/articulo/english/2017/01/18/decorated-activist-slain-northern-mexican-state-chihuahua",
+    "type": "reputable-journalism",
+    "claim": "Aged 51; shot in Guadalupe y Calvo; state prosecutor identified a suspect and was searching for him."
+   },
+   {
+    "title": "Isidro Baldenegro Lopez",
+    "publisher": "Human Rights Defenders Memorial",
+    "author": "",
+    "date": "",
+    "url": "https://hrdmemorial.org/?p=3200",
+    "type": "organisational",
+    "claim": "Shot at a relative's home after returning from exile caused by threats; no arrests reported in the record."
+   }
+  ],
+  "editorial_status": "published"
+ },
+ {
+  "slug": "wangari-maathai",
+  "name": "Wangari Maathai",
+  "category": "footprint",
+  "country": "Kenya",
+  "country_code": "KE",
+  "region": "Africa",
+  "place": "Nyeri",
+  "lat": -0.42,
+  "lng": 36.95,
+  "born": "1940-04-01",
+  "died": "2011-09-25",
+  "occupation": "Biologist, academic, politician and founder of the Green Belt Movement",
+  "earth": "Deforestation, soil erosion and water loss; women's livelihoods and democratic rights",
+  "summary": "Kenyan biologist who founded the Green Belt Movement, linking tree planting with women's empowerment and democracy, and became the first African woman to win the Nobel Peace Prize.",
+  "life": "Wangari Muta Maathai was born on 1 April 1940 in Nyeri, Kenya. She studied biology in the United States and earned a PhD from the University of Nairobi in 1971, becoming the first woman in East and Central Africa to earn a doctorate, according to the Nobel Prize biography. She died of ovarian cancer on 25 September 2011, aged 71, according to the Green Belt Movement.",
+  "work": "In 1976, while serving on the National Council of Women of Kenya, she introduced the idea of community tree planting, which became the Green Belt Movement in 1977. The movement uses tree planting as an entry point for community empowerment, better environmental management and improved livelihoods, with a strong focus on women. She was elected to Kenya's parliament in December 2002 and served as Assistant Minister for Environment, Natural Resources and Wildlife.",
+  "impact": "She received the Right Livelihood Award (1984), the Goldman Environmental Prize (1991) and, in 2004, the Nobel Peace Prize, which the Nobel biography links to her long struggle for democracy, human rights and environmental conservation. The Green Belt Movement's own website reports that its groups have grown millions of trees across Kenya; this figure is the organisation's own account.",
+  "legacy": "The Green Belt Movement continues her community tree-planting and advocacy work, and in 2010 she co-founded the Wangari Maathai Institute for Peace and Environmental Studies with the University of Nairobi. At her state funeral, Al Jazeera reported, her coffin was made of water hyacinth and papyrus rather than wood, in keeping with her wishes.",
+  "topics": [
+   "forests",
+   "restoration",
+   "community-action",
+   "environmental-activism",
+   "soil",
+   "water",
+   "environmental-education"
+  ],
+  "sdgs": [
+   15,
+   5,
+   13,
+   16,
+   6
+  ],
+  "timeline": [
+   {
+    "year": "1940",
+    "event": "Born in Nyeri, Kenya."
+   },
+   {
+    "year": "1971",
+    "event": "Earns a PhD from the University of Nairobi."
+   },
+   {
+    "year": "1977",
+    "event": "Founds the Green Belt Movement."
+   },
+   {
+    "year": "1984",
+    "event": "Receives the Right Livelihood Award."
+   },
+   {
+    "year": "1991",
+    "event": "Receives the Goldman Environmental Prize."
+   },
+   {
+    "year": "2002",
+    "event": "Elected to Kenya's parliament; later Assistant Minister for Environment."
+   },
+   {
+    "year": "2004",
+    "event": "Awarded the Nobel Peace Prize."
+   },
+   {
+    "year": "2011",
+    "event": "Dies of ovarian cancer on 25 September, aged 71."
+   }
+  ],
+  "sources": [
+   {
+    "title": "Wangari Maathai — Biographical",
+    "publisher": "The Nobel Prize (nobelprize.org)",
+    "author": "",
+    "date": "2004",
+    "url": "https://www.nobelprize.org/prizes/peace/2004/maathai/biographical/",
+    "type": "award-body",
+    "claim": "Born 1940 in Nyeri; education and 1971 PhD; tree planting idea 1976; parliament 2002; assistant minister; Nobel Peace Prize 2004; died 25 September 2011."
+   },
+   {
+    "title": "Wangari Maathai: Biography",
+    "publisher": "Green Belt Movement",
+    "author": "",
+    "date": "",
+    "url": "https://www.greenbeltmovement.org/wangari-maathai/biography",
+    "type": "organisational",
+    "claim": "Birth date; death date and cause; led GBM 1977–2002; Wangari Maathai Institute 2010; honours list."
+   },
+   {
+    "title": "Who We Are",
+    "publisher": "Green Belt Movement",
+    "author": "",
+    "date": "",
+    "url": "https://www.greenbeltmovement.org/who-we-are",
+    "type": "organisational",
+    "claim": "Founded 1977; tree planting as an entry point for community empowerment."
+   },
+   {
+    "title": "Kenyans mourn for 'Tree Mother of Africa'",
+    "publisher": "Al Jazeera",
+    "author": "",
+    "date": "2011-10-08",
+    "url": "https://www.aljazeera.com/amp/news/2011/10/8/kenyans-mourn-for-tree-mother-of-africa",
+    "type": "reputable-journalism",
+    "claim": "Died of ovarian cancer aged 71; state funeral; coffin of water hyacinth and papyrus."
+   }
+  ],
+  "editorial_status": "published"
+ },
+ {
+  "slug": "rachel-carson",
+  "name": "Rachel Carson",
+  "category": "footprint",
+  "country": "United States",
+  "country_code": "US",
+  "region": "North America",
+  "place": "Springdale, Pennsylvania",
+  "lat": 40.54,
+  "lng": -79.78,
+  "born": "1907-05-27",
+  "died": "1964-04-14",
+  "occupation": "Marine biologist, government scientist and writer",
+  "earth": "Pesticide pollution (including DDT); marine life and ecology",
+  "summary": "Marine biologist and writer whose 1962 book Silent Spring warned of the harm caused by indiscriminate pesticide use and helped shape modern environmental policy.",
+  "life": "Rachel Carson was born on 27 May 1907 in Springdale, Pennsylvania (US National Park Service). She studied English and then biology, and later studied and taught zoology in Maryland before leaving her doctoral studies for paid work. She died of cancer at her home in Silver Spring, Maryland, on 14 April 1964.",
+  "work": "In 1935 she began working for the US Bureau of Fisheries, now part of the US Fish and Wildlife Service, and rose to become editor-in-chief of all the Service's publications before resigning to write full-time. Her sea books, including The Sea Around Us (1951), which won the National Book Award, brought ocean science to a wide public. In Silent Spring (1962) she set out evidence linking post-war chemical pesticides to harmful biological effects, despite pressure from industry and government.",
+  "impact": "The US National Park Service credits Silent Spring with helping lead to the creation of the Environmental Protection Agency, the first Earth Day in 1970 and the 1972 US ban on DDT. The US Fish and Wildlife Service describes the book as credited with launching the modern environmental movement.",
+  "legacy": "The coastal Maine refuge established in 1966 was renamed the Rachel Carson National Wildlife Refuge in 1970. She was posthumously awarded the Presidential Medal of Freedom in 1980, and Silent Spring was designated a National Historic Chemical Landmark by the American Chemical Society in 2012 (Maryland State Archives).",
+  "topics": [
+   "pollution",
+   "environmental-health",
+   "biodiversity",
+   "oceans",
+   "environmental-education",
+   "conservation"
+  ],
+  "sdgs": [
+   3,
+   14,
+   15,
+   12
+  ],
+  "timeline": [
+   {
+    "year": "1907",
+    "event": "Born in Springdale, Pennsylvania."
+   },
+   {
+    "year": "1935",
+    "event": "Joins the US Bureau of Fisheries (later the Fish and Wildlife Service)."
+   },
+   {
+    "year": "1951",
+    "event": "Publishes The Sea Around Us, which wins the National Book Award."
+   },
+   {
+    "year": "1962",
+    "event": "Publishes Silent Spring."
+   },
+   {
+    "year": "1964",
+    "event": "Dies of cancer at home in Silver Spring, Maryland, on 14 April."
+   },
+   {
+    "year": "1970",
+    "event": "Coastal Maine refuge renamed in her honour."
+   },
+   {
+    "year": "1980",
+    "event": "Posthumously awarded the Presidential Medal of Freedom."
+   }
+  ],
+  "sources": [
+   {
+    "title": "Rachel Carson",
+    "publisher": "US National Park Service",
+    "author": "",
+    "date": "",
+    "url": "https://www.nps.gov/people/rachel-carson.htm",
+    "type": "government",
+    "claim": "Birth date and place; career from 1935; books; Silent Spring's influence on EPA, Earth Day and DDT ban; death on 14 April 1964 at Silver Spring from cancer."
+   },
+   {
+    "title": "About Us — Rachel Carson National Wildlife Refuge",
+    "publisher": "US Fish and Wildlife Service",
+    "author": "",
+    "date": "",
+    "url": "https://www.fws.gov/refuge/rachel-carson/about-us",
+    "type": "government",
+    "claim": "Refuge established 1966 and renamed for Carson 1970; her career at the Service; Silent Spring credited with launching modern environmental movement."
+   },
+   {
+    "title": "Rachel Carson (Maryland Women's Hall of Fame)",
+    "publisher": "Maryland State Archives",
+    "author": "",
+    "date": "",
+    "url": "https://msa.maryland.gov/msa/educ/exhibits/womenshallfame/html/carson.html",
+    "type": "government",
+    "claim": "Career details; honours including posthumous Presidential Medal of Freedom (1980) and ACS National Historic Chemical Landmark (2012); death from breast cancer in 1964."
+   }
+  ],
+  "editorial_status": "published"
+ },
+ {
+  "slug": "yacouba-sawadogo",
+  "name": "Yacouba Sawadogo",
+  "category": "footprint",
+  "country": "Burkina Faso",
+  "country_code": "BF",
+  "region": "Africa",
+  "place": "Gourga, near Ouahigouya",
+  "lat": 13.58,
+  "lng": -2.42,
+  "born": "1946",
+  "died": "2023-12-03",
+  "occupation": "Farmer",
+  "earth": "Desertification, land degradation and drought in the Sahel",
+  "summary": "Burkinabè farmer who adapted the traditional zaï planting-pit technique to restore barren land and grew a diverse forest, inspiring farmers across the Sahel.",
+  "life": "Yacouba Sawadogo was born in 1946 in the village of Gourga in northern Burkina Faso. He died on 3 December 2023, aged 77, in hospital in Ouahigouya after a long illness, according to The New York Times (as republished by the Boston Globe) and Right Livelihood.",
+  "work": "After drought and famine in the early 1980s, he adapted zaï, a traditional practice of digging small pits to catch rainwater. According to UNEP, he made the pits wider and deeper, added organic matter and stones to help hold water, and used termites to loosen hard ground; The New York Times reported that he dug the pits during the dry season, earlier than was customary. On land that had been barren he grew a forest of more than 60 species of trees and shrubs; its size is reported variously as about 27, 30 and 40 hectares.",
+  "impact": "According to Right Livelihood, which honoured him in 2018, his methods had by 2016 helped restore productive capacity on tens of thousands of hectares in Burkina Faso's Yatenga and Gourcy provinces, and influenced policy and other farmers. UNEP named him a Champion of the Earth in 2020 in the Inspiration and Action category. His story was told in the 2010 documentary The Man Who Stopped the Desert.",
+  "legacy": "His forest at Gourga and the improved zaï technique remain an example of low-cost, farmer-led land restoration in drylands. Right Livelihood's executive director described him as 'a visionary farmer and a beacon of hope'.",
+  "topics": [
+   "restoration",
+   "soil",
+   "agriculture",
+   "forests",
+   "climate-adaptation",
+   "indigenous-knowledge",
+   "water"
+  ],
+  "sdgs": [
+   15,
+   2,
+   13,
+   6
+  ],
+  "timeline": [
+   {
+    "year": "1946",
+    "event": "Born in Gourga, northern Burkina Faso."
+   },
+   {
+    "year": "1980s",
+    "event": "Begins adapting the zaï technique after drought and famine."
+   },
+   {
+    "year": "2010",
+    "event": "Featured in the documentary The Man Who Stopped the Desert."
+   },
+   {
+    "year": "2018",
+    "event": "Receives the Right Livelihood Award."
+   },
+   {
+    "year": "2020",
+    "event": "Named a UNEP Champion of the Earth (Inspiration and Action)."
+   },
+   {
+    "year": "2023",
+    "event": "Dies in Ouahigouya on 3 December, aged 77."
+   }
+  ],
+  "sources": [
+   {
+    "title": "Yacouba Sawadogo — Inspiration and Action (Champions of the Earth 2020)",
+    "publisher": "UN Environment Programme",
+    "author": "",
+    "date": "2020",
+    "url": "https://www.unep.org/championsofearth/laureates/2020/yacouba-sawadogo",
+    "type": "un-agency",
+    "claim": "2020 award; adapted zaï with wider pits, stones, termites; 40-hectare forest with more than 60 species; began early 1980s after famine."
+   },
+   {
+    "title": "Remembering Yacouba Sawadogo",
+    "publisher": "Right Livelihood",
+    "author": "",
+    "date": "2023-12-04",
+    "url": "https://rightlivelihood.org/?p=9179",
+    "type": "award-body",
+    "claim": "Died 3 December 2023; born 1946; forest of nearly 40 ha with 60+ species; 2018 award; tens of thousands of hectares restored in Yatenga and Gourcy; quote from Ole von Uexkull."
+   },
+   {
+    "title": "Yacouba Sawadogo, African farmer who held back the desert, dies at 77",
+    "publisher": "The New York Times (republished by The Boston Globe)",
+    "author": "",
+    "date": "2023-12-23",
+    "url": "https://www.bostonglobe.com/2023/12/23/metro/yacouba-sawadogo-african-farmer-who-held-back-desert-dies-77",
+    "type": "reputable-journalism",
+    "claim": "Died 3 December 2023 in hospital in Ouahigouya after long illness; born 1946 in Gourga; zaï adaptations; forest of about 30 hectares; 2010 documentary."
+   },
+   {
+    "title": "Yacouba Sawadogo: a great defender of nature",
+    "publisher": "Tree Aid",
+    "author": "Summer Brooks",
+    "date": "2023-12-04",
+    "url": "https://treeaid.org/updates/yacouba-sawadogo-a-great-defender-of-nature/",
+    "type": "organisational",
+    "claim": "Born 1946 in Gourga; died aged 77; forest of 27 hectares protected for over 40 years."
+   }
+  ],
+  "editorial_status": "published"
+ },
+ {
+  "slug": "jane-goodall",
+  "name": "Jane Goodall",
+  "category": "footprint",
+  "country": "United Kingdom",
+  "country_code": "GB",
+  "region": "Europe",
+  "place": "London",
+  "lat": 51.51,
+  "lng": -0.13,
+  "born": "1934-04-03",
+  "died": "2025-10-01",
+  "occupation": "Primatologist, ethologist and conservationist",
+  "earth": "Chimpanzee conservation, habitat loss and community-centred conservation; youth environmental education",
+  "summary": "British primatologist whose long-term study of wild chimpanzees at Gombe changed scientific understanding of animals, and who built a global conservation and youth movement.",
+  "life": "Valerie Jane Morris-Goodall was born on 3 April 1934 in London. She died of natural causes on 1 October 2025, aged 91, while in California on a speaking tour of the United States, according to the Jane Goodall Institute and press reports.",
+  "work": "She arrived at Gombe, in Tanzania, on 14 July 1960 to study wild chimpanzees, and there observed chimpanzees making and using tools, such as a chimpanzee named David Greybeard using stems to fish for termites, a finding that challenged the idea that only humans make tools. Her research became one of the longest field studies of any wild animal group. She founded the Jane Goodall Institute in 1977 and the Roots & Shoots youth programme in 1991.",
+  "impact": "Press reports at her death stated that Roots & Shoots operates in more than 60 countries. She was named a UN Messenger of Peace in 2002, made a Dame in 2004, and received the US Presidential Medal of Freedom in January 2025. UN Secretary-General António Guterres paid tribute to her as 'our dear Messenger of Peace'.",
+  "legacy": "The Jane Goodall Institute continues her chimpanzee research, community conservation and Roots & Shoots youth work. The institute marked the first anniversary of her death on 1 October 2026.",
+  "topics": [
+   "biodiversity",
+   "conservation",
+   "forests",
+   "environmental-education",
+   "community-action"
+  ],
+  "sdgs": [
+   15,
+   4,
+   13
+  ],
+  "timeline": [
+   {
+    "year": "1934",
+    "event": "Born in London on 3 April."
+   },
+   {
+    "year": "1960",
+    "event": "Arrives at Gombe, Tanzania, on 14 July to study chimpanzees."
+   },
+   {
+    "year": "1977",
+    "event": "Founds the Jane Goodall Institute."
+   },
+   {
+    "year": "1991",
+    "event": "Founds Roots & Shoots."
+   },
+   {
+    "year": "2002",
+    "event": "Named a UN Messenger of Peace."
+   },
+   {
+    "year": "2004",
+    "event": "Made a Dame Commander of the Order of the British Empire."
+   },
+   {
+    "year": "2025",
+    "event": "Receives the Presidential Medal of Freedom in January; dies of natural causes in California on 1 October, aged 91."
+   }
+  ],
+  "sources": [
+   {
+    "title": "Remembering Jane",
+    "publisher": "Jane Goodall Institute",
+    "author": "",
+    "date": "2025",
+    "url": "https://janegoodall.org/remembering-jane/",
+    "type": "organisational",
+    "claim": "Institute's account: died of natural causes on 1 October 2025 aged 91; arrived Gombe 14 July 1960; tool-use discovery; JGI 1977; Roots & Shoots 1991; UN Messenger of Peace 2002; DBE 2004."
+   },
+   {
+    "title": "Conservationist and chimpanzee expert Dame Jane Goodall dies aged 91",
+    "publisher": "The Scotsman (PA Media)",
+    "author": "",
+    "date": "2025-10-01",
+    "url": "https://mp.scotsman.com/uk-news/conservationist-and-chimpanzee-expert-dame-jane-goodall-dies-aged-91-5665121",
+    "type": "reputable-journalism",
+    "claim": "Died 1 October 2025 in California on a US speaking tour, natural causes per institute; born London 1934; David Greybeard tool use; Roots & Shoots in 60+ countries; honours including 2025 Presidential Medal of Freedom."
+   },
+   {
+    "title": "World-renowned chimpanzee expert Jane Goodall dies at 91",
+    "publisher": "Eyewitness News (EWN) / Associated Press",
+    "author": "",
+    "date": "2025-10-02",
+    "url": "https://www.ewn.co.za/2025/10/02/world-renowned-chimpanzee-expert-jane-goodall-dies-at-91",
+    "type": "reputable-journalism",
+    "claim": "Died peacefully in her sleep in Los Angeles on a US speaking tour; born 3 April 1934 in London; JGI 1977; Roots & Shoots 1991; Guterres tribute."
+   }
+  ],
+  "editorial_status": "published"
+ }
+]

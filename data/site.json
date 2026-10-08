@@ -1,0 +1,54 @@
+{
+  "name": "We Speak Sustainability",
+  "tagline": "Small actions. Real people. A better world.",
+  "base_url": "https://wespeaksustainability.com",
+  "repo_url": "https://github.com/LordAsh001/wespeaksustainability",
+  "tally_story_form": "",
+  "tally_correction_form": "",
+  "tally_newsletter_form": "",
+  "goal": 1000,
+  "goatcounter": "",
+  "evidence": {
+    "verified": {"label": "Verified", "text": "Checked by our editors against credible independent evidence, usually including an interview."},
+    "documented": {"label": "Documented", "text": "Supported by reliable published sources such as UN agencies, award bodies and reputable journalism. Not yet independently re-verified by our editors."},
+    "self-reported": {"label": "Self-reported", "text": "Based mainly on the contributor's own account."},
+    "insufficient": {"label": "Insufficient evidence", "text": "Not enough information to publish as a factual claim."}
+  },
+  "problems": {
+    "plastic-waste": {"label": "Plastic waste", "q": "What do you do with plastic when nobody collects it?"},
+    "food-waste": {"label": "Food waste", "q": "How do communities keep food out of landfill?"},
+    "water-scarcity": {"label": "Water", "q": "How do people secure clean, safe water?"},
+    "deforestation": {"label": "Forests and deforestation", "q": "How do people protect and regrow forests?"},
+    "biodiversity-loss": {"label": "Biodiversity loss", "q": "How do people protect the living world around them?"},
+    "soil-degradation": {"label": "Soil degradation", "q": "How do farmers bring tired land back to life?"},
+    "air-pollution": {"label": "Air pollution", "q": "How do communities clean the air they breathe?"},
+    "energy": {"label": "Energy", "q": "How do people find clean power where the grid doesn't reach?"},
+    "agricultural-waste": {"label": "Agricultural waste", "q": "What can farm waste become?"},
+    "ocean-pollution": {"label": "Ocean pollution", "q": "How do coastal communities clean their shores?"},
+    "fast-fashion": {"label": "Fast fashion", "q": "How do people wear, mend and share clothes differently?"},
+    "urban-waste": {"label": "Urban waste", "q": "How do towns and cities reuse, repair and recycle more?"},
+    "climate-adaptation": {"label": "Climate adaptation and resilience", "q": "How do communities prepare for a changing climate?"}
+  },
+  "topics": {
+    "climate": "Climate", "climate-adaptation": "Climate adaptation", "climate-mitigation": "Climate mitigation",
+    "water": "Water", "waste": "Waste", "circular-economy": "Circular economy", "biodiversity": "Biodiversity",
+    "conservation": "Conservation", "forests": "Forests", "oceans": "Oceans", "agriculture": "Agriculture",
+    "soil": "Soil", "food-systems": "Food systems", "energy": "Energy", "renewable-energy": "Renewable energy",
+    "sustainable-transport": "Sustainable transport", "sustainable-cities": "Sustainable cities",
+    "sustainable-buildings": "Sustainable buildings", "materials": "Materials", "pollution": "Pollution",
+    "environmental-justice": "Environmental justice", "indigenous-knowledge": "Indigenous knowledge",
+    "environmental-education": "Environmental education", "sustainable-business": "Sustainable business",
+    "sustainable-technology": "Sustainable technology", "community-action": "Community action",
+    "environmental-activism": "Environmental activism", "environmental-health": "Environmental health",
+    "restoration": "Restoration", "reuse": "Reuse", "repair": "Repair", "recycling": "Recycling",
+    "sustainable-consumption": "Sustainable consumption"
+  },
+  "sdgs": {
+    "1": "No Poverty", "2": "Zero Hunger", "3": "Good Health and Well-being", "4": "Quality Education",
+    "5": "Gender Equality", "6": "Clean Water and Sanitation", "7": "Affordable and Clean Energy",
+    "8": "Decent Work and Economic Growth", "9": "Industry, Innovation and Infrastructure",
+    "10": "Reduced Inequalities", "11": "Sustainable Cities and Communities",
+    "12": "Responsible Consumption and Production", "13": "Climate Action", "14": "Life Below Water",
+    "15": "Life on Land", "16": "Peace, Justice and Strong Institutions", "17": "Partnerships for the Goals"
+  }
+}
