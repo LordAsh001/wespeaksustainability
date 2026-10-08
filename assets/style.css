@@ -259,3 +259,4 @@ th{font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--mu
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn.ghost{color:var(--ink)} :root:not([data-theme="light"]) .btn.ghost:hover{color:var(--paper)}}
 :root[data-theme="dark"] .btn.ghost{color:var(--ink)} :root[data-theme="dark"] .btn.ghost:hover{color:var(--paper)}
 .memorial-zone .btn.ghost{color:var(--stone-ink)!important} .memorial-zone .btn.ghost:hover{color:var(--stone)!important;background:var(--stone-ink)}
+.leaflet-popup-content-wrapper,.leaflet-popup-tip{background:#fffdf8!important;color:#1f1b16!important}.leaflet-popup-content a{color:#8c3a20!important}.leaflet-popup-content .kind{color:#a8492a}
