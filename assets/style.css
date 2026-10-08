@@ -254,3 +254,8 @@ th{font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--mu
 .memorial-zone .site-foot .muted,.memorial-zone .site-foot h4,.memorial-zone .foot-note{color:var(--stone-muted)}
 .memorial-zone .theme-toggle{color:var(--stone-ink);border-color:#5a554e}
 .memorial-zone :focus-visible{outline-color:var(--candle)}
+/* dark-mode button text */
+:root[data-theme="dark"] .btn,:root[data-theme="dark"] .nav a.btn{color:#1a1815}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .btn.ghost{color:var(--ink)} :root:not([data-theme="light"]) .btn.ghost:hover{color:var(--paper)}}
+:root[data-theme="dark"] .btn.ghost{color:var(--ink)} :root[data-theme="dark"] .btn.ghost:hover{color:var(--paper)}
+.memorial-zone .btn.ghost{color:var(--stone-ink)!important} .memorial-zone .btn.ghost:hover{color:var(--stone)!important;background:var(--stone-ink)}
