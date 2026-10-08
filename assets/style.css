@@ -278,3 +278,14 @@ img.portrait{object-fit:cover;padding:0;border:2px solid #5a554e}
 .mem-photo{max-width:720px;margin-top:24px}
 .mem-photo img{border-radius:var(--r);aspect-ratio:4/3;max-height:520px;filter:saturate(.92)}
 .memorial-zone .photo figcaption{color:var(--stone-muted)}
+/* photo orientation */
+.photo.hero{max-width:920px}
+.photo.hero img{aspect-ratio:3/2;max-height:none}
+.photo.hero.portrait,.photo.hero.square{max-width:460px}
+.photo.hero.portrait img{aspect-ratio:4/5}
+.photo.hero.square img{aspect-ratio:1}
+@media (max-width:700px){.photo.hero img{aspect-ratio:3/2}.photo.hero.portrait img{aspect-ratio:4/5}}
+.mem-photo.portrait{max-width:420px}
+.mem-photo.portrait img{aspect-ratio:4/5}
+.mem-photo.landscape img{aspect-ratio:3/2}
+.memorial-zone .place{color:var(--stone-ink)}
