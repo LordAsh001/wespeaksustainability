@@ -125,6 +125,7 @@ def credit(im):
 
 
 def figure(im, cls="photo", sizes="(max-width: 900px) 100vw, 800px", eager=False):
+    cls += " " + im.get("orientation", "landscape")
     return (f'<figure class="{cls}"><img src="{photo_url(im["file"], 960)}" srcset="{photo_url(im["file"], 500)} 500w, {photo_url(im["file"], 960)} 960w, {photo_url(im["file"], 1280)} 1280w" '
             f'sizes="{sizes}" alt="{e(im["alt"])}" style="object-position:{e(im.get("focus", "50% 30%"))}" {"fetchpriority=high" if eager else "loading=lazy"} decoding="async">'
             f'<figcaption>{e(im["caption"])} {credit(im)}</figcaption></figure>')
@@ -282,7 +283,7 @@ def story_card(s, show_summary=True):
 
 def portrait(m, big=False):
     im = hero_of(m)
-    if im:
+    if im and im.get("use_as_portrait", True):
         return f'<img class="portrait" src="{photo_url(im["file"], 330 if big else 250)}" alt="" style="object-position:{e(im.get("focus", "50% 25%"))}" loading="lazy" decoding="async">'
     return f'<div class="portrait" aria-hidden="true">{e(initials(m["name"]))}</div>'
 
