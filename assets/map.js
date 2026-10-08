@@ -5,7 +5,7 @@
   fetch('/map-data.json').then(function(r){return r.json()}).then(function(data){
     el.innerHTML='';
     var map=L.map(el,{scrollWheelZoom:false,worldCopyJump:true}).setView([12,10],2);
-    L.tileLayer('https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png',{maxZoom:12,attribution:'&copy; OpenStreetMap contributors &copy; CARTO'}).addTo(map);
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:12,attribution:'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}).addTo(map);
     var group=L.markerClusterGroup({showCoverageOnHover:false,maxClusterRadius:40});map.addLayer(group);
     function esc(s){return String(s).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
     function draw(){
