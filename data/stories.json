@@ -289,7 +289,23 @@
     "claim": "Wecyclers still operating in 2022, employing low-income residents as sorters and riders."
    }
   ],
-  "editorial_status": "published"
+  "editorial_status": "published",
+  "images": [
+   {
+    "file": "KBF Africa - Bilikiss Adebiyi Abiola and the Wecyclers in 2019.jpg",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "author": "Nyancho Nwanri/Arete for the King Baudouin Foundation",
+    "copyright_holder": "Nyancho Nwanri/Arete for the King Baudouin Foundation",
+    "alt": "Bilikiss Adebiyi-Abiola and members of the Wecyclers team, in purple shirts, standing among sacks of collected plastic bottles",
+    "caption": "Bilikiss Adebiyi-Abiola and the Wecyclers team in Lagos, 2019.",
+    "role": "hero",
+    "focus": "50% 40%",
+    "source": "Wikimedia Commons",
+    "source_url": "https://commons.wikimedia.org/wiki/File:KBF_Africa_-_Bilikiss_Adebiyi_Abiola_and_the_Wecyclers_in_2019.jpg",
+    "permission": "Free licence; attribution required"
+   }
+  ]
  },
  {
   "slug": "maradi-farmers-managed-natural-regeneration",
@@ -391,7 +407,23 @@
     "claim": "Rinaudo still active in 2024; FMNR spread to other countries such as Ghana."
    }
   ],
-  "editorial_status": "published"
+  "editorial_status": "published",
+  "images": [
+   {
+    "file": "FMNR example 2.jpeg",
+    "license": "CC BY-SA 1.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/1.0/",
+    "author": "Tony Rinaudo",
+    "copyright_holder": "Tony Rinaudo",
+    "alt": "A flat, sandy millet field in West Africa with almost no trees on the horizon",
+    "caption": "A seemingly bare millet field in West Africa. Fields like this can still hold living tree stumps and roots, which sprout again when farmers protect them.",
+    "role": "hero",
+    "focus": "50% 50%",
+    "source": "Wikimedia Commons",
+    "source_url": "https://commons.wikimedia.org/wiki/File:FMNR_example_2.jpeg",
+    "permission": "Free licence; attribution required"
+   }
+  ]
  },
  {
   "slug": "william-kamkwamba-masitala-windmill",
@@ -489,7 +521,23 @@
     "claim": "At age 14, in poverty and famine, he built a windmill to power his family's home."
    }
   ],
-  "editorial_status": "published"
+  "editorial_status": "published",
+  "images": [
+   {
+    "file": "William Kamkwamba at TED in 2007.jpg",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "author": "Erik (HASH) Hersman",
+    "copyright_holder": "Erik (HASH) Hersman",
+    "alt": "William Kamkwamba on stage, arms raised, at a TED conference",
+    "caption": "William Kamkwamba speaking at TED in 2007.",
+    "role": "hero",
+    "focus": "50% 25%",
+    "source": "Wikimedia Commons",
+    "source_url": "https://commons.wikimedia.org/wiki/File:William_Kamkwamba_at_TED_in_2007.jpg",
+    "permission": "Free licence; attribution required"
+   }
+  ]
  },
  {
   "slug": "leah-namugerwa-birthday-trees-uganda",
@@ -694,7 +742,37 @@
     "claim": "Clean-up activity at Versova reported in February 2026 (current status)."
    }
   ],
-  "editorial_status": "published"
+  "editorial_status": "published",
+  "images": [
+   {
+    "file": "Afroz wiki image.jpg",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "author": "Abgram",
+    "copyright_holder": "Abgram",
+    "alt": "Afroz Shah in a cap and gloves, crouching to collect rubbish on the beach",
+    "caption": "Afroz Shah, 2019.",
+    "role": "hero",
+    "focus": "50% 30%",
+    "source": "Wikimedia Commons",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Afroz_wiki_image.jpg",
+    "permission": "Free licence; attribution required"
+   },
+   {
+    "file": "Varsova Beach CleanUp Campaign.png",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "author": "Choudharyg677",
+    "copyright_holder": "Choudharyg677",
+    "alt": "Volunteers in white and orange bending to collect waste on Versova beach",
+    "caption": "Volunteers at the Versova beach clean-up, 2018.",
+    "role": "inline",
+    "focus": "50% 50%",
+    "source": "Wikimedia Commons",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Varsova_Beach_CleanUp_Campaign.png",
+    "permission": "Free licence; attribution required"
+   }
+  ]
  },
  {
   "slug": "jadav-payeng-molai-forest-assam",
@@ -800,7 +878,23 @@
     "claim": "Payeng active and speaking publicly in November 2025."
    }
   ],
-  "editorial_status": "published"
+  "editorial_status": "published",
+  "images": [
+   {
+    "file": "Forest Man of India - Jadav Payeng DSC 5008.jpg",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "author": "JyotiPN",
+    "copyright_holder": "JyotiPN",
+    "alt": "Portrait of Jadav Payeng wearing a knitted cap and a red and white gamosa scarf",
+    "caption": "Jadav Payeng, known as the Forest Man of India.",
+    "role": "hero",
+    "focus": "50% 25%",
+    "source": "Wikimedia Commons",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Forest_Man_of_India_-_Jadav_Payeng_DSC_5008.jpg",
+    "permission": "Free licence; attribution required"
+   }
+  ]
  },
  {
   "slug": "chewang-norphel-artificial-glaciers-ladakh",
@@ -897,7 +991,23 @@
     "claim": "Storage volumes; irrigation benefits; limitations and hazards; 'artificial glacier' term misleading. DOI 10.1007/s10113-018-1372-0."
    }
   ],
-  "editorial_status": "published"
+  "editorial_status": "published",
+  "images": [
+   {
+    "file": "Chewang Norphel in 2009.jpg",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "author": "Kiran Jonnalagadda",
+    "copyright_holder": "Kiran Jonnalagadda",
+    "alt": "Chewang Norphel seated indoors, smiling slightly",
+    "caption": "Chewang Norphel in 2009.",
+    "role": "hero",
+    "focus": "50% 25%",
+    "source": "Wikimedia Commons",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Chewang_Norphel_in_2009.jpg",
+    "permission": "Free licence; attribution required"
+   }
+  ]
  },
  {
   "slug": "mohammed-rezwan-solar-boat-schools-bangladesh",
@@ -1082,7 +1192,23 @@
     "claim": "Mountain Mamas; clean-up participation and tonnage (organisation figures); YOUTHTOPIA."
    }
   ],
-  "editorial_status": "published"
+  "editorial_status": "published",
+  "images": [
+   {
+    "file": "Isabel and Melati Wijsen on UPROXX.jpg",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0/",
+    "author": "UPROXX Life + Adventure",
+    "copyright_holder": "UPROXX Life + Adventure",
+    "alt": "Sisters Isabel and Melati Wijsen sitting side by side in Bye Bye Plastic Bags T-shirts",
+    "caption": "Isabel and Melati Wijsen, in a still from a UPROXX video about their campaign.",
+    "role": "hero",
+    "focus": "50% 35%",
+    "source": "Wikimedia Commons",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Isabel_and_Melati_Wijsen_on_UPROXX.jpg",
+    "permission": "Free licence; attribution required"
+   }
+  ]
  },
  {
   "slug": "kamikatsu-zero-waste-town-japan",
@@ -1171,7 +1297,23 @@
     "claim": "Organisation's own account of sorting history from 1997, 2003 declaration, reuse shop dates, goals to 2030."
    }
   ],
-  "editorial_status": "published"
+  "editorial_status": "published",
+  "images": [
+   {
+    "file": "Kamikatsucho-zero-waste-center.jpeg",
+    "license": "CC0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "author": "Wikimedia Commons user Sorrysorry",
+    "copyright_holder": "Wikimedia Commons user Sorrysorry",
+    "alt": "The long, low timber Zero Waste Center building in Kamikatsu, with wooded mountains behind",
+    "caption": "The Kamikatsu Zero Waste Center, photographed in 2021.",
+    "role": "hero",
+    "focus": "50% 50%",
+    "source": "Wikimedia Commons",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Kamikatsucho-zero-waste-center.jpeg",
+    "permission": "Public domain / no rights reserved"
+   }
+  ]
  },
  {
   "slug": "pacific-islands-students-climate-case-vanuatu",
@@ -1258,7 +1400,23 @@
     "claim": "Unanimous opinion 23 July 2025; no budget at start; ruling not self-executing; current status."
    }
   ],
-  "editorial_status": "published"
+  "editorial_status": "published",
+  "images": [
+   {
+    "file": "Solomon Yeo.png",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0/",
+    "author": "Pacific Islands Students Fighting Climate Change",
+    "copyright_holder": "Pacific Islands Students Fighting Climate Change",
+    "alt": "Solomon Yeo, a young man, looking at the camera outdoors",
+    "caption": "Solomon Yeo in a 2019 campaign video by Pacific Islands Students Fighting Climate Change.",
+    "role": "hero",
+    "focus": "50% 30%",
+    "source": "Wikimedia Commons",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Solomon_Yeo.png",
+    "permission": "Free licence; attribution required"
+   }
+  ]
  },
  {
   "slug": "abel-cruz-fog-catchers-lima",
@@ -1540,7 +1698,23 @@
     "claim": "Organisation's own account: first Repair Café 18 October 2009 in Amsterdam; support to local groups since 2011."
    }
   ],
-  "editorial_status": "published"
+  "editorial_status": "published",
+  "images": [
+   {
+    "file": "Repair Cafe by Ilvy Njiokiktjien.jpg",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "author": "Ilvy Njiokiktjien",
+    "copyright_holder": "Ilvy Njiokiktjien",
+    "alt": "Volunteers and visitors around tables, repairing household items together at a Repair Café",
+    "caption": "Volunteers and visitors at a Repair Café, 2012. Image supplied by the Repair Café Foundation.",
+    "role": "hero",
+    "focus": "50% 40%",
+    "source": "Wikimedia Commons",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Repair_Cafe_by_Ilvy_Njiokiktjien.jpg",
+    "permission": "Free licence; attribution required"
+   }
+  ]
  },
  {
   "slug": "incredible-edible-todmorden",
@@ -1638,7 +1812,23 @@
     "claim": "Organisation's own account: founded 2008 by Mary Clear and Pam Warhurst; first plantings; reasons; no office or paid staff; over 700 groups; small actions mattered most."
    }
   ],
-  "editorial_status": "published"
+  "editorial_status": "published",
+  "images": [
+   {
+    "file": "Incredible Edible Salford, Patricroft railway station (geograph 4004260).jpg",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "author": "El Pollock",
+    "copyright_holder": "El Pollock",
+    "alt": "A wooden planter of vegetables on a railway platform beside the Patricroft station sign",
+    "caption": "The Incredible Edible idea that began in Todmorden has spread to other towns. This planter is at Patricroft railway station, Salford.",
+    "role": "inline",
+    "focus": "50% 50%",
+    "source": "Wikimedia Commons",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Incredible_Edible_Salford,_Patricroft_railway_station_(geograph_4004260).jpg",
+    "permission": "Free licence; attribution required"
+   }
+  ]
  },
  {
   "slug": "leydy-pech-mayan-beekeepers-gm-soy",
@@ -1717,7 +1907,23 @@
     "claim": "Revival of Xunáan Kab beekeeping with Mayan women; lawsuit and outcomes; threats; continued illegal soy planting and stalled consultation."
    }
   ],
-  "editorial_status": "published"
+  "editorial_status": "published",
+  "images": [
+   {
+    "file": "México Impacto de mega proyectos de desarrollo (15669450302) (cropped).jpg",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "author": "Daniel Cima for the Inter-American Commission on Human Rights",
+    "copyright_holder": "Daniel Cima for the Inter-American Commission on Human Rights",
+    "alt": "Leydy Pech speaking into a microphone at a hearing table behind a sign reading Peticionario",
+    "caption": "Leydy Pech speaking at an Inter-American Commission on Human Rights hearing, 30 October 2014.",
+    "role": "hero",
+    "focus": "50% 25%",
+    "source": "Wikimedia Commons",
+    "source_url": "https://commons.wikimedia.org/wiki/File:México_Impacto_de_mega_proyectos_de_desarrollo_(15669450302)_(cropped).jpg",
+    "permission": "Free licence; attribution required"
+   }
+  ]
  },
  {
   "slug": "nohra-padilla-bogota-recyclers",
@@ -1912,6 +2118,22 @@
     "claim": "2024 memoir co-written with Mitch Anderson; Ceibo Alliance; her writing on women as voices of the forest; current status."
    }
   ],
-  "editorial_status": "published"
+  "editorial_status": "published",
+  "images": [
+   {
+    "file": "Nemonte Nenquimo 2020 UNEP Champions of the Earth laureate credit UNEP020-compressed.jpg",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "author": "UN Environment Programme (PNUMA)",
+    "copyright_holder": "UN Environment Programme (PNUMA)",
+    "alt": "Nemonte Nenquimo wearing a red and white feather headband and red face paint",
+    "caption": "Nemonte Nenquimo, named a UN Environment Programme Champion of the Earth in 2020.",
+    "role": "hero",
+    "focus": "50% 25%",
+    "source": "Wikimedia Commons",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Nemonte_Nenquimo_2020_UNEP_Champions_of_the_Earth_laureate_credit_UNEP020-compressed.jpg",
+    "permission": "Free licence; attribution required"
+   }
+  ]
  }
 ]

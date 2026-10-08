@@ -102,7 +102,23 @@
     "claim": "Creation of the Instituto Chico Mendes de Conservação da Biodiversidade."
    }
   ],
-  "editorial_status": "published"
+  "editorial_status": "published",
+  "images": [
+   {
+    "file": "Chico Mendes in 1988 (cropped).jpg",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "author": "Miranda Smith, Miranda Productions, Inc.",
+    "copyright_holder": "Miranda Smith, Miranda Productions, Inc.",
+    "alt": "Chico Mendes smiling, with a moustache, against a dark background",
+    "caption": "Chico Mendes at his home in Xapuri, Acre, in 1988.",
+    "role": "hero",
+    "focus": "50% 25%",
+    "source": "Wikimedia Commons",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Chico_Mendes_in_1988_(cropped).jpg",
+    "permission": "Free licence; attribution required"
+   }
+  ]
  },
  {
   "slug": "berta-caceres",
@@ -220,7 +236,23 @@
     "claim": "Date of birth reported as 4 March 1972; mother of four; gunmen entered her home in La Esperanza at night."
    }
   ],
-  "editorial_status": "published"
+  "editorial_status": "published",
+  "images": [
+   {
+    "file": "Berta Cáceres (cropped).jpg",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0/",
+    "author": "UN Environment",
+    "copyright_holder": "UN Environment",
+    "alt": "Close portrait of Berta Cáceres",
+    "caption": "Berta Cáceres, in a still from UN Environment's video tribute for her posthumous Champions of the Earth award.",
+    "role": "hero",
+    "focus": "50% 25%",
+    "source": "Wikimedia Commons",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Berta_Cáceres_(cropped).jpg",
+    "permission": "Free licence; attribution required"
+   }
+  ]
  },
  {
   "slug": "dorothy-stang",
@@ -311,7 +343,23 @@
     "claim": "Shot six times in Anapu in February 2005, aged 73; Regivaldo Galvão convicted in Belém, 30 years; Moura convicted at retrial, 30 years; gunmen's sentences; five defendants tried."
    }
   ],
-  "editorial_status": "published"
+  "editorial_status": "published",
+  "images": [
+   {
+    "file": "Irmã dorothy stang - panoramio (2).jpg",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "author": "Roberto de Vasconcelos",
+    "copyright_holder": "Roberto de Vasconcelos",
+    "alt": "A banner with Dorothy Stang's smiling portrait and the words Queremos justiça e Reforma Agrária",
+    "caption": "A banner bearing Dorothy Stang's portrait, calling for justice and agrarian reform, photographed in February 2012.",
+    "role": "hero",
+    "focus": "50% 30%",
+    "source": "Wikimedia Commons",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Irmã_dorothy_stang_-_panoramio_(2).jpg",
+    "permission": "Free licence; attribution required"
+   }
+  ]
  },
  {
   "slug": "ken-saro-wiwa",
@@ -430,7 +478,23 @@
     "claim": "US$15.5m settlement including trust for Ogoni people; Shell did not admit wrongdoing and said it had no part in the violence."
    }
   ],
-  "editorial_status": "published"
+  "editorial_status": "published",
+  "images": [
+   {
+    "file": "Bus Memorial to Ken Saro-Wiwa (5927206987).jpg",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "author": "Alan Stanton",
+    "copyright_holder": "Alan Stanton",
+    "alt": "A full-size steel sculpture of a Nigerian bus parked on a paved area in London",
+    "caption": "The Ken Saro-Wiwa bus memorial, a steel sculpture of a Nigerian bus, behind the Bernie Grant Arts Centre in Tottenham, London, 2011.",
+    "role": "hero",
+    "focus": "50% 60%",
+    "source": "Wikimedia Commons",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Bus_Memorial_to_Ken_Saro-Wiwa_(5927206987).jpg",
+    "permission": "Free licence; attribution required"
+   }
+  ]
  },
  {
   "slug": "isidro-baldenegro-lopez",
@@ -652,7 +716,23 @@
     "claim": "Died of ovarian cancer aged 71; state funeral; coffin of water hyacinth and papyrus."
    }
   ],
-  "editorial_status": "published"
+  "editorial_status": "published",
+  "images": [
+   {
+    "file": "Wangari Maathai in Nairobi.jpg",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0/",
+    "author": "Fredrick Onyango",
+    "copyright_holder": "Fredrick Onyango",
+    "alt": "Wangari Maathai smiling, wearing a yellow dress and headwrap",
+    "caption": "Wangari Maathai in Nairobi, 2006.",
+    "role": "hero",
+    "focus": "50% 25%",
+    "source": "Wikimedia Commons",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Wangari_Maathai_in_Nairobi.jpg",
+    "permission": "Free licence; attribution required"
+   }
+  ]
  },
  {
   "slug": "rachel-carson",
@@ -746,7 +826,23 @@
     "claim": "Career details; honours including posthumous Presidential Medal of Freedom (1980) and ACS National Historic Chemical Landmark (2012); death from breast cancer in 1964."
    }
   ],
-  "editorial_status": "published"
+  "editorial_status": "published",
+  "images": [
+   {
+    "file": "Rachel-Carson.jpg",
+    "license": "Public domain",
+    "license_url": "",
+    "author": "U.S. Fish and Wildlife Service",
+    "copyright_holder": "U.S. Fish and Wildlife Service",
+    "alt": "Black and white portrait of Rachel Carson",
+    "caption": "Rachel Carson. Photograph by the U.S. Fish and Wildlife Service, where she worked.",
+    "role": "hero",
+    "focus": "50% 25%",
+    "source": "Wikimedia Commons",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Rachel-Carson.jpg",
+    "permission": "Public domain / no rights reserved"
+   }
+  ]
  },
  {
   "slug": "yacouba-sawadogo",
@@ -846,7 +942,23 @@
     "claim": "Born 1946 in Gourga; died aged 77; forest of 27 hectares protected for over 40 years."
    }
   ],
-  "editorial_status": "published"
+  "editorial_status": "published",
+  "images": [
+   {
+    "file": "Yacouba Sawadogo.jpg",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "author": "EKokou",
+    "copyright_holder": "EKokou",
+    "alt": "Yacouba Sawadogo in a striped blue and white robe, standing outdoors among trees",
+    "caption": "Yacouba Sawadogo, 2019.",
+    "role": "hero",
+    "focus": "50% 25%",
+    "source": "Wikimedia Commons",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Yacouba_Sawadogo.jpg",
+    "permission": "Free licence; attribution required"
+   }
+  ]
  },
  {
   "slug": "jane-goodall",
@@ -938,6 +1050,22 @@
     "claim": "Died peacefully in her sleep in Los Angeles on a US speaking tour; born 3 April 1934 in London; JGI 1977; Roots & Shoots 1991; Guterres tribute."
    }
   ],
-  "editorial_status": "published"
+  "editorial_status": "published",
+  "images": [
+   {
+    "file": "Jane Goodall 2015.jpg",
+    "license": "Public domain",
+    "license_url": "",
+    "author": "U.S. Department of State",
+    "copyright_holder": "U.S. Department of State",
+    "alt": "Jane Goodall in a teal jacket, smiling, in front of flowers",
+    "caption": "Jane Goodall in October 2015.",
+    "role": "hero",
+    "focus": "50% 25%",
+    "source": "Wikimedia Commons",
+    "source_url": "https://commons.wikimedia.org/wiki/File:Jane_Goodall_2015.jpg",
+    "permission": "Public domain / no rights reserved"
+   }
+  ]
  }
 ]
