@@ -111,8 +111,55 @@ def art(seed, problem="urban-waste", label=""):
 from urllib.parse import quote as _q
 
 
-def photo_url(file, w=960):
+PHOTO_WIDTHS = (500, 960, 1280)
+PHOTO_CACHE = os.path.join(ROOT, ".photo-cache")
+LOCAL_PHOTOS = {}  # (file, width) -> site path
+
+
+def remote_photo_url(file, w=960):
     return f"https://commons.wikimedia.org/wiki/Special:FilePath/{_q(file)}?width={w}"
+
+
+def photo_url(file, w=960):
+    """Self-hosted copy when the build fetched one; otherwise the Wikimedia Commons original."""
+    return LOCAL_PHOTOS.get((file, w)) or remote_photo_url(file, w)
+
+
+def fetch_photos():
+    """Download every credited photo once (cached between builds) and serve it from our own domain.
+    Runs on GitHub Actions; if a download fails the page falls back to the Commons URL."""
+    import time
+    import urllib.request
+    files = sorted({im["file"] for x in ALL_STORIES + ALL_LEGACY for im in x.get("images", [])})
+    os.makedirs(PHOTO_CACHE, exist_ok=True)
+    ok = fail = 0
+    for f in files:
+        key = hashlib.sha1(f.encode()).hexdigest()[:12]
+        for w in PHOTO_WIDTHS:
+            cached = [n for n in os.listdir(PHOTO_CACHE) if n.startswith(f"{key}-{w}.")]
+            if not cached:
+                try:
+                    req = urllib.request.Request(remote_photo_url(f, w), headers={
+                        "User-Agent": "WeSpeakSustainabilitySiteBuilder/1.0 (https://wespeaksustainability.com)"})
+                    with urllib.request.urlopen(req, timeout=60) as r:
+                        ctype = r.headers.get("Content-Type", "")
+                        data = r.read()
+                    ext = "png" if "png" in ctype else "webp" if "webp" in ctype else "jpg"
+                    if not ctype.startswith("image/") or len(data) < 1000:
+                        raise ValueError(f"unexpected response {ctype}")
+                    with open(os.path.join(PHOTO_CACHE, f"{key}-{w}.{ext}"), "wb") as fh:
+                        fh.write(data)
+                    cached = [f"{key}-{w}.{ext}"]
+                    time.sleep(0.4)
+                except Exception as ex:  # keep building; hotlink instead
+                    print(f"  photo fetch failed: {f} @{w}: {ex}")
+                    fail += 1
+                    continue
+            os.makedirs(os.path.join(OUT, "photos"), exist_ok=True)
+            shutil.copy(os.path.join(PHOTO_CACHE, cached[0]), os.path.join(OUT, "photos", cached[0]))
+            LOCAL_PHOTOS[(f, w)] = f"/photos/{cached[0]}"
+            ok += 1
+    print(f"Photos: {ok} self-hosted, {fail} falling back to Wikimedia Commons")
 
 
 def hero_of(x):
@@ -182,7 +229,7 @@ def layout(path, title, desc, body, *, jsonld=None, head_extra="", scripts=None,
 <meta property="og:title" content="{e(title)}">
 <meta property="og:description" content="{e(desc)}">
 <meta property="og:url" content="{BASE}{path}">
-<meta property="og:image" content="{e(og_image or BASE + '/assets/og.png')}">
+<meta property="og:image" content="{e((BASE + og_image) if (og_image or '').startswith('/') else (og_image or BASE + '/assets/og.png'))}">
 <meta property="og:site_name" content="{SITE['name']}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="theme-color" content="#f7f2e8">
@@ -284,7 +331,7 @@ def story_card(s, show_summary=True):
 def portrait(m, big=False):
     im = hero_of(m)
     if im and im.get("use_as_portrait", True):
-        return f'<img class="portrait" src="{photo_url(im["file"], 330 if big else 250)}" alt="" style="object-position:{e(im.get("focus", "50% 25%"))}" loading="lazy" decoding="async">'
+        return f'<img class="portrait" src="{photo_url(im["file"], 500)}" alt="" style="object-position:{e(im.get("focus", "50% 25%"))}" loading="lazy" decoding="async">'
     return f'<div class="portrait" aria-hidden="true">{e(initials(m["name"]))}</div>'
 
 
@@ -550,7 +597,7 @@ def page_story(s):
           "citation": [x.get("url") for x in s["sources"] if x.get("url")]}
     hi = hero_of(s)
     if hi:
-        ld["image"] = photo_url(hi["file"], 1280)
+        ld["image"] = (BASE if photo_url(hi["file"], 1280).startswith("/") else "") + photo_url(hi["file"], 1280)
     write(f"/stories/{s['slug']}/", layout(f"/stories/{s['slug']}/", s["title"], s["summary"], body, jsonld=ld, og_type="article", og_image=photo_url(hi["file"], 1280) if hi else None))
 
 
@@ -695,7 +742,7 @@ def mem_page(m):
           "nationality": m["country"], "jobTitle": m["occupation"], "description": m["summary"], "url": f"{BASE}/legacy/{m['slug']}/"}
     hi = hero_of(m)
     if hi:
-        ld["image"] = photo_url(hi["file"], 1280)
+        ld["image"] = (BASE if photo_url(hi["file"], 1280).startswith("/") else "") + photo_url(hi["file"], 1280)
     write(f"/legacy/{m['slug']}/", layout(f"/legacy/{m['slug']}/", f"{m['name']} ({year(m['born'])}–{year(m['died'])})", m["summary"], body, jsonld=ld, og_type="profile", zone="memorial-zone", og_image=photo_url(hi["file"], 1280) if hi else None))
 
 
@@ -943,6 +990,8 @@ def main():
         shutil.rmtree(OUT)
     os.makedirs(OUT)
     shutil.copytree(os.path.join(ROOT, "assets"), os.path.join(OUT, "assets"))
+    if os.environ.get("WSS_FETCH_PHOTOS") == "1":
+        fetch_photos()
     page_home()
     page_stories()
     for s in STORIES:
