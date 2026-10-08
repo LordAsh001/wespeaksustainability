@@ -125,7 +125,7 @@ def credit(im):
 
 
 def figure(im, cls="photo", sizes="(max-width: 900px) 100vw, 800px", eager=False):
-    cls += " " + im.get("orientation", "landscape")
+    cls += " o-" + im.get("orientation", "landscape")
     return (f'<figure class="{cls}"><img src="{photo_url(im["file"], 960)}" srcset="{photo_url(im["file"], 500)} 500w, {photo_url(im["file"], 960)} 960w, {photo_url(im["file"], 1280)} 1280w" '
             f'sizes="{sizes}" alt="{e(im["alt"])}" style="object-position:{e(im.get("focus", "50% 30%"))}" {"fetchpriority=high" if eager else "loading=lazy"} decoding="async">'
             f'<figcaption>{e(im["caption"])} {credit(im)}</figcaption></figure>')
