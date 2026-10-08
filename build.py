@@ -116,6 +116,20 @@ NAV = [("/stories/", "Stories"), ("/map/", "Map"), ("/copy-this/", "Copy This"),
        ("/solutions/", "Solutions"), ("/legacy/", "Legacy"), ("/about/", "About")]
 
 
+def _asset_version():
+    h = hashlib.sha1()
+    for fn in sorted(os.listdir(os.path.join(ROOT, "assets"))):
+        h.update(open(os.path.join(ROOT, "assets", fn), "rb").read())
+    return h.hexdigest()[:8]
+
+
+AV = _asset_version()
+
+
+def av(u):
+    return f"{u}?v={AV}" if u.startswith("/assets/") else u
+
+
 GC = (f'<script src="https://gc.zgo.at/count.js" data-goatcounter="https://{SITE["goatcounter"]}.goatcounter.com/count" async></script>' if SITE.get("goatcounter") else "")
 
 
@@ -125,7 +139,7 @@ def layout(path, title, desc, body, *, jsonld=None, head_extra="", scripts=None,
     ld = ""
     if jsonld:
         ld = f'<script type="application/ld+json">{json.dumps(jsonld, ensure_ascii=False)}</script>'
-    js = "".join(f'<script src="{s}" defer></script>' for s in (scripts or []))
+    js = "".join(f'<script src="{av(s)}" defer></script>' for s in (scripts or []))
     return f"""<!doctype html>
 <html lang="en-GB">
 <head>
@@ -146,7 +160,7 @@ def layout(path, title, desc, body, *, jsonld=None, head_extra="", scripts=None,
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Inter:wght@400;600&display=swap">
-<link rel="stylesheet" href="/assets/style.css">
+<link rel="stylesheet" href="/assets/style.css?v={AV}">
 <script>try{{var t=localStorage.getItem('wss-theme');if(t)document.documentElement.dataset.theme=t}}catch(e){{}}</script>
 {head_extra}{ld}
 {GC}
@@ -168,7 +182,7 @@ def layout(path, title, desc, body, *, jsonld=None, head_extra="", scripts=None,
 {body}
 </main>
 {footer()}
-<script src="/assets/app.js" defer></script>
+<script src="/assets/app.js?v={AV}" defer></script>
 {js}
 </body>
 </html>"""
