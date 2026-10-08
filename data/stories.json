@@ -303,7 +303,8 @@
     "focus": "50% 40%",
     "source": "Wikimedia Commons",
     "source_url": "https://commons.wikimedia.org/wiki/File:KBF_Africa_-_Bilikiss_Adebiyi_Abiola_and_the_Wecyclers_in_2019.jpg",
-    "permission": "Free licence; attribution required"
+    "permission": "Free licence; attribution required",
+    "orientation": "landscape"
    }
   ]
  },
@@ -421,7 +422,8 @@
     "focus": "50% 50%",
     "source": "Wikimedia Commons",
     "source_url": "https://commons.wikimedia.org/wiki/File:FMNR_example_2.jpeg",
-    "permission": "Free licence; attribution required"
+    "permission": "Free licence; attribution required",
+    "orientation": "landscape"
    }
   ]
  },
@@ -532,10 +534,11 @@
     "alt": "William Kamkwamba on stage, arms raised, at a TED conference",
     "caption": "William Kamkwamba speaking at TED in 2007.",
     "role": "hero",
-    "focus": "50% 25%",
+    "focus": "50% 20%",
     "source": "Wikimedia Commons",
     "source_url": "https://commons.wikimedia.org/wiki/File:William_Kamkwamba_at_TED_in_2007.jpg",
-    "permission": "Free licence; attribution required"
+    "permission": "Free licence; attribution required",
+    "orientation": "square"
    }
   ]
  },
@@ -753,10 +756,11 @@
     "alt": "Afroz Shah in a cap and gloves, crouching to collect rubbish on the beach",
     "caption": "Afroz Shah, 2019.",
     "role": "hero",
-    "focus": "50% 30%",
+    "focus": "50% 12%",
     "source": "Wikimedia Commons",
     "source_url": "https://commons.wikimedia.org/wiki/File:Afroz_wiki_image.jpg",
-    "permission": "Free licence; attribution required"
+    "permission": "Free licence; attribution required",
+    "orientation": "portrait"
    },
    {
     "file": "Varsova Beach CleanUp Campaign.png",
@@ -770,7 +774,8 @@
     "focus": "50% 50%",
     "source": "Wikimedia Commons",
     "source_url": "https://commons.wikimedia.org/wiki/File:Varsova_Beach_CleanUp_Campaign.png",
-    "permission": "Free licence; attribution required"
+    "permission": "Free licence; attribution required",
+    "orientation": "landscape"
    }
   ]
  },
@@ -889,10 +894,11 @@
     "alt": "Portrait of Jadav Payeng wearing a knitted cap and a red and white gamosa scarf",
     "caption": "Jadav Payeng, known as the Forest Man of India.",
     "role": "hero",
-    "focus": "50% 25%",
+    "focus": "50% 45%",
     "source": "Wikimedia Commons",
     "source_url": "https://commons.wikimedia.org/wiki/File:Forest_Man_of_India_-_Jadav_Payeng_DSC_5008.jpg",
-    "permission": "Free licence; attribution required"
+    "permission": "Free licence; attribution required",
+    "orientation": "portrait"
    }
   ]
  },
@@ -1005,7 +1011,8 @@
     "focus": "50% 25%",
     "source": "Wikimedia Commons",
     "source_url": "https://commons.wikimedia.org/wiki/File:Chewang_Norphel_in_2009.jpg",
-    "permission": "Free licence; attribution required"
+    "permission": "Free licence; attribution required",
+    "orientation": "landscape"
    }
   ]
  },
@@ -1206,7 +1213,8 @@
     "focus": "50% 35%",
     "source": "Wikimedia Commons",
     "source_url": "https://commons.wikimedia.org/wiki/File:Isabel_and_Melati_Wijsen_on_UPROXX.jpg",
-    "permission": "Free licence; attribution required"
+    "permission": "Free licence; attribution required",
+    "orientation": "landscape"
    }
   ]
  },
@@ -1311,7 +1319,8 @@
     "focus": "50% 50%",
     "source": "Wikimedia Commons",
     "source_url": "https://commons.wikimedia.org/wiki/File:Kamikatsucho-zero-waste-center.jpeg",
-    "permission": "Public domain / no rights reserved"
+    "permission": "Public domain / no rights reserved",
+    "orientation": "landscape"
    }
   ]
  },
@@ -1414,7 +1423,8 @@
     "focus": "50% 30%",
     "source": "Wikimedia Commons",
     "source_url": "https://commons.wikimedia.org/wiki/File:Solomon_Yeo.png",
-    "permission": "Free licence; attribution required"
+    "permission": "Free licence; attribution required",
+    "orientation": "landscape"
    }
   ]
  },
@@ -1709,10 +1719,11 @@
     "alt": "Volunteers and visitors around tables, repairing household items together at a Repair Café",
     "caption": "Volunteers and visitors at a Repair Café, 2012. Image supplied by the Repair Café Foundation.",
     "role": "hero",
-    "focus": "50% 40%",
+    "focus": "50% 45%",
     "source": "Wikimedia Commons",
     "source_url": "https://commons.wikimedia.org/wiki/File:Repair_Cafe_by_Ilvy_Njiokiktjien.jpg",
-    "permission": "Free licence; attribution required"
+    "permission": "Free licence; attribution required",
+    "orientation": "portrait"
    }
   ]
  },
@@ -1826,7 +1837,8 @@
     "focus": "50% 50%",
     "source": "Wikimedia Commons",
     "source_url": "https://commons.wikimedia.org/wiki/File:Incredible_Edible_Salford,_Patricroft_railway_station_(geograph_4004260).jpg",
-    "permission": "Free licence; attribution required"
+    "permission": "Free licence; attribution required",
+    "orientation": "landscape"
    }
   ]
  },
@@ -1921,7 +1933,8 @@
     "focus": "50% 25%",
     "source": "Wikimedia Commons",
     "source_url": "https://commons.wikimedia.org/wiki/File:México_Impacto_de_mega_proyectos_de_desarrollo_(15669450302)_(cropped).jpg",
-    "permission": "Free licence; attribution required"
+    "permission": "Free licence; attribution required",
+    "orientation": "portrait"
    }
   ]
  },
@@ -2129,10 +2142,11 @@
     "alt": "Nemonte Nenquimo wearing a red and white feather headband and red face paint",
     "caption": "Nemonte Nenquimo, named a UN Environment Programme Champion of the Earth in 2020.",
     "role": "hero",
-    "focus": "50% 25%",
+    "focus": "50% 28%",
     "source": "Wikimedia Commons",
     "source_url": "https://commons.wikimedia.org/wiki/File:Nemonte_Nenquimo_2020_UNEP_Champions_of_the_Earth_laureate_credit_UNEP020-compressed.jpg",
-    "permission": "Free licence; attribution required"
+    "permission": "Free licence; attribution required",
+    "orientation": "portrait"
    }
   ]
  }

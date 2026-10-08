@@ -116,7 +116,8 @@
     "focus": "50% 25%",
     "source": "Wikimedia Commons",
     "source_url": "https://commons.wikimedia.org/wiki/File:Chico_Mendes_in_1988_(cropped).jpg",
-    "permission": "Free licence; attribution required"
+    "permission": "Free licence; attribution required",
+    "orientation": "portrait"
    }
   ]
  },
@@ -250,7 +251,8 @@
     "focus": "50% 25%",
     "source": "Wikimedia Commons",
     "source_url": "https://commons.wikimedia.org/wiki/File:Berta_Cáceres_(cropped).jpg",
-    "permission": "Free licence; attribution required"
+    "permission": "Free licence; attribution required",
+    "orientation": "portrait"
    }
   ]
  },
@@ -357,7 +359,9 @@
     "focus": "50% 30%",
     "source": "Wikimedia Commons",
     "source_url": "https://commons.wikimedia.org/wiki/File:Irmã_dorothy_stang_-_panoramio_(2).jpg",
-    "permission": "Free licence; attribution required"
+    "permission": "Free licence; attribution required",
+    "orientation": "landscape",
+    "use_as_portrait": false
    }
   ]
  },
@@ -492,7 +496,9 @@
     "focus": "50% 60%",
     "source": "Wikimedia Commons",
     "source_url": "https://commons.wikimedia.org/wiki/File:Bus_Memorial_to_Ken_Saro-Wiwa_(5927206987).jpg",
-    "permission": "Free licence; attribution required"
+    "permission": "Free licence; attribution required",
+    "orientation": "landscape",
+    "use_as_portrait": false
    }
   ]
  },
@@ -730,7 +736,8 @@
     "focus": "50% 25%",
     "source": "Wikimedia Commons",
     "source_url": "https://commons.wikimedia.org/wiki/File:Wangari_Maathai_in_Nairobi.jpg",
-    "permission": "Free licence; attribution required"
+    "permission": "Free licence; attribution required",
+    "orientation": "portrait"
    }
   ]
  },
@@ -840,7 +847,8 @@
     "focus": "50% 25%",
     "source": "Wikimedia Commons",
     "source_url": "https://commons.wikimedia.org/wiki/File:Rachel-Carson.jpg",
-    "permission": "Public domain / no rights reserved"
+    "permission": "Public domain / no rights reserved",
+    "orientation": "portrait"
    }
   ]
  },
@@ -956,7 +964,8 @@
     "focus": "50% 25%",
     "source": "Wikimedia Commons",
     "source_url": "https://commons.wikimedia.org/wiki/File:Yacouba_Sawadogo.jpg",
-    "permission": "Free licence; attribution required"
+    "permission": "Free licence; attribution required",
+    "orientation": "portrait"
    }
   ]
  },
@@ -1064,7 +1073,8 @@
     "focus": "50% 25%",
     "source": "Wikimedia Commons",
     "source_url": "https://commons.wikimedia.org/wiki/File:Jane_Goodall_2015.jpg",
-    "permission": "Public domain / no rights reserved"
+    "permission": "Public domain / no rights reserved",
+    "orientation": "portrait"
    }
   ]
  }
