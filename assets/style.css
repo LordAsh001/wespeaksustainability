@@ -260,3 +260,21 @@ th{font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--mu
 :root[data-theme="dark"] .btn.ghost{color:var(--ink)} :root[data-theme="dark"] .btn.ghost:hover{color:var(--paper)}
 .memorial-zone .btn.ghost{color:var(--stone-ink)!important} .memorial-zone .btn.ghost:hover{color:var(--stone)!important;background:var(--stone-ink)}
 .leaflet-popup-content-wrapper,.leaflet-popup-tip{background:#fffdf8!important;color:#1f1b16!important}.leaflet-popup-content a{color:#8c3a20!important}.leaflet-popup-content .kind{color:#a8492a}
+/* photographs */
+.photo{margin:0}
+.photo img{width:100%;display:block;object-fit:cover;background:var(--paper-2)}
+.photo.hero{margin-top:8px}
+.photo.hero img{aspect-ratio:21/9;max-height:560px;border-radius:var(--r)}
+@media (max-width:700px){.photo.hero img{aspect-ratio:4/3}}
+.story-body .photo{margin:20px 0 6px}
+.story-body .photo img{border-radius:12px;aspect-ratio:3/2}
+.photo figcaption{font-size:.86rem;color:var(--muted);margin-top:8px;line-height:1.45}
+.credit{display:block;font-size:.78rem;opacity:.9}
+.credit a{color:inherit}
+.card img.art{width:100%;aspect-ratio:16/8;object-fit:cover;height:auto;background:var(--paper-2)}
+.feature .art img.art{aspect-ratio:4/3;height:100%}
+img.portrait{object-fit:cover;padding:0;border:2px solid #5a554e}
+.story-head img.portrait{width:120px}
+.mem-photo{max-width:720px;margin-top:24px}
+.mem-photo img{border-radius:var(--r);aspect-ratio:4/3;max-height:520px;filter:saturate(.92)}
+.memorial-zone .photo figcaption{color:var(--stone-muted)}
