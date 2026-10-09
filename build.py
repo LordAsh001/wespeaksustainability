@@ -191,8 +191,62 @@ LOGO = ('<svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><circle 
         '<path d="M9 22c4-1 6-6 11-6s7 5 11 6" fill="none" stroke="#a8492a" stroke-width="2.4" stroke-linecap="round"/>'
         '<circle cx="20" cy="12" r="2.6" fill="#b9871f"/><path d="M12 28c3 2 13 2 16 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>')
 
-NAV = [("/stories/", "Stories"), ("/map/", "Map"), ("/copy-this/", "Copy This"),
-       ("/solutions/", "Solutions"), ("/legacy/", "Legacy"), ("/insights/", "Insights"), ("/about/", "About")]
+MENU = [
+    ("Explore", [("/stories/", "All stories", "Every documented action, with filters"),
+                 ("/map/", "World map", "Find stories by place"),
+                 ("/solutions/", "One problem, many solutions", "Compare approaches across countries"),
+                 ("/copy-this/", "Copy This", "Practical ideas you can try"),
+                 ("/what-didnt-work/", "What didn't work?", "Lessons from setbacks"),
+                 ("/people/", "People", "Everyone featured in the archive")]),
+    ("Remember", [("/legacy/", "Legacy archive", "Lives that changed our relationship with Earth"),
+                  ("/environmental-defenders/", "Environmental defenders", "Those who lost their lives"),
+                  ("/footprints/", "They left a footprint", "Enduring environmental legacies")]),
+    ("Research", [("/insights/", "Insights", "What the archive shows so far"),
+                  ("/data/", "Open data", "Download the archive (CC BY 4.0)"),
+                  ("/methodology/", "Methodology", "How stories are selected and checked"),
+                  ("/for-institutions/", "For institutions", "For governments, UN agencies and NGOs")]),
+    ("About", [("/about/", "About the project", "Why this archive exists"),
+               ("/1000-small-things/", "1,000 Small Things", "Our goal and progress"),
+               ("/founder/", "Founder & talks", "Request a talk or briefing"),
+               ("/editorial-policy/", "Editorial policy", "Evidence, corrections, anti-greenwashing"),
+               ("/corrections/", "Report a correction", "Help us get it right")]),
+]
+NAV = [(u, t) for _, items in MENU for u, t, _d in items]
+SECTION_NAMES = {u.strip("/"): t for u, t in NAV}
+SECTION_NAMES.update({"stories": "Stories", "legacy": "Legacy", "submit": "Tell your story", "search": "Search", "site-map": "Site map"})
+SEARCH_ICON = '<svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="7" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="m15 15 6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>'
+
+
+def menu_html(path):
+    groups = []
+    for i, (label, items) in enumerate(MENU):
+        active = any(path.startswith(u) for u, _, _ in items)
+        links = "".join(f'<li><a href="{u}"{" aria-current=page" if path.startswith(u) else ""}><b>{e(t)}</b><span>{e(d)}</span></a></li>' for u, t, d in items)
+        groups.append(f'<li class="menu-group{" is-active" if active else ""}"><button type="button" class="menu-trigger" aria-expanded="false" aria-controls="menu-{i}">{e(label)}<svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.8"/></svg></button>'
+                      f'<div class="menu-panel" id="menu-{i}"><ul>{links}</ul></div></li>')
+    return "".join(groups)
+
+
+def crumbs_html(path, title, crumbs):
+    if path in ("/", "/404.html"):
+        return "", None
+    trail = [("/", "Home")]
+    if crumbs:
+        trail += crumbs
+    else:
+        parts = [p for p in path.strip("/").split("/") if p]
+        acc = "/"
+        for seg in parts[:-1]:
+            acc += seg + "/"
+            trail.append((acc, SECTION_NAMES.get(seg, seg.replace("-", " ").title())))
+    trail.append((path, title))
+    items = []
+    for i, (u, t) in enumerate(trail):
+        last = i == len(trail) - 1
+        items.append(f'<li>{"<span aria-current=page>" + e(t) + "</span>" if last else f"<a href={chr(34)}{u}{chr(34)}>{e(t)}</a>"}</li>')
+    ld = {"@context": "https://schema.org", "@type": "BreadcrumbList",
+          "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": t, "item": BASE + u} for i, (u, t) in enumerate(trail)]}
+    return f'<nav class="crumbs" aria-label="Breadcrumb"><div class="wrap"><ol>{"".join(items)}</ol></div></nav>', ld
 
 
 def _asset_version():
@@ -212,13 +266,25 @@ def av(u):
 GC = (f'<script src="https://gc.zgo.at/count.js" data-goatcounter="https://{SITE["goatcounter"]}.goatcounter.com/count" async></script>' if SITE.get("goatcounter") else "")
 
 
-def layout(path, title, desc, body, *, jsonld=None, head_extra="", scripts=None, og_type="website", zone="", og_image=None):
+def layout(path, title, desc, body, *, jsonld=None, head_extra="", scripts=None, og_type="website", zone="", og_image=None, crumbs=None, page_nav=""):
     full_title = title if title == SITE["name"] else f"{title} · {SITE['name']}"
-    nav = "".join(f'<a href="{u}"{" aria-current=\"page\"" if path.startswith(u) else ""}>{t}</a>' for u, t in NAV)
+    body = re.sub(r'<nav class="breadcrumb"[^>]*>.*?</nav>', "", body, flags=re.S)
+    crumb_title = re.sub(r"\s*\(\d{4}.*$", "", title)
+    crumb_bar, crumb_ld = crumbs_html(path, crumb_title, crumbs)
     ld = ""
-    if jsonld:
-        ld = f'<script type="application/ld+json">{json.dumps(jsonld, ensure_ascii=False)}</script>'
+    for obj in [jsonld, crumb_ld]:
+        if obj:
+            ld += f'<script type="application/ld+json">{json.dumps(obj, ensure_ascii=False)}</script>'
     js = "".join(f'<script src="{av(s)}" defer></script>' for s in (scripts or []))
+    bottom = [("/", "Home", '<path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/>'),
+              ("/stories/", "Stories", '<path d="M5 4h11l3 3v13H5z"/><path d="M8 10h8M8 14h8M8 18h5"/>'),
+              ("/map/", "Map", '<circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c3 3 3 15 0 18M12 3c-3 3-3 15 0 18"/>'),
+              ("#search", "Search", '<circle cx="10" cy="10" r="7"/><path d="m15 15 6 6"/>'),
+              ("/submit/", "Share", '<path d="M12 5v14M5 12h14"/>')]
+    bottom_html = "".join(
+        f'<a href="{u}"{" data-open-search" if u == "#search" else ""}{" aria-current=page" if (u != "/" and u != "#search" and path.startswith(u)) or (u == "/" and path == "/") else ""}>'
+        f'<svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{icon}</svg><span>{t}</span></a>'
+        for u, t, icon in bottom)
     return f"""<!doctype html>
 <html lang="en-GB">
 <head>
@@ -246,22 +312,45 @@ def layout(path, title, desc, body, *, jsonld=None, head_extra="", scripts=None,
 </head>
 <body class="{zone}">
 <a class="skip" href="#main">Skip to content</a>
+<div class="progress-bar" aria-hidden="true"><span></span></div>
 <header class="site-head">
  <div class="wrap head-in">
   <a class="brand" href="/">{LOGO}<span>We Speak Sustainability</span></a>
-  <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
   <nav class="nav" id="nav" aria-label="Main">
-   {nav}
-   <a href="/search/" class="search-link"{" aria-current=\"page\"" if path.startswith("/search/") else ""}><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><circle cx="10" cy="10" r="7" fill="none" stroke="currentColor" stroke-width="2.2"/><path d="m15 15 6 6" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/></svg>Search</a>
-   <a href="/submit/" class="btn">Tell your story</a>
+   <ul class="menu">{menu_html(path)}</ul>
   </nav>
+  <div class="head-actions">
+   <button type="button" class="search-trigger" data-open-search aria-label="Search the archive">{SEARCH_ICON}<span class="st-label">Search</span><kbd>/</kbd></button>
+   <a href="/submit/" class="btn head-cta">Tell your story</a>
+   <button type="button" class="menu-btn" aria-expanded="false" aria-controls="drawer" aria-label="Open menu"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+  </div>
  </div>
 </header>
-<main id="main">
+<div class="drawer" id="drawer" hidden>
+ <div class="drawer-in" role="dialog" aria-modal="true" aria-label="Menu">
+  <div class="drawer-top"><span class="brand">{LOGO}<span>Menu</span></span><button type="button" class="drawer-close" aria-label="Close menu">×</button></div>
+  <button type="button" class="drawer-search" data-open-search>{SEARCH_ICON}<span>Search stories, people, places…</span></button>
+  {"".join(f'<details{" open" if any(path.startswith(u) for u, _, _ in items) or (label == "Explore" and not any(path.startswith(u) for _, its in MENU for u, _, _ in its)) else ""}><summary>{e(label)}</summary><ul>' + "".join(f'<li><a href="{u}"{" aria-current=page" if path.startswith(u) else ""}>{e(t)}<span>{e(d)}</span></a></li>' for u, t, d in items) + '</ul></details>' for label, items in MENU)}
+  <a class="btn" href="/submit/" style="width:100%;margin-top:16px">Tell your story</a>
+ </div>
+</div>
+<div class="palette" id="palette" hidden>
+ <div class="palette-in" role="dialog" aria-modal="true" aria-label="Search">
+  <form class="palette-form" action="/search/" role="search"><label for="palette-q" class="sr-only">Search the archive</label>{SEARCH_ICON}<input id="palette-q" name="q" type="search" autocomplete="off" placeholder="Search stories, people, countries, problems…"><kbd class="esc">Esc</kbd></form>
+  <div class="palette-results" id="palette-results" aria-live="polite"></div>
+  <div class="palette-hint"><span><kbd>↑</kbd><kbd>↓</kbd> to move</span><span><kbd>Enter</kbd> to open</span><span><kbd>/</kbd> or <kbd>Ctrl K</kbd> to search anywhere</span></div>
+ </div>
+</div>
+{crumb_bar}
+<main id="main" tabindex="-1">
 {body}
+{page_nav}
 </main>
 {footer()}
+<nav class="bottom-nav" aria-label="Quick navigation">{bottom_html}</nav>
+<button type="button" class="to-top" aria-label="Back to top" hidden><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
 <script src="/assets/app.js?v={AV}" defer></script>
+<script src="/assets/nav.js?v={AV}" defer></script>
 {js}
 </body>
 </html>"""
@@ -288,7 +377,7 @@ def footer():
     <li><a href="/editorial-policy/">Editorial &amp; verification policy</a></li><li><a href="/about/">About</a></li><li><a href="/founder/">Founder &amp; talks</a></li></ul></div>
   </div>
   <div class="foot-note">
-   <span>Stories are published with sources. Spotted an error? <a href="/corrections/">Tell us</a>.</span>
+   <span>Stories are published with sources. Spotted an error? <a href="/corrections/">Tell us</a>. · <a href="/site-map/">Site map</a></span>
    <button class="theme-toggle" type="button" data-theme-toggle>Toggle dark mode</button>
   </div>
  </div>
@@ -453,6 +542,22 @@ def page_home():
  </div>
 </div></section>
 
+<section class="block find-way"><div class="wrap">
+ <div class="block-head"><div><span class="eyebrow">Find your way</span><h2>Where would you like to start?</h2></div></div>
+ <div class="ways">
+  <a class="way" href="/copy-this/"><b>I want to do something</b><span>Practical ideas you can copy, sorted from easiest to hardest.</span></a>
+  <a class="way" href="/map/"><b>Show me what's happening near me</b><span>Browse the world map or pick a country below.</span></a>
+  <a class="way" href="/solutions/"><b>I'm working on a specific problem</b><span>Compare how different countries tackle the same problem.</span></a>
+  <a class="way" href="/insights/"><b>I'm a researcher or policymaker</b><span>Insights, open data and our methodology.</span></a>
+  <a class="way" href="/legacy/"><b>I want to remember and learn</b><span>Defenders and pioneers who changed our relationship with Earth.</span></a>
+  <a class="way" href="/submit/"><b>I have a story to share</b><span>Tell us what you are doing, however small.</span></a>
+ </div>
+ <div class="quick-filters">
+  <div><h3>By region</h3><ul class="chips">{"".join(f'<li><a class="chip" href="/stories/?region={_q(r)}">{e(r)} ({n})</a></li>' for r, n in Counter(x["region"] for x in STORIES).most_common())}</ul></div>
+  <div><h3>By problem</h3><ul class="chips">{"".join(f'<li><a class="chip" href="/solutions/{p}/">{e(PROBLEMS[p]["label"])} ({len(v)})</a></li>' for p, v in sorted(PROBLEM_STORIES.items(), key=lambda kv: -len(kv[1])))}</ul></div>
+ </div>
+</div></section>
+
 <section class="block"><div class="wrap">
  <div class="block-head"><div><span class="eyebrow">The world is speaking</span><h2>Every point is a person, a place, a start</h2></div><p>Tap a point to read the story. Every story on the map is also in the <a href="/stories/">full list</a>.</p></div>
  {worldmap()}
@@ -536,6 +641,32 @@ def page_home():
     write("/", layout("/", SITE["name"], "A living global archive of grassroots sustainability: real people, small actions, sourced stories and ideas you can copy.", body, jsonld=ld))
 
 
+def add_toc(html_body):
+    """Give every section heading an id and return (html, 'On this page' box)."""
+    entries = []
+
+    def rep(m):
+        attrs, text = m.group(1) or "", m.group(2)
+        plain = re.sub(r"<[^>]+>", "", text)
+        idm = re.search(r'id="([^"]+)"', attrs)
+        sid = idm.group(1) if idm else "s-" + slugify(plain)[:40]
+        if not idm:
+            attrs += f' id="{sid}"'
+        entries.append((sid, plain.capitalize() if plain.isupper() else plain))
+        return f"<section{attrs}><h2>{text}</h2>"
+    out = re.sub(r"<section([^>]*)>\s*<h2>(.*?)</h2>", rep, html_body)
+    if len(entries) < 3:
+        return out, ""
+    links = "".join(f'<li><a href="#{i}">{e(t)}</a></li>' for i, t in entries)
+    return out, f'<nav class="aside-box toc" aria-label="On this page"><h3>On this page</h3><ol>{links}</ol></nav>'
+
+
+def prev_next(items, idx, base, label_fn, kind):
+    prev_i, next_i = items[idx - 1], items[(idx + 1) % len(items)]
+    return (f'<nav class="wrap pager" aria-label="More {kind}"><a class="pager-prev" href="{base}{prev_i["slug"]}/" rel="prev"><span>← Previous {kind}</span><b>{e(label_fn(prev_i))}</b></a>'
+            f'<a class="pager-next" href="{base}{next_i["slug"]}/" rel="next"><span>Next {kind} →</span><b>{e(label_fn(next_i))}</b></a></nav>')
+
+
 def page_story(s):
     ct = s.get("copy_this") or {}
     q = s.get("quote") or {}
@@ -615,7 +746,15 @@ def page_story(s):
     hi = hero_of(s)
     if hi:
         ld["image"] = (BASE if photo_url(hi["file"], 1280).startswith("/") else "") + photo_url(hi["file"], 1280)
-    write(f"/stories/{s['slug']}/", layout(f"/stories/{s['slug']}/", s["title"], s["summary"], body, jsonld=ld, og_type="article", og_image=photo_url(hi["file"], 1280) if hi else None))
+    body, toc = add_toc(body)
+    body = body.replace('<div class="sticky">', '<div class="sticky">' + toc, 1)
+    if toc:
+        mob = toc.replace('<nav class="aside-box toc" aria-label="On this page"><h3>On this page</h3>', '<details class="toc-mobile"><summary>On this page</summary><nav class="toc" aria-label="On this page (mobile)">').replace("</ol></nav>", "</ol></nav></details>")
+        body = body.replace('<div class="story-body">', '<div class="story-body">' + mob, 1).replace('<div class="lwe">', '<div class="lwe">' + mob, 1)
+    idx = STORIES.index(s)
+    pn = prev_next(STORIES, idx, "/stories/", lambda x: x["title"], "story")
+    crumbs = [("/stories/", "Stories"), (f"/stories/{slugify(s['country'])}/", s["country"])]
+    write(f"/stories/{s['slug']}/", layout(f"/stories/{s['slug']}/", s["title"], s["summary"], body, jsonld=ld, og_type="article", og_image=photo_url(hi["file"], 1280) if hi else None, crumbs=crumbs, page_nav=pn))
 
 
 def filter_bar(items):
@@ -762,7 +901,14 @@ def mem_page(m):
     hi = hero_of(m)
     if hi:
         ld["image"] = (BASE if photo_url(hi["file"], 1280).startswith("/") else "") + photo_url(hi["file"], 1280)
-    write(f"/legacy/{m['slug']}/", layout(f"/legacy/{m['slug']}/", f"{m['name']} ({year(m['born'])}–{year(m['died'])})", m["summary"], body, jsonld=ld, og_type="profile", zone="memorial-zone", og_image=photo_url(hi["file"], 1280) if hi else None))
+    body, toc = add_toc(body)
+    body = body.replace('<aside><div class="sticky">', '<aside><div class="sticky">' + toc, 1)
+    if toc:
+        mob = toc.replace('<nav class="aside-box toc" aria-label="On this page"><h3>On this page</h3>', '<details class="toc-mobile"><summary>On this page</summary><nav class="toc" aria-label="On this page (mobile)">').replace("</ol></nav>", "</ol></nav></details>")
+        body = body.replace('<div class="lwe">', '<div class="lwe">' + mob, 1)
+    idx = LEGACY.index(m)
+    pn = prev_next(LEGACY, idx, "/legacy/", lambda x: x["name"], "profile")
+    write(f"/legacy/{m['slug']}/", layout(f"/legacy/{m['slug']}/", f"{m['name']} ({year(m['born'])}–{year(m['died'])})", m["summary"], body, jsonld=ld, og_type="profile", zone="memorial-zone", og_image=photo_url(hi["file"], 1280) if hi else None, crumbs=[("/legacy/", "Legacy"), section], page_nav=pn))
 
 
 def page_legacy():
@@ -1242,6 +1388,22 @@ def page_institutions():
     write("/for-institutions/", layout("/for-institutions/", "For institutions", "How governments, UN agencies, NGOs and researchers can use and contribute to the We Speak Sustainability archive.", body))
 
 
+def page_sitemap():
+    groups = "".join(f'<section><h2>{e(label)}</h2><ul>' + "".join(f'<li><a href="{u}">{e(t)}</a> <span class="muted">· {e(d)}</span></li>' for u, t, d in items) + "</ul></section>" for label, items in MENU)
+    stories = "".join(f'<li><a href="/stories/{x["slug"]}/">{e(x["title"])}</a> <span class="muted">· {e(x["country"])}</span></li>' for x in sorted(STORIES, key=lambda x: (x["country"], x["title"])))
+    legacy = "".join(f'<li><a href="/legacy/{m["slug"]}/">{e(m["name"])}</a></li>' for m in LEGACY)
+    countries = "".join(f'<li><a class="chip" href="/stories/{slugify(c)}/">{e(c)}</a></li>' for c in sorted(COUNTRY_STORIES))
+    topics = "".join(f'<li><a class="chip" href="/stories/{t}/">{e(TOPICS[t])}</a></li>' for t in sorted(TOPIC_COUNTS, key=lambda t: TOPICS.get(t, t)) if t in TOPICS)
+    body = head("Site map", "Everything on We Speak Sustainability", "Every section, story and profile on one page.")
+    body += f"""<div class="wrap prose sitemap" style="padding-bottom:72px">
+<div class="sitemap-grid">{groups}<section><h2>Take part</h2><ul><li><a href="/submit/">Tell your story</a></li><li><a href="/search/">Search</a></li></ul></section></div>
+<h2>Countries</h2><ul class="chips">{countries}</ul>
+<h2>Topics</h2><ul class="chips">{topics}</ul>
+<h2>All stories ({len(STORIES)})</h2><ul class="cols">{stories}</ul>
+<h2>Legacy profiles ({len(LEGACY)})</h2><ul class="cols">{legacy}</ul></div>"""
+    write("/site-map/", layout("/site-map/", "Site map", "A complete list of every page, story and profile on We Speak Sustainability.", body))
+
+
 def validate():
     errs = []
     for s in ALL_STORIES:
@@ -1296,6 +1458,7 @@ def main():
     page_insights()
     page_founder()
     page_institutions()
+    page_sitemap()
     extras()
     print(f"Built {len(PAGES)} pages: {len(STORIES)} stories, {len(LEGACY)} legacy profiles -> {OUT}")
 
