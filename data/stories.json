@@ -98,7 +98,8 @@
     "claim": "Picture book by Miranda Paul (Millbrook Press, 2015) on the N'jau recycling women; discarded bags collected rainwater, attracting mosquitoes."
    }
   ],
-  "editorial_status": "published"
+  "editorial_status": "published",
+  "display_name": "Isatou Ceesay"
  },
  {
   "slug": "nzambi-matee-gjenge-plastic-paving-bricks",
@@ -189,7 +190,8 @@
     "claim": "Around 10% of plastic recycled in Kenya; 50 tonnes recycled in 2021; over 100 direct and indirect jobs; bricks used on Nairobi sidewalks."
    }
   ],
-  "editorial_status": "published"
+  "editorial_status": "published",
+  "display_name": "Nzambi"
  },
  {
   "slug": "wecyclers-lagos-cargo-bike-recycling",
@@ -306,7 +308,8 @@
     "permission": "Free licence; attribution required",
     "orientation": "landscape"
    }
-  ]
+  ],
+  "display_name": "Bilikiss"
  },
  {
   "slug": "maradi-farmers-managed-natural-regeneration",
@@ -425,7 +428,8 @@
     "permission": "Free licence; attribution required",
     "orientation": "landscape"
    }
-  ]
+  ],
+  "display_name": "the farmers of Maradi"
  },
  {
   "slug": "william-kamkwamba-masitala-windmill",
@@ -1102,7 +1106,8 @@
     "claim": "Founding 1998 with scholarship money; motivation quote; four years' fundraising; work with boat builders."
    }
   ],
-  "editorial_status": "published"
+  "editorial_status": "published",
+  "display_name": "Mohammed Rezwan"
  },
  {
   "slug": "wijsen-sisters-bye-bye-plastic-bags-bali",
@@ -1426,7 +1431,8 @@
     "permission": "Free licence; attribution required",
     "orientation": "landscape"
    }
-  ]
+  ],
+  "display_name": "the Pacific Islands students"
  },
  {
   "slug": "abel-cruz-fog-catchers-lima",
@@ -1840,7 +1846,8 @@
     "permission": "Free licence; attribution required",
     "orientation": "landscape"
    }
-  ]
+  ],
+  "display_name": "Incredible Edible Todmorden"
  },
  {
   "slug": "leydy-pech-mayan-beekeepers-gm-soy",
@@ -2149,5 +2156,1666 @@
     "orientation": "portrait"
    }
   ]
+ },
+ {
+  "slug": "soil-haiti-household-toilets-compost",
+  "title": "Turning household toilet waste into compost in northern Haiti",
+  "person": "SOIL (Sustainable Organic Integrated Livelihoods), co-founded by Sasha Kramer and Sarah Brownell",
+  "actor_type": "organisation",
+  "country": "Haiti",
+  "country_code": "HT",
+  "region": "Latin America & Caribbean",
+  "city": "Cap-Haïtien",
+  "lat": 19.76,
+  "lng": -72.2,
+  "started_year": 2006,
+  "status": "ongoing",
+  "status_note": "Active as of November 2025, when SOIL reported a workshop with Haiti's national water and sanitation authority (DINEPA) in Cap-Haïtien and a results-based financing phase running 2025–2027.",
+  "scale": "city",
+  "occupation": "Sasha Kramer: ecologist (Stanford PhD) and human rights advocate",
+  "pillar": "people-making-change",
+  "topics": [
+   "waste",
+   "circular-economy",
+   "environmental-health",
+   "soil",
+   "agriculture",
+   "sustainable-cities",
+   "community-action",
+   "reuse"
+  ],
+  "sdgs": [
+   2,
+   3,
+   6,
+   11,
+   12
+  ],
+  "problem": "urban-waste",
+  "summary": "In Haitian neighbourhoods without sewers, SOIL rents waterless household toilets for a small monthly fee, collects the waste weekly and turns it into compost for farmers.",
+  "small_thing": "SOIL began with a handful of simple concrete public toilets. When those proved unsafe and hard to charge for, it switched to placing waterless toilets inside individual homes.",
+  "problem_text": "According to Global Citizen, fewer than a third of Haitians have basic sanitation such as a home toilet, and less than 1% of human waste in the country is treated. Latrines can contaminate water and become unusable in floods, and Haiti has no realistic prospect of city-wide sewers soon.",
+  "why_started": "Sasha Kramer first went to Haiti in 2004 as a human rights observer after a coup. Ashoka reports that she came to see poverty as the most widespread human rights abuse there, and the lack of sanitation as one of its most basic forms, and wanted to use her training in ecology to respond.",
+  "what_they_did": "SOIL was co-founded in 2006 by Kramer and Sarah Brownell. Its EkoLakay service rents families a waterless toilet built from local materials for a small monthly fee (Ashoka gives US$5). Waste is collected regularly, carried to a treatment site outside the city and composted to WHO standards; the compost is sold locally for farming and reforestation.\n\nThe Skoll Centre case study says SOIL first offered public toilets and, after the 2010 earthquake, developed household toilets linked to 5-gallon drums. It also sells black soldier fly larvae as chicken feed, according to Global Citizen, and works increasingly with Haitian government sanitation bodies.",
+  "what_changed": "According to the Skoll Centre (Oxford) case study of September 2024, SOIL served 3,074 households – more than 18,000 people – produced over 225 tonnes of compost a year and employed 69 staff. SOIL reports that in 2025 DINEPA pledged to cover public-sector sanitation costs for about 1,400 families on the EkoLakay service. Ashoka reported that compost sales recovered close to 70% of waste-treatment costs. Health outcomes have not been independently measured in these sources.",
+  "what_they_learned": "Kramer has described a 'period of reckoning' on realising that a purely private, fee-based model could not cover the full cost of what is a public good, leading SOIL to seek public funding alongside household fees (Skoll Centre case study).",
+  "quote": {
+   "text": "",
+   "source": 0
+  },
+  "why_it_matters": "A toilet rental service in one Haitian city will not close the global sanitation gap. But it shows that safe sanitation can work without sewers or water, and that human waste can be treated and returned to farmland rather than polluting water supplies.",
+  "setbacks": "Early public toilets were culturally hard to charge for and unsafe for women and children (Ashoka). Fee income and compost sales do not cover full costs, and transport is around half of costs. SOIL has had to operate through cholera, the 2010 earthquake, COVID-19 and political unrest; in 2022 fuel shortages and gang roadblocks forced it onto emergency protocols limited to essential services for existing customers.",
+  "copy_this": {
+   "problem": "Unsafe or absent sanitation where sewers are unaffordable or impractical.",
+   "what": "Container-based or composting toilets with regular collection and properly managed thermophilic composting.",
+   "materials": "Sealed toilet units with containers, cover material (e.g. sawdust or bagasse), collection transport, a secure composting site.",
+   "cost": "Moderate",
+   "skills": "Composting and pathogen-control know-how, logistics, customer service, monitoring.",
+   "time": "Months to pilot; years to build a reliable service.",
+   "people": "A small team for collection and composting, plus local health and sanitation authorities.",
+   "difficulty": "Hard",
+   "risks": "Human waste carries pathogens; composting must meet recognised health standards (such as WHO guidance) and follow local regulations. Never use untreated waste on food crops.",
+   "adapt": "At household level, a well-managed composting toilet for an off-grid cabin or allotment can follow the same principles, with local approval.",
+   "lessons": "Design for dignity and safety first; expect user fees alone not to cover a public service."
+  },
+  "evidence": "documented",
+  "sources": [
+   {
+    "title": "SOIL – Case Study",
+    "publisher": "Skoll Centre for Social Entrepreneurship, University of Oxford",
+    "author": "Cynthia Rayner",
+    "date": "2024-09",
+    "url": "https://www.skollcentre.org/sites/default/files/2024-09/SOIL%20-%20Case%20Study.pdf",
+    "type": "book",
+    "claim": "Founded 2006 by Kramer and Brownell; early public toilets then household model; 3,074 households, 18,000+ people, 225+ tonnes compost, 69 staff; 'period of reckoning' over private model."
+   },
+   {
+    "title": "Sasha Kramer",
+    "publisher": "Ashoka",
+    "author": "",
+    "date": "2015",
+    "url": "https://www.ashoka.org/fellow/sasha-kramer",
+    "type": "award-body",
+    "claim": "Why Kramer started; public toilets abandoned; US$5 monthly fee; compost recovering ~70% of treatment costs; transport ~50% of costs."
+   },
+   {
+    "title": "En Haití convierten los desechos humanos en compost para combatir la pobreza",
+    "publisher": "Global Citizen",
+    "author": "Joe McCarthy",
+    "date": "2021-09-09",
+    "url": "https://www.globalcitizen.org/es/content/turning-poop-into-compost-haiti-soil/",
+    "type": "reputable-journalism",
+    "claim": "Haiti sanitation statistics; waterless toilet; compost sold cheaply to farmers; black soldier fly larvae; crises SOIL operated through."
+   },
+   {
+    "title": "Sasha Kramer",
+    "publisher": "Schwab Foundation for Social Entrepreneurship",
+    "author": "",
+    "date": "",
+    "url": "https://www.schwabfound.org/awardees/sasha-kramer",
+    "type": "award-body",
+    "claim": "EkoLakay toilet rental and weekly collection; WHO-standard composting; compost used for agriculture and reforestation; Kramer's background."
+   },
+   {
+    "title": "Update from Haiti: October 2022",
+    "publisher": "SOIL",
+    "author": "",
+    "date": "2022-10",
+    "url": "https://oursoil.org/blog/2022-10/update-haiti-october-2022",
+    "type": "organisational",
+    "claim": "Organisation's own account: emergency protocols during fuel shortages and gang roadblocks; weekly service to over 2,000 households maintained."
+   },
+   {
+    "title": "Government Partners Join SOIL to Advance Sanitation in Cap-Haïtien",
+    "publisher": "SOIL",
+    "author": "",
+    "date": "2025-11-04",
+    "url": "https://oursoil.org/blog/2025-11/government-partners-join-soil-advance-sanitation-cap-haitien",
+    "type": "organisational",
+    "claim": "Organisation's own account: current status; DINEPA pledge covering about 1,400 families; RBF Phase II 2025–2027."
+   }
+  ],
+  "editorial_status": "published",
+  "published": "2026-10-09",
+  "display_name": "SOIL"
+ },
+ {
+  "slug": "fragments-of-hope-belize-coral-replanting",
+  "title": "Replanting a hurricane-flattened reef off southern Belize",
+  "person": "Lisa Carne and Fragments of Hope",
+  "actor_type": "group",
+  "country": "Belize",
+  "country_code": "BZ",
+  "region": "Latin America & Caribbean",
+  "city": "Placencia",
+  "lat": 16.51,
+  "lng": -88.37,
+  "started_year": 2006,
+  "status": "ongoing",
+  "status_note": "Active in 2025: Mongabay reported that after record bleaching in 2024 the group paused planting to monitor, then lifted its self-imposed moratorium in June 2025.",
+  "scale": "community",
+  "occupation": "Lisa Carne: marine biologist; group includes local fishers and tour guides",
+  "pillar": "people-making-change",
+  "topics": [
+   "oceans",
+   "restoration",
+   "biodiversity",
+   "conservation",
+   "climate-adaptation",
+   "community-action"
+  ],
+  "sdgs": [
+   13,
+   14
+  ],
+  "problem": "biodiversity-loss",
+  "summary": "After Hurricane Iris wrecked a reef near Placencia, a biologist and local fishers began growing coral fragments in nurseries and replanting them, even as marine heatwaves set them back.",
+  "small_thing": "After Hurricane Iris in 2001, Lisa Carne noticed broken pieces of elkhorn coral lying in seagrass and wondered whether reefs could be replenished by planting such fragments.",
+  "problem_text": "Hurricane Iris struck southern Belize in October 2001 and, according to UNDP, left live coral cover at Laughing Bird Caye National Park below 6%. Caribbean Acropora corals had already declined by more than 98% in recent decades and are listed as Critically Endangered by the IUCN.",
+  "why_started": "Carne had lived in Placencia since the mid-1990s and worked on reefs as a researcher and park manager. Seeing coral fragments scattered after the hurricane led to her idea of replenishing reefs by planting corals, and in 2006 a research grant let her use Laughing Bird Caye as a natural laboratory and nursery (Fragments of Hope's own account).",
+  "what_they_did": "The group grows fragments of fast-growing Acropora corals in underwater nurseries and replants them on degraded reef, choosing naturally heat-tolerant colonies, keeping genetic diversity and planting only between December and May, outside hurricane and bleaching season. Fragments of Hope was registered as a Belizean not-for-profit in 2013.\n\nThe Commonwealth case study describes local fishers, tour operators and Fisheries Department staff as central to the work. UNDP reports that Placencia fisherman and guide Dale Godfrey chaired the group, that 30 more Belizeans had been trained and certified in coral replenishment, and that the work had spread to 10 reef sites in four protected areas.",
+  "what_changed": "According to Mongabay, live coral cover on the restored reef at Laughing Bird Caye rose from about 6% in 2006 to about 60% by 2023, with more than 92,000 fragments planted over roughly one hectare. The Commonwealth case study reports that outplanted corals reproduced sexually in each year monitored from 2014 to 2017. In 2017 the project received a UN Momentum for Change 'Lighthouse Activity' award.",
+  "what_they_learned": "Carne has stressed that local action still counts even though climate change is global, telling UNDP that \"there are smaller things you can do that impact local sites\". The group has also learned to identify heat-resistant 'winner' corals and move them to lower-stress sites.",
+  "quote": {
+   "text": "2024 was the worst bleaching event since we've been recording around 2008",
+   "source": 2
+  },
+  "why_it_matters": "Replanting a hectare of reef cannot offset ocean warming. But the project shows that a small, locally rooted team can rebuild damaged reef, train neighbours to monitor it, and learn which corals are most likely to survive hotter seas.",
+  "setbacks": "Mongabay reports that 2024 brought the worst bleaching the group had recorded; many planted corals at Laughing Bird Caye died from heat stress and disease, and at another site, Moho Caye, live coral cover fell from over 50% to under 5%. The group paused planting to focus on monitoring. The Commonwealth case study also lists unreliable funding, illegal fishing and monitoring costs that exceed the cost of restoration itself.",
+  "copy_this": {
+   "problem": "Damaged reefs near communities that depend on fishing and tourism.",
+   "what": "Community coral gardening: nursery-grown fragments replanted under permit, with long-term monitoring.",
+   "materials": "Nursery frames or lines, dive or snorkel gear, cable ties or cement, monitoring equipment.",
+   "cost": "Moderate",
+   "skills": "Diving, coral biology, species identification, data recording; formal training is essential.",
+   "time": "Years to decades.",
+   "people": "A core trained team plus volunteers, fishers and the fisheries or parks authority.",
+   "difficulty": "Hard",
+   "risks": "Coral collection and planting usually require government permits; poor technique can damage reefs. Heatwaves can kill planted corals.",
+   "adapt": "Non-divers can support monitoring, reduce local pollution and overfishing, or volunteer with an established restoration group.",
+   "lessons": "Plant outside storm and heat seasons, favour heat-tolerant colonies, and budget for monitoring from the start."
+  },
+  "evidence": "documented",
+  "sources": [
+   {
+    "title": "Case study: Fragments of Hope – community-led coral reef restoration at Laughing Bird Caye",
+    "publisher": "Commonwealth Secretariat",
+    "author": "",
+    "date": "2020-11",
+    "url": "https://thecommonwealth.org/case-study/case-study-fragments-hope-community-led-coral-reef-restoration-laughing-bird-caye",
+    "type": "government",
+    "claim": "Methods; community involvement; sexual reproduction 2014–2017; 2017 UN Lighthouse Activity award; challenges including funding, illegal fishing and monitoring costs."
+   },
+   {
+    "title": "Innovation helps rebuild Belize's coral reef",
+    "publisher": "UNDP",
+    "author": "",
+    "date": "2019-06-07",
+    "url": "https://undp.medium.com/innovation-helps-rebuild-belizes-coral-reef-bcd89ed1b1ba",
+    "type": "un-agency",
+    "claim": "Coral cover under 6% after Hurricane Iris; Dale Godfrey as chair; 30 Belizeans trained; 10 sites in four protected areas; Carne quote on smaller local actions."
+   },
+   {
+    "title": "Restoration, protection aim to save Belize's coral reef from extreme heat and disease",
+    "publisher": "Mongabay",
+    "author": "",
+    "date": "2025-07",
+    "url": "https://news.mongabay.com/2025/07/restoration-protection-aim-to-save-belizes-coral-reef-from-extreme-heat-and-disease/",
+    "type": "reputable-journalism",
+    "claim": "Coral cover ~6% (2006) to ~60% (2023); 92,000+ fragments; 2024 bleaching losses; Moho Caye decline; planting pause and June 2025 resumption; monitoring training; Carne quote."
+   },
+   {
+    "title": "History",
+    "publisher": "Fragments of Hope",
+    "author": "",
+    "date": "",
+    "url": "https://fragmentsofhope.org/history/",
+    "type": "organisational",
+    "claim": "Organisation's own account: Carne's background, post-hurricane idea, 2006 research grant, 2013 registration."
+   }
+  ],
+  "editorial_status": "published",
+  "published": "2026-10-09",
+  "display_name": "Lisa Carne"
+ },
+ {
+  "slug": "brazil-semiarid-family-rainwater-cisterns",
+  "title": "Families in Brazil's dry north-east build their own rainwater tanks",
+  "person": "Rural families of Brazil's semi-arid region, with the Articulação Semiárido Brasileiro (ASA) network",
+  "actor_type": "community",
+  "country": "Brazil",
+  "country_code": "BR",
+  "region": "Latin America & Caribbean",
+  "city": "Floresta, Pernambuco",
+  "lat": -8.6,
+  "lng": -38.57,
+  "started_year": 2000,
+  "status": "ongoing",
+  "status_note": "Cistern building slowed sharply after 2014 (about 3,000 units in 2022, per Brasil de Fato) and was resumed with federal funding in 2023–2024.",
+  "scale": "regional",
+  "occupation": "Smallholder farmers and rural households; local masons",
+  "pillar": "small-things",
+  "topics": [
+   "water",
+   "climate-adaptation",
+   "community-action",
+   "environmental-health",
+   "agriculture",
+   "environmental-justice"
+  ],
+  "sdgs": [
+   1,
+   5,
+   6,
+   13
+  ],
+  "problem": "water-scarcity",
+  "summary": "Rural households in Brazil's semi-arid north-east build 16,000-litre tanks beside their homes to store roof rainwater, cutting long walks for water during the dry months.",
+  "small_thing": "A family and a local mason spend about five days building a cylindrical cement tank next to the house and connecting it to the roof with gutters.",
+  "problem_text": "Brazil's semi-arid north-east receives roughly 300–800 mm of rain a year, falling in a short season, with 8 to 11 dry months (IPS). Before cisterns, women often walked six to eight kilometres carrying 20 litres of water on their heads, and families relied on tanker trucks or distant reservoirs.",
+  "why_started": "The ASA network of civil-society groups, created in 1999, promoted the idea of 'living with' the semi-arid climate rather than fighting drought. IPS reports that ASA saw household rainwater storage as a way to improve quality of life and to involve families directly rather than offering handouts.",
+  "what_they_did": "Communities choose priority families – for example those with many children, older relatives or a woman as head of household. Each family helps build a 16,000-litre cement tank beside the house, working with a mason, and attends training on collecting and keeping water clean (IPS, 2005 and 2010). Local NGOs in the ASA network map families and give technical support, with federal funding since 2003 (Brasil de Fato).\n\nIn 2005 IPS met Antonio Xavier de Souza, a member of the Pipipan Indigenous people in Floresta, Pernambuco, whose family tank had been in use for three years. In 2024 Brasil de Fato reported on farmer Glauciane Magalhães in rural Senador Pompeu, Ceará, whose family had bought water from tanker trucks before receiving a cistern.",
+  "what_changed": "According to Brasil de Fato (2024), more than one million cisterns have been built across 1,262 semi-arid municipalities, averaging around 50,000 a year over two decades. IPS reported in 2010 that over 273,000 people had been trained in water management. Independent measurement of health or time savings at household level is not given in these sources.",
+  "what_they_learned": "ASA's Naidison Baptista told IPS that because families build the tanks themselves, they are achieving something rather than receiving a handout. Antonio Xavier de Souza's experience showed that one tank may not last a very dry year, so other sources are still needed.",
+  "quote": {
+   "text": "By building the tank themselves, the families are achieving something, they're not receiving a handout",
+   "source": 1
+  },
+  "why_it_matters": "A single rainwater tank will not end drought. But storing the rain that falls on a family's own roof gives a reliable store of drinking water close to home, reduces dependence on tanker trucks and long walks, and can be built with local skills.",
+  "setbacks": "In the drier year of 2005 Antonio's tank ran out in April, compared with September the year before, and his family had to haul water by ox cart (IPS). Small roofs cannot fill a tank. A programme technical adviser called the original one-million goal over-ambitious. Federal funding fell from about 150,000 cisterns in 2014 to about 3,000 in 2022 before being resumed (Brasil de Fato).",
+  "copy_this": {
+   "problem": "Unreliable drinking water in places with a short rainy season.",
+   "what": "Roof rainwater harvesting into a covered household tank.",
+   "materials": "Gutters and downpipes, a first-flush diverter, a sealed tank (cement, ferrocement or plastic), a tap or hand pump.",
+   "cost": "Low",
+   "skills": "Basic masonry or plumbing; training in water hygiene.",
+   "time": "Days to build; ongoing maintenance.",
+   "people": "One household with help from a skilled builder.",
+   "difficulty": "Moderate",
+   "risks": "Stored water must be kept covered and clean; treat it for drinking where advised. Tanks need child-safe lids and mosquito-proofing. Check local building rules.",
+   "adapt": "In wetter or urban areas, a smaller water butt for gardens is a simple start.",
+   "lessons": "Size the tank to roof area and rainfall, ration through the dry season, and keep a back-up source."
+  },
+  "evidence": "documented",
+  "sources": [
+   {
+    "title": "BRAZIL: Rainwater Tanks Represent Health and Hope for 100,000 Families",
+    "publisher": "Inter Press Service",
+    "author": "Mario Osava",
+    "date": "2005-09-12",
+    "url": "https://www.ipsnews.net/?p=16834",
+    "type": "reputable-journalism",
+    "claim": "Antonio Xavier de Souza (Pipipan, Floresta); 16,000-litre tanks; families supply labour and training; tank running out in dry year; roof size limits; goal judged over-ambitious."
+   },
+   {
+    "title": "Brazilian Communities Find Ways to Live in Semiarid Environment",
+    "publisher": "Inter Press Service",
+    "author": "Fabiana Frayssinet",
+    "date": "2010-10-26",
+    "url": "https://www.ipsnews.net/?p=43475",
+    "type": "reputable-journalism",
+    "claim": "Rainfall and dry months; family selection criteria; five-day build with a mason; women walking 6–8 km; 273,124 people trained; Baptista quotes."
+   },
+   {
+    "title": "Governo Lula volta a distribuir cisternas para o semiárido",
+    "publisher": "Brasil de Fato",
+    "author": "Rodolfo Rodrigo",
+    "date": "2024-04-11",
+    "url": "https://www.brasildefato.com.br/2024/04/11/governo-lula-volta-a-distribuir-cisternas-para-o-semiarido",
+    "type": "reputable-journalism",
+    "claim": "ASA created 1999; federal funding since 2003; over 1 million cisterns in 1,262 municipalities; peak ~150,000 (2014) and low ~3,000 (2022); resumption; Glauciane Magalhães."
+   }
+  ],
+  "editorial_status": "published",
+  "published": "2026-10-09",
+  "display_name": "the families of Brazil's semi-arid north-east"
+ },
+ {
+  "slug": "uaxactun-community-forest-concession-guatemala",
+  "title": "A village inside a Maya ruin looks after its own forest",
+  "person": "Uaxactún community and its Organización, Manejo y Conservación (OMYC)",
+  "actor_type": "community",
+  "country": "Guatemala",
+  "country_code": "GT",
+  "region": "Latin America & Caribbean",
+  "city": "Uaxactún, Petén",
+  "lat": 17.39,
+  "lng": -89.63,
+  "started_year": 1999,
+  "status": "ongoing",
+  "status_note": "In October 2022 Guatemala's protected-areas council CONAP extended the community's concession for a further 25 years.",
+  "scale": "community",
+  "occupation": "Forest workers, xate harvesters, community board members",
+  "pillar": "people-making-change",
+  "topics": [
+   "forests",
+   "conservation",
+   "biodiversity",
+   "community-action",
+   "sustainable-business",
+   "indigenous-knowledge"
+  ],
+  "sdgs": [
+   5,
+   8,
+   12,
+   15
+  ],
+  "problem": "deforestation",
+  "summary": "Around 1,000 people in Uaxactún manage an 83,500-hectare forest in Guatemala's Maya Biosphere Reserve, living from xate palm, timber and other products while keeping deforestation low.",
+  "small_thing": "Villagers had harvested xate palm fronds since the 1960s for outside contractors. In 2013 their community organisation took over the harvest itself, setting rules such as taking one frond per plant.",
+  "problem_text": "The Maya Biosphere Reserve in northern Guatemala faces deforestation from cattle ranching, fires and other pressures. A 2015 study cited by Mongabay found annual forest loss of 5.5% in the reserve's buffer zone, compared with under 0.01% in certified community concessions.",
+  "why_started": "Uaxactún began over a century ago as a camp for chicle gatherers, and most residents depend on the forest for income (Mongabay). Under the reserve's community concession system, the village gained legal rights to manage and use the surrounding forest; OMYC's vice-president told Mongabay that residents had 'always been preserving it'.",
+  "what_they_did": "Through OMYC, the community runs regulated xate harvesting – sold to florists in the United States – plus timber harvesting limited to the dry season under a 40-year rotation plan, with archaeological areas off limits. Women sort xate at the community warehouse, and Rainforest Alliance reports women being trained to harvest and process xate, ramón nut and allspice. Profits pay wages and then fund health care and education, including teachers' salaries (Mongabay).\n\nWCS reports that more than 100,000 xate palms have been planted, and the community has its own firefighters. Ángela Fajardo, a board treasurer who has been part of the concession for over 20 years, played a key role in the 2022 renewal review, according to Rainforest Alliance.",
+  "what_changed": "According to Guatemala's state news agency AGN, CONAP renewed the Uaxactún concession in October 2022 for 25 years, covering 83,558 hectares, of which 9,314 are strictly protected. Rainforest Alliance reports near-zero deforestation across the reserve's community concessions; Uaxactún-specific deforestation figures were not found in these sources.",
+  "what_they_learned": "Fajardo told Rainforest Alliance that women had to overcome machismo and persuade their husbands to let them take part, and urged other women: \"Don't wait for someone to make space for you.\"",
+  "quote": {
+   "text": "Don't wait for someone to make space for you.",
+   "source": 2
+  },
+  "why_it_matters": "One village cannot protect the whole Maya forest. But Uaxactún shows that when communities hold secure rights to their forest and earn a living from it, they have strong reasons to keep it standing.",
+  "setbacks": "WCS names deforestation, fire and long-term financial and technical sustainability as ongoing challenges. Women initially faced resistance to taking part (Rainforest Alliance). The wider reserve faces threats from cattle ranching, oil and tourism projects (Mongabay).",
+  "copy_this": {
+   "problem": "Forests lost when local people have no secure stake in them.",
+   "what": "Community-managed harvesting of forest products under agreed rules and a management plan.",
+   "materials": "A management plan, harvesting rules, storage and sorting space, links to buyers.",
+   "cost": "Moderate",
+   "skills": "Forest inventory, bookkeeping, negotiation with authorities and buyers, fire prevention.",
+   "time": "Years; concession terms here run 25 years.",
+   "people": "A whole community with an accountable organisation.",
+   "difficulty": "Hard",
+   "risks": "Over-harvesting, internal disputes, and conflict with illegal land-grabbers; legal rights vary by country.",
+   "adapt": "Smaller groups can start with sustainable harvesting rules for one product, or a community woodland or seed-gathering agreement.",
+   "lessons": "Secure tenure, fair sharing of income and inclusion of women strengthen both livelihoods and forest protection."
+  },
+  "evidence": "documented",
+  "sources": [
+   {
+    "title": "Communities lead the way in rainforest conservation in Guatemala",
+    "publisher": "Mongabay",
+    "author": "",
+    "date": "2016-06",
+    "url": "https://news.mongabay.com/2016/06/communities-lead-the-way-in-rainforest-conservation-in-guatemala/",
+    "type": "reputable-journalism",
+    "claim": "Village history and population; concession granted 1999 (83,560 ha); xate history and 2013 takeover; one frond per plant; timber rules; profits to health and education; 2015 deforestation study; reserve-wide threats."
+   },
+   {
+    "title": "Otorgan prórroga a unidad de manejo Uaxactún",
+    "publisher": "Agencia Guatemalteca de Noticias (AGN)",
+    "author": "",
+    "date": "2022-10",
+    "url": "https://agn.gt/otorgan-prorroga-a-unidad-de-manejo-uaxactun/",
+    "type": "government",
+    "claim": "25-year extension signed by CONAP in October 2022; 83,558 ha with zoning; permitted products."
+   },
+   {
+    "title": "Women and forests: a winning team in Guatemala's Maya Biosphere Reserve",
+    "publisher": "Rainforest Alliance",
+    "author": "Marta Fiolhais",
+    "date": "2022-11-16",
+    "url": "https://www.rainforest-alliance.org/in-the-field/women-and-forests-a-winning-team-in-guatemalas-maya-biosphere-reserve",
+    "type": "organisational",
+    "claim": "Partner NGO's account: Ángela Fajardo's role and quote; women's training; near-zero deforestation across concessions."
+   },
+   {
+    "title": "Uaxactún",
+    "publisher": "Wildlife Conservation Society Guatemala",
+    "author": "",
+    "date": "",
+    "url": "https://guatemala.wcs.org/Wild-Places/Uaxactun.aspx",
+    "type": "organisational",
+    "claim": "Partner NGO's account: managed through OMYC since 2000; 100,000+ xate palms planted; challenges of fire, deforestation and sustainability."
+   }
+  ],
+  "editorial_status": "published",
+  "published": "2026-10-09",
+  "display_name": "the people of Uaxactún"
+ },
+ {
+  "slug": "dar-si-hmad-fog-water-ait-baamrane",
+  "title": "Catching fog to bring water to mountain villages in south-west Morocco",
+  "person": "Jamila Bargach and Dar Si Hmad (with co-founder Aissa Derhem and the Aït Baamrane villages)",
+  "actor_type": "organisation",
+  "country": "Morocco",
+  "country_code": "MA",
+  "region": "Africa",
+  "city": "Aït Baamrane, Sidi Ifni Province",
+  "lat": 29.38,
+  "lng": -10.17,
+  "started_year": 2010,
+  "status": "ongoing",
+  "status_note": "The most recent independent coverage found (The New Arab, August 2023) describes the fog collectors as operating. Dar Si Hmad's own website remains active. No 2024–2026 news report was found confirming Jamila Bargach's current role.",
+  "scale": "community",
+  "occupation": "Anthropologist; director of a local non-profit",
+  "pillar": "people-making-change",
+  "topics": [
+   "water",
+   "climate-adaptation",
+   "sustainable-technology",
+   "community-action",
+   "environmental-education"
+  ],
+  "sdgs": [
+   5,
+   6,
+   13
+  ],
+  "problem": "water-scarcity",
+  "summary": "A small Moroccan non-profit worked with Amazigh villages for years to turn Atlantic fog into piped drinking water, sparing women hours of daily walking to wells.",
+  "small_thing": "Before building anything, Dar Si Hmad spent years on surveys and tests. In 2010 its first ethnographic field-school students helped carry out a community survey of the villages the fog project would serve.",
+  "problem_text": "In the Aït Baamrane area on the edge of the Sahara, rainfall is very low and drought has lowered groundwater. Women and girls spent around three hours or more a day fetching water from distant, depleted wells. Some families left for the cities.",
+  "why_started": "Dar Si Hmad was co-founded by Jamila Bargach and Dr Aissa Derhem, who had first learned about fog collection while studying in Canada (Thomson Reuters Foundation/WEF). The mountain of Boutmezguida is covered in fog on roughly 130–145 days a year, so the team saw fog as a local water source. Bargach has described water collection as a burden that limited young women's opportunities (Morocco World News).",
+  "what_they_did": "After about nine to ten years of surveys and feasibility work with the University of La Laguna and other partners, the system went into operation around 2015. Mesh nets on Mount Boutmezguida catch droplets from fog blowing in from the Atlantic; the water drains into a basin, is filtered and piped to villages. Because Moroccan law requires drinking water to be mineralised, it is mixed with groundwater before use.\n\nThe original nets tore in strong winds, so Dar Si Hmad worked with the German WaterFoundation (Wasserstiftung) to install stronger 'CloudFisher' nets. Women were given mobile phones and training to report on the system, and Dar Si Hmad ran a 'water school' and literacy and income workshops. Residents pay for water with prepaid cards, with prices rising above a set amount per person to discourage commercial use.",
+  "what_changed": "Figures differ by date and source. In 2016 the UNFCCC described the system as serving more than 400 people in five villages, averaging about 6,300 litres a day. In 2018 the Thomson Reuters Foundation reported about 140 families across 14 villages, and in 2023 The New Arab reported 31 collectors supplying about 1,600 people. Villagers interviewed by PRI's The World said the water freed time for study and for work such as argan oil production. The project received a UN Momentum for Change award (Women for Results) in 2016. These numbers come largely from the organisation and media reports and have not been independently audited.",
+  "what_they_learned": "Bargach has said the project should not be reduced to a technical success story; changing how people saw fog mattered too. Many residents had believed fog prevented rain and did not trust it (PRI's The World).",
+  "quote": {
+   "text": "When you don't have water, you live in water anxiety.",
+   "source": 2
+  },
+  "why_it_matters": "Fog harvesting cannot solve water shortages across a region: atmospheric water is a tiny share of the world's freshwater and only suits specific foggy sites. But for small mountain communities near the right conditions, it shows how a low-energy, locally managed system can reduce the daily burden of carrying water.",
+  "setbacks": "The first nets were not strong enough for high winds and tore, and had to be replaced with a sturdier design. Many residents initially distrusted fog, and some women who were proud of their role as water carriers resisted the change. Bargach reported that dense-fog days on the mountain had fallen from about 145 to 135 since the project began. Expansion to more villages depends on funding, and Derhem has said large-scale fog collection needs investment.",
+  "copy_this": {
+   "problem": "A community near coasts or mountains with frequent fog but little rain or groundwater.",
+   "what": "Study local fog frequency, test small mesh collectors, then pipe collected water to a shared storage tank or homes, with local people trained to monitor and maintain the system.",
+   "materials": "Fine mesh nets on sturdy frames, gutters, storage tanks, filters and piping; water testing.",
+   "cost": "Moderate",
+   "skills": "Site measurement, basic engineering, water quality testing, community organising.",
+   "time": "Years of testing before a full system; ongoing maintenance.",
+   "people": "A local organisation, technical partners and households who help run it.",
+   "difficulty": "Hard",
+   "risks": "Wind damage to nets, changing fog patterns, water quality and legal drinking-water standards, unfair water allocation.",
+   "adapt": "Start with a small test collector for irrigation or livestock before supplying drinking water; check national water rules.",
+   "lessons": "Spend time on trust and local beliefs, not just hardware; involve the people who previously carried the water in running the new system."
+  },
+  "evidence": "documented",
+  "sources": [
+   {
+    "title": "Moroccan fog harvesting project wins United Nations award",
+    "publisher": "Morocco World News",
+    "author": "",
+    "date": "2016-09-29",
+    "url": "https://www.moroccoworldnews.com/2016/09/197525/moroccan-fog-water-harvesting-project-wins-united-nations-award/",
+    "type": "reputable-journalism",
+    "claim": "2016 UN Momentum for Change award; five villages, 400+ people; Bargach's comments on women's burden and the project as more than a technical story."
+   },
+   {
+    "title": "Women for Results: Fog harvesting (Momentum for Change project summary)",
+    "publisher": "UNFCCC",
+    "author": "",
+    "date": "2016",
+    "url": "https://unfccc.int/files/secretariat/momentum_for_change/application/pdf/wfr_fog-harvesting_1.pdf",
+    "type": "un-agency",
+    "claim": "Average 6,300 litres/day, 600 m² of nets, 400+ residents in five villages, women trained to report on system; 10 years of research."
+   },
+   {
+    "title": "Tackling water scarcity in Morocco by harvesting fog",
+    "publisher": "The New Arab",
+    "author": "Lauren Lewis",
+    "date": "2023-08-15",
+    "url": "https://newarab.com/features/tackling-water-scarcity-morocco-harvesting-fog",
+    "type": "reputable-journalism",
+    "claim": "31 collectors serving 1,600 people; mineralisation with groundwater; prepaid cards; drop in fog days; Bargach quote on water anxiety."
+   },
+   {
+    "title": "These Moroccans are turning foggy days into a solution to their water crisis",
+    "publisher": "The World (PRX/PRI)",
+    "author": "Rebecca Rosman",
+    "date": "2018-03-29",
+    "url": "https://theworld.org/stories/2018/03/29/fog-nets-pkg",
+    "type": "reputable-journalism",
+    "claim": "CloudFisher nets on Mount Boutmezguida; distrust of fog; resistance from some women; water school; villagers' accounts of benefits."
+   },
+   {
+    "title": "Moroccan women are catching fog to solve the water crisis",
+    "publisher": "World Economic Forum / Thomson Reuters Foundation",
+    "author": "Valeria Cardi",
+    "date": "2018-05-18",
+    "url": "https://www.weforum.org/stories/nature-and-biodiversity/the-fog-catchers-conjuring-water-out-of-moroccan-mist/",
+    "type": "reputable-journalism",
+    "claim": "Running since 2015 after nine years of tests; original nets tore in wind; 140 families in 14 villages; Derhem's background."
+   },
+   {
+    "title": "Jamila Bargach (Campbell Resident Scholar)",
+    "publisher": "School for Advanced Research",
+    "author": "",
+    "date": "2010",
+    "url": "https://sarweb.org/?p=6948",
+    "type": "organisational",
+    "claim": "Bargach is an anthropologist; 2010 ethnographic field school community survey for the fog project."
+   },
+   {
+    "title": "This woman has found a way to harvest drinking water from fog",
+    "publisher": "Euronews",
+    "author": "Thomas Duthois and Abdellah Azizi",
+    "date": "2022-07-20",
+    "url": "https://euronews.com/next/2022/07/23/this-woman-has-found-a-way-to-harvest-drinking-water-from-fog-to-overcome-droughts-in-moro",
+    "type": "reputable-journalism",
+    "claim": "Bargach co-founded Dar Si Hmad with Dr Aissa Derhem in 2010; expansion depends on funding."
+   }
+  ],
+  "editorial_status": "published",
+  "published": "2026-10-09",
+  "display_name": "Jamila Bargach"
+ },
+ {
+  "slug": "nidaa-al-ard-arab-salim-recycling",
+  "title": "A retired teacher and her neighbours sorted their village's rubbish themselves",
+  "person": "Zeinab Mokalled (Moukalled) and the women of Nidaa al-Ard (Call of the Earth)",
+  "actor_type": "group",
+  "country": "Lebanon",
+  "country_code": "LB",
+  "region": "Middle East",
+  "city": "Arab Salim, Nabatieh",
+  "lat": 33.43,
+  "lng": 35.5,
+  "started_year": 1995,
+  "status": "ongoing",
+  "status_note": "The most recent source found (L'Orient Today, March 2023) said Zeinab Mokalled, then 86, still supervised the centre's activities. No 2024–2026 report was found confirming its current status, and southern Lebanon was affected by conflict in 2024.",
+  "scale": "community",
+  "occupation": "Retired secondary-school teacher",
+  "pillar": "people-making-change",
+  "topics": [
+   "waste",
+   "recycling",
+   "community-action",
+   "environmental-education",
+   "circular-economy"
+  ],
+  "sdgs": [
+   5,
+   11,
+   12
+  ],
+  "problem": "urban-waste",
+  "summary": "When no one collected rubbish in her south Lebanon village, a teacher organised local women to sort household waste, building a volunteer recycling centre that has lasted decades.",
+  "small_thing": "In the mid-1990s Zeinab Mokalled gathered village women, many of them her former students, to sort household waste and stored the recyclables in her own back garden.",
+  "problem_text": "During years of conflict and occupation in south Lebanon, rubbish collection in Arab Salim stopped and waste was dumped haphazardly. There was no functioning municipality, and Lebanon later faced a national waste crisis in 2015 when Beirut's main landfill closed.",
+  "why_started": "Mokalled said she noticed bulky items filling bins while organic waste littered the pavements (L'Orient Today). When she asked the regional governor for help, she was told the village was not Paris and received no support (The New Arab; Christian Science Monitor). She and her neighbours decided to act themselves.",
+  "what_they_did": "Mokalled recruited women to sort waste at home into organic material, plastics, glass and metal, and the volunteers collected it door to door. A friend, Khadija Farhat, bought a lorry with her own money. The group found buyers for recyclables through a public appeal and formally registered as the NGO Nidaa al-Ard, 'Call of the Earth', in 1998.\n\nAccording to The New Arab, 46 volunteer members each paid an annual fee to keep the service going. The group later added electronic waste and looked into composting suited to the hot, dry climate. With an Italian embassy grant it built a warehouse that also has a classroom where schoolchildren learn about recycling.",
+  "what_changed": "Reporters describe the end of haphazard dumping in Arab Salim, a village of roughly 10,000 people according to The New Arab. In 2023 Khadija Farhat estimated about 70% of households took part (L'Orient Today). Neighbouring villages, including Jarjouaa, tried similar schemes. The local authorities eventually provided 300 bins and a plot of land. Recycling volumes have not been independently measured.",
+  "what_they_learned": "Mokalled has said she knew nothing about the environment at first and was simply driven by a love of cleanliness and order. She concluded that, without government help, residents had to do things themselves.",
+  "quote": {
+   "text": "We really don't have any government to help us, so we have to do things by ourselves.",
+   "source": 1
+  },
+  "why_it_matters": "One village sorting its rubbish will not fix a national waste system. But Arab Salim shows that household separation, organised by neighbours, can keep a community clean and supply recyclers for decades, even without reliable public services.",
+  "setbacks": "There was no funding at the start, and some women were initially reluctant to sort waste. The governor refused help, and a later governor at first criticised the group for bypassing the state. Mokalled says the centre has come through three wars that destroyed equipment. During Lebanon's economic crisis the group sometimes lacked money for fuel. Recycling plants paid low prices, and a copycat scheme in Jarjouaa was abandoned after the municipal council took it over.",
+  "copy_this": {
+   "problem": "Rubbish piling up or being dumped where collection is unreliable or absent.",
+   "what": "Agree a simple sorting system with neighbours, collect separated recyclables on a set day, and find local buyers for them.",
+   "materials": "Bins or sacks for each material, a dry storage space, transport, and a list of recycling buyers.",
+   "cost": "Low",
+   "skills": "Organising volunteers, record-keeping, negotiating with buyers and local officials.",
+   "time": "A few hours a week to start; grows as more households join.",
+   "people": "A core group of committed volunteers plus participating households.",
+   "difficulty": "Moderate",
+   "risks": "Hygiene and fire risk in stored waste, low or unstable prices for recyclables, burnout of volunteers.",
+   "adapt": "Start with one or two materials that have a reliable buyer, and add composting for food waste where space allows.",
+   "lessons": "Persistence matters more than funding at the start; teaching children helps the habit spread."
+  },
+  "evidence": "documented",
+  "sources": [
+   {
+    "title": "This 81-year-old Lebanese woman and her friends solved their village's trash crisis",
+    "publisher": "The New Arab",
+    "author": "",
+    "date": "2017-06-09",
+    "url": "https://newarab.com/features/81-year-old-lebanese-woman-solved-her-villages-trash-crisis",
+    "type": "reputable-journalism",
+    "claim": "Governor's refusal; garden storage; Khadija Farhat's lorry; 46 paying volunteers; bins and land from authorities; Italian embassy warehouse; e-waste and compost; neighbouring villages."
+   },
+   {
+    "title": "Her recycling project faced long odds in Lebanon. Still she persisted",
+    "publisher": "Christian Science Monitor",
+    "author": "",
+    "date": "2017-06-22",
+    "url": "https://proof.csmonitor.com/World/Middle-East/2017/0622/Her-recycling-project-faced-long-odds-in-Lebanon.-Still-she-persisted",
+    "type": "reputable-journalism",
+    "claim": "Idea in 1995; sorting categories; NGO Nidaa al-Ard; classroom; early setbacks and governor's criticism; quote on lack of government help."
+   },
+   {
+    "title": "Zeinab Moukalled, 86, a tireless pioneer of waste sorting in Lebanon",
+    "publisher": "L'Orient Today",
+    "author": "Suzanne Baaklini",
+    "date": "2023-03-07",
+    "url": "https://today.lorientlejour.com/article/1330687/zeinab-moukalled-86-a-tireless-pioneer-of-waste-sorting-in-lebanon.html",
+    "type": "reputable-journalism",
+    "claim": "Former teacher; NGO registered 1998; ~70% household participation; three wars destroying equipment; fuel shortages; low buyer prices; Jarjouaa scheme abandoned; still supervising in 2023."
+   }
+  ],
+  "editorial_status": "published",
+  "published": "2026-10-09",
+  "display_name": "Zeinab Mokalled"
+ },
+ {
+  "slug": "ice-stupas-skardu-gilgit-baltistan",
+  "title": "Freezing winter streams into ice towers to water spring fields",
+  "person": "Villagers of Hussainabad (Skardu) and Pari (Kharmang), Gilgit-Baltistan",
+  "actor_type": "community",
+  "country": "Pakistan",
+  "country_code": "PK",
+  "region": "Asia",
+  "city": "Skardu, Gilgit-Baltistan",
+  "lat": 35.3,
+  "lng": 75.63,
+  "started_year": 2018,
+  "status": "ongoing",
+  "status_note": "AFP reported in April 2025 that more than 20 villages build ice stupas each winter.",
+  "scale": "regional",
+  "occupation": "Farmers and village volunteers",
+  "pillar": "small-things",
+  "topics": [
+   "water",
+   "climate-adaptation",
+   "agriculture",
+   "community-action",
+   "indigenous-knowledge"
+  ],
+  "sdgs": [
+   2,
+   6,
+   13
+  ],
+  "problem": "climate-adaptation",
+  "summary": "Mountain farmers in northern Pakistan pipe winter stream water into the freezing air to build ice cones that melt in spring, when their fields need water most.",
+  "small_thing": "A farmer, Ghulam Haider Hashmi, told AFP that villagers discovered artificial glaciers on YouTube. Residents of Pari village tried the technique in 2019 and have repeated it each winter since.",
+  "problem_text": "In Gilgit-Baltistan's high valleys, farmers rely on snow and glacier melt, which usually arrives from mid-May. Planting time in March and April often has too little water, and warmer winters have reduced snowfall. Farmers had to delay sowing until May or June.",
+  "why_started": "Villagers wanted to store winter water for spring planting without building tanks or reservoirs (Arab News). They adapted the 'ice stupa' method developed in nearby Ladakh, India, by engineer Sonam Wangchuk from 2013.",
+  "what_they_did": "During December to February, residents pipe water from streams uphill and spray it into the air through a vertical pipe; it freezes as it falls, forming a tall cone of ice called 'Gang Pu' in Balti. The cone melts slowly through spring and feeds the fields.\n\nIn Hussainabad, a team of 25 volunteers took turns visiting the site daily to make sure water had not frozen inside the pipes (Arab News, 2021). The University of Baltistan and the UN-supported GLOF-2 climate adaptation project have provided technical and some financial support, but residents describe the idea as their own.",
+  "what_changed": "According to AFP (2025), the first ice stupas in Gilgit-Baltistan were built in 2018, more than 20 villages now build them each winter, and over 16,000 residents have water access without reservoirs or tanks. One farmer told AFP his village's eight stupas held about 20 million litres. Farmers interviewed said they could now plant earlier and, in some cases, two or three times a year. These figures are reported by AFP and have not been independently measured.",
+  "what_they_learned": "Farmers told AFP the stupas had saved their fields and ended water shortages at planting time. Researchers caution that the method depends on freezing winter temperatures.",
+  "quote": {
+   "text": "We decided to make ice stupas to conserve water during winters",
+   "source": 0
+  },
+  "why_it_matters": "Ice stupas do not stop glaciers melting or replace long-term water planning. But they show how a mountain community can use simple piping and cold air to shift water from winter to spring, buying time for crops as the climate changes.",
+  "setbacks": "Pipes can freeze, so volunteers must check them constantly. The method only works when temperatures fall below zero, and the ice melts through spring. Warmer winters and recent dry years have reduced snowfall and snowmelt in the region, according to an ICIMOD researcher quoted by AFP.",
+  "copy_this": {
+   "problem": "Cold mountain areas where water is plentiful in winter but scarce at spring planting.",
+   "what": "Pipe stream water from higher up and spray it upward on freezing nights so it builds a cone of ice that melts slowly in spring.",
+   "materials": "Long pipe, a vertical spray pipe and nozzle, a reliable stream above the site, simple frame (optional).",
+   "cost": "Low",
+   "skills": "Basic plumbing, understanding of local temperatures and gradients, teamwork.",
+   "time": "Set-up over days; daily checks throughout winter.",
+   "people": "A village volunteer team sharing monitoring shifts.",
+   "difficulty": "Moderate",
+   "risks": "Frozen or burst pipes, working in severe cold, ice collapse, disputes over water rights.",
+   "adapt": "Only suited to places with sustained sub-zero winter temperatures and a stream at higher elevation; seek advice from local universities or projects already doing it.",
+   "lessons": "Regular monitoring is essential; learning from nearby communities can shorten trial and error."
+  },
+  "evidence": "documented",
+  "sources": [
+   {
+    "title": "In Pakistan's Gilgit-Baltistan region, locals build artificial glaciers to freeze, store water",
+    "publisher": "Arab News",
+    "author": "Nisar Ali",
+    "date": "2021-12-29",
+    "url": "https://arabnews.pk/node/1994646",
+    "type": "reputable-journalism",
+    "claim": "Hussainabad and Pari villages; Pari since 2019; 25-volunteer monitoring team; how ice stupas work; University of Baltistan and GLOF-2 support; resident quote."
+   },
+   {
+    "title": "Artificial glaciers boost water supply in northern Pakistan",
+    "publisher": "AFP (via Inquirer.net)",
+    "author": "",
+    "date": "2025-04-06",
+    "url": "https://globalnation.inquirer.net/?p=271881",
+    "type": "reputable-journalism",
+    "claim": "First stupas 2018; 20+ villages; 16,000+ residents; farmer found technique on YouTube; 20 million litres in one village; earlier planting; warming and dry years."
+   }
+  ],
+  "editorial_status": "published",
+  "published": "2026-10-09",
+  "display_name": "the villagers of Gilgit-Baltistan"
+ },
+ {
+  "slug": "verynile-qursaya-fishers-plastic",
+  "title": "Nile fishers in Cairo paid to bring back plastic as well as fish",
+  "person": "VeryNile (founded by Mostafa Habib and Khadija Hafez) and fishers of Qursaya Island",
+  "actor_type": "group",
+  "country": "Egypt",
+  "country_code": "EG",
+  "region": "Africa",
+  "city": "Qursaya Island, Giza",
+  "lat": 30.02,
+  "lng": 31.22,
+  "started_year": 2018,
+  "status": "ongoing",
+  "status_note": "Al Manassa reported in March/April 2025 on fishers still collecting plastic and a boat project linked to VeryNile.",
+  "scale": "city",
+  "occupation": "Young founders and local fishers",
+  "pillar": "people-making-change",
+  "topics": [
+   "waste",
+   "recycling",
+   "pollution",
+   "community-action",
+   "circular-economy"
+  ],
+  "sdgs": [
+   6,
+   8,
+   12,
+   14
+  ],
+  "problem": "plastic-waste",
+  "summary": "A youth-led group in Cairo pays Nile fishers from Qursaya Island to collect plastic bottles, adding income as catches fall and keeping plastic out of the river.",
+  "small_thing": "VeryNile began in 2018 with volunteer clean-up events. In 2019 it started asking fishers on Qursaya Island to use their boats to collect plastic from the Nile.",
+  "problem_text": "Plastic bottles and bags clog stretches of the Nile in Cairo. Fishers report catching fewer fish each year, and studies cited by AFP found microplastics in most fish sampled from Cairo.",
+  "why_started": "Co-founder Mostafa Habib was inspired by conversations with his grandmother in Upper Egypt about pollution in the river (Stanford Social Innovation Review). He said people treated the river as a place to throw rubbish, and that fishers needed support because their catches had fallen.",
+  "what_they_did": "VeryNile pays fishers per kilogram for plastic they collect, at a price it says is above what traders offer. Higher-value plastics such as bottles go to recyclers; AFP reported that lower-grade plastics were sent as fuel to a cement factory. When COVID-19 made group clean-ups unsafe, the group put more resources into the fisher partnership.\n\nThe group also works with local craftswomen to make baskets and bags, and with partners on a boat and an education project, according to SSIR and Al Manassa.",
+  "what_changed": "Reuters reported in 2021 that more than 40 fishers had collected about 18 tonnes of plastic bottles in a year, and that one fisher could add up to about 200 Egyptian pounds a day to his income. AFP reported in 2023 that VeryNile worked with 65 fishers and bought 10–12 tonnes of plastic a month. These figures come from the group and fishers and have not been independently audited.",
+  "what_they_learned": "Linking the clean-up to fishers' income made it practical: as one fisher told Reuters, the river is cleaner and fishers gain another source of income. Some fishers initially worried about being seen as rubbish collectors rather than craftsmen (Al Manassa).",
+  "quote": {
+   "text": "On the one hand, the Nile is cleaner, and on the other hand the fisherman now has more than one source of income",
+   "source": 0
+  },
+  "why_it_matters": "Collecting plastic from a river does not stop it entering in the first place, and an expert quoted by AFP said such efforts can only scratch the surface. But the model shows how paying people who already work on the water can remove plastic while supporting livelihoods hit by pollution.",
+  "setbacks": "COVID-19 stopped group clean-ups. Some fishers were reluctant at first, fearing loss of status. Income from plastic is seasonal and drops when winter tourism and waste fall. Fish stocks keep declining, and AFP noted that low-grade plastic is burned as cement-kiln fuel rather than recycled.",
+  "copy_this": {
+   "problem": "Plastic waste in a river, lake or coast where local people already work on the water.",
+   "what": "Agree a fair per-kilogram price with fishers or boat owners to bring back plastic, then sell sorted material to recyclers.",
+   "materials": "Collection sacks, scales, storage space, gloves, and links to recycling buyers.",
+   "cost": "Moderate",
+   "skills": "Sorting plastics, bookkeeping, finding buyers and funders, relationship-building with fishers.",
+   "time": "Ongoing; regular collection days.",
+   "people": "A small coordinating team and a group of fishers or boat users.",
+   "difficulty": "Moderate",
+   "risks": "Prices for plastic may not cover payments, safety on the water, unclear end-destination of low-grade plastic.",
+   "adapt": "Start with one material that has a steady buyer; combine with clean-ups and campaigns to reduce plastic use upstream.",
+   "lessons": "Respect people's existing work and status; check where collected plastic actually ends up."
+  },
+  "evidence": "documented",
+  "sources": [
+   {
+    "title": "Nile fishermen protect stocks by pulling plastic from river",
+    "publisher": "Reuters (via WDEZ)",
+    "author": "Mohamed Zaki, Sherif Fahmy, Nadeen Ebrahim",
+    "date": "2021-05-25",
+    "url": "https://wdez.com/2021/05/25/nile-fishermen-protect-stocks-by-pulling-plastic-from-river",
+    "type": "reputable-journalism",
+    "claim": "40+ fishers; ~18 tonnes in a year; fishers' income; quotes from Mohamed Nasar and Saeed Hassanein."
+   },
+   {
+    "title": "VeryNile: cleaning the Nile with fishers",
+    "publisher": "Stanford Social Innovation Review",
+    "author": "Marianne Dhenin",
+    "date": "2021",
+    "url": "https://ssir.org/articles/entry/verynile_environment_community_egypt",
+    "type": "reputable-journalism",
+    "claim": "Founded 2018 by Mostafa Habib and Khadija Hafez; on-water clean-ups with fishers from 2019; COVID-19 shift; craftswomen; partners; Habib's motivation."
+   },
+   {
+    "title": "Out of Nile, into tile: Young Egyptians battle plastic plague",
+    "publisher": "AFP (via Africanews)",
+    "author": "",
+    "date": "2023-01-18",
+    "url": "https://www.africanews.com/2023/01/18/young-egyptians-battle-plastic-plague/",
+    "type": "reputable-journalism",
+    "claim": "65 fishers; 10–12 tonnes a month; low-grade plastic to cement factory; expert view that efforts scratch the surface; microplastics in Cairo fish."
+   },
+   {
+    "title": "VeryNile and the Nile fishermen (feature)",
+    "publisher": "Al Manassa",
+    "author": "Mohamed Awad",
+    "date": "2025-04-13",
+    "url": "https://almanassa.com/en/stories/23412",
+    "type": "reputable-journalism",
+    "claim": "Fishers still collecting plastic in 2025; early reluctance; seasonal income; boat project; declining fish catches."
+   }
+  ],
+  "editorial_status": "published",
+  "published": "2026-10-09",
+  "display_name": "VeryNile and the Qursaya fishers"
+ },
+ {
+  "slug": "abreha-we-atsbeha-watershed-restoration",
+  "title": "The Tigray village that chose to stay and restore its land",
+  "person": "Community of Abreha We Atsbeha, mobilised by village leader Aba Hawi",
+  "actor_type": "community",
+  "country": "Ethiopia",
+  "country_code": "ET",
+  "region": "Africa",
+  "city": "Abreha We Atsbeha, near Wukro, Tigray",
+  "lat": 13.81,
+  "lng": 39.62,
+  "started_year": 1998,
+  "status": "ongoing",
+  "status_note": "The most detailed account found dates from 2020 (Mekelle University researchers). Tigray was badly affected by the 2020–2022 war in northern Ethiopia; no source was found describing the state of the watershed works or of Aba Hawi since then, so current condition is unverified.",
+  "scale": "community",
+  "occupation": "farmers; village leader",
+  "pillar": "people-making-change",
+  "topics": [
+   "restoration",
+   "water",
+   "soil",
+   "agriculture",
+   "climate-adaptation",
+   "community-action",
+   "forests"
+  ],
+  "sdgs": [
+   2,
+   6,
+   13,
+   15
+  ],
+  "problem": "soil-degradation",
+  "summary": "Offered relocation from their degraded, drought-hit valley, villagers in Tigray chose instead to restore it with terraces, check dams, hillside enclosures and hand-dug wells.",
+  "small_thing": "In 1998, faced with a government offer to move to a more fertile area, the villagers decided to stay and start repairing their own land. Their leader, Aba Hawi, urged others to follow by trying new techniques on his own farm first.",
+  "problem_text": "Abreha We Atsbeha lies in one of the most degraded parts of eastern Tigray. Bare hillsides could no longer hold rain, groundwater was not being recharged, flash floods damaged farmland and soil was washing away. After years of crop failure, households depended on relief food.",
+  "why_started": "According to Mekelle University researchers, the government offered residents a choice: relocate, or restore the landscape with support from the Ministry of Agriculture. Residents found relocation hard to accept and chose restoration, although reaching agreement was difficult at first.",
+  "what_they_did": "Families closed degraded hillsides to grazing and wood cutting, letting vegetation return, and built bench terraces, stone bunds, micro-basins and check dams to slow water and trap silt. Community nurseries supplied seedlings, and around 650 hand-dug wells were later used for dry-season irrigation. Fuel-efficient stoves reduced the need for firewood, and the community wrote its own bylaws on sharing benefits.\n\nThe work relied heavily on community labour, alongside support from the Relief Society of Tigray, the World Food Programme's MERET land-rehabilitation programme, Mekelle University, regional agriculture bodies and international donors.",
+  "what_changed": "According to the 2020 account by Mitiku Haile and Dawit Gebregziabher of Mekelle University, around 69% of the 6,766-hectare watershed was restored through enclosures, the water table rose from about 50 m to about 5 m below the surface, soil loss fell by 80% and crop production rose by 300%; these figures are the authors' and have not been independently checked here. The village received the UNDP Equator Prize in 2012, and the World Food Programme reported that once-barren hillsides were producing grain, vegetables and coffee.",
+  "what_they_learned": "Aba Hawi's approach, as reported by the researchers, was that a leader should be a model farmer and test new techniques and crops first. The researchers concluded that success rested on active local participation and ownership.",
+  "quote": {
+   "text": "I am getting a reasonable income from a field that was previously covered by sand.",
+   "source": 1
+  },
+  "why_it_matters": "One village's terraces will not reverse land degradation across the Horn of Africa. But Abreha We Atsbeha shows that slow, collective work on water and soil can make a seemingly exhausted landscape farmable again, and that staying put can be a realistic alternative to relocation when people own the decisions.",
+  "setbacks": "Reaching consensus took time; one account says it took about a decade to persuade everyone to close the hills to livestock and wood harvesting. Heavy rain can damage structures. Residents had hoped to harvest fuelwood from the enclosures but could not, which pushed some towards illegal cutting. The researchers also flag the general risk of works decaying after outside funding ends. The 2020–2022 war affected Tigray; its impact on this watershed is not documented in the sources found.",
+  "copy_this": {
+   "problem": "Eroded hillsides, falling groundwater and repeated crop failure",
+   "what": "Close degraded slopes to grazing and cutting, build terraces and small check dams, and recharge groundwater for shallow wells",
+   "materials": "Local stone and soil, hand tools, tree seedlings from a community nursery",
+   "cost": "Low",
+   "skills": "Basic soil and water conservation techniques, ideally with advice from local agricultural extension staff",
+   "time": "Years; groundwater and vegetation recover slowly",
+   "people": "A whole community, with agreed rules",
+   "difficulty": "Hard",
+   "risks": "Conflict over lost grazing or fuelwood access; poorly built structures failing in heavy rain",
+   "adapt": "Start with one small catchment or gully and agree access rules before closing land",
+   "lessons": "Fair rules on who benefits, and leaders who try methods first, matter as much as the engineering"
+  },
+  "evidence": "documented",
+  "sources": [
+   {
+    "title": "Successful landscape restoration in Abreha We Atsbeha watershed, Tigray, Ethiopia",
+    "publisher": "Tropenbos International (ETFRN News 60: Restoring African Drylands)",
+    "author": "Mitiku Haile; Dawit Gebregziabher (Mekelle University)",
+    "date": "2020-09",
+    "url": "https://www.tropenbos.org/file.php/2350/etfrnnews60-haile-successful-landscape-restoration-abreha-we-atsbeha-watershed-tigray-ethiopia.pdf",
+    "type": "peer-reviewed",
+    "claim": "1998 choice between relocation and restoration; Aba Hawi's leadership; measures (enclosures, terraces, 55 check dams, ~650 wells, stoves, bylaws); impact figures; Equator Prize 2012; difficulties"
+   },
+   {
+    "title": "Ethiopian village recognized at Rio+20 for innovative hunger solution",
+    "publisher": "World Food Programme (via PreventionWeb, UNDRR)",
+    "author": "WFP",
+    "date": "2012-06-21",
+    "url": "https://www.preventionweb.net/news/ethiopian-village-recognized-rio20-innovative-hunger-solution",
+    "type": "un-agency",
+    "claim": "2012 Equator Prize from UNDP; MERET programme; hillsides now farmed; quote from farmer Hiwot Gebre-Tsadkan; award accepted by farmers' association chairman Gebremichal Giday"
+   },
+   {
+    "title": "Abreha Atsbeha: a community restores a landscape",
+    "publisher": "FMNR Hub",
+    "author": "Liz Rinaudo",
+    "date": "2012-05-22",
+    "url": "https://fmnrhub.com.au/abreha-atsbeha-a-community-restores-a-landscape",
+    "type": "organisational",
+    "claim": "Relocation request in the 1990s; about 10 years to persuade everyone to close the hills; family ponds, check dams, wells; labour arrangements"
+   }
+  ],
+  "editorial_status": "published",
+  "published": "2026-10-09",
+  "display_name": "the people of Abreha We Atsbeha"
+ },
+ {
+  "slug": "ghana-bamboo-bikes-kumasi",
+  "title": "Students in Ghana who started building bicycles from bamboo",
+  "person": "Bernice Dapaah and Ghana Bamboo Bikes Initiative",
+  "actor_type": "organisation",
+  "country": "Ghana",
+  "country_code": "GH",
+  "region": "Africa",
+  "city": "Kumasi",
+  "lat": 6.69,
+  "lng": -1.62,
+  "started_year": 2010,
+  "status": "ongoing",
+  "status_note": "A World Intellectual Property Organization video feature in March 2025 describes the company as operating, with Dapaah training workers and growing her own bamboo.",
+  "scale": "regional",
+  "occupation": "student, later social entrepreneur",
+  "pillar": "people-making-change",
+  "topics": [
+   "sustainable-transport",
+   "materials",
+   "sustainable-business",
+   "climate-mitigation",
+   "forests"
+  ],
+  "sdgs": [
+   5,
+   8,
+   11,
+   12,
+   13
+  ],
+  "problem": "energy",
+  "summary": "A student project in Ghana grew into a women-led workshop making bicycle frames from locally grown bamboo, creating jobs and offering a low-energy alternative to metal frames.",
+  "small_thing": "In 2010 an entrepreneurship lecturer challenged students to create their own jobs. Bernice Dapaah and two fellow students decided to try turning Ghana's bamboo into bicycle frames.",
+  "problem_text": "Many young people in rural Ghana, especially women with little formal education, struggle to find work, and many move to cities. Affordable transport is scarce in rural areas, and metal bicycle frames take energy-intensive manufacturing.",
+  "why_started": "Writing for the World Economic Forum in 2014, Dapaah said a college entrepreneurship professor had pushed students to create self-employment rather than seek office jobs. She and two classmates wanted to create jobs for young people in rural Ghana and saw an opportunity in the country's bamboo.",
+  "what_they_did": "The initiative trained people with no prior bike-building experience, mostly women, to make bamboo frames suited to rough roads and carrying farm loads. In its early days it also aimed to employ street children and people with disabilities. With support from the GEF Small Grants Programme, implemented through the Bright Generation Community Foundation, it set up a training centre and workshop and planted bamboo.\n\nThe bikes are sold in Ghana and abroad. Dapaah has said a large share of output was aimed at international buyers.",
+  "what_changed": "In 2014 Dapaah wrote that the team of 30 people, almost all women, made 60 to 100 bikes a month; this is her own account. According to the GEF, by 2013 the project had created stable jobs for ten bike builders, 25 young people had planted a hectare with 1,500 bamboo seedlings, and the approach had been copied in two other communities. The initiative won a UNEP SEED Award in 2010 and was a UN Climate Change Momentum for Change 'Lighthouse Activity' in 2013. No independent figure on carbon savings was found.",
+  "what_they_learned": "Dapaah has said the biggest early challenge was labour: nobody knew how to build bamboo bikes, so the team trained women itself, some in several skills to cover absences.",
+  "quote": {
+   "text": "In the beginning, the major challenge was labour.",
+   "source": 0
+  },
+  "why_it_matters": "Bamboo bicycles will not transform transport on their own. But the initiative shows how a fast-growing local material, combined with training, can create skilled work for people often left out of jobs, while making a useful, low-energy product.",
+  "setbacks": "Dapaah has said that no one locally had the skills at first, so training took time, and that attracting investors in the region was difficult even for viable ventures. Early plans, such as a government order for rural teachers and health workers reported in 2011, were not confirmed in later sources found.",
+  "copy_this": {
+   "problem": "Lack of rural jobs and affordable transport",
+   "what": "Train local people to make a useful product from a renewable local material",
+   "materials": "Locally grown bamboo, joining materials, standard bicycle components",
+   "cost": "Moderate",
+   "skills": "Frame building, quality testing, basic business management",
+   "time": "Months to train builders; longer to establish bamboo supply and sales",
+   "people": "A small team of trainers and trainees",
+   "difficulty": "Moderate",
+   "risks": "Unsafe frames if quality control is weak; harvesting bamboo faster than it regrows",
+   "adapt": "Apply the same model to other local materials or products, such as furniture or crafts",
+   "lessons": "Invest in training first, plant your own supply, and expect finance to be the hardest part"
+  },
+  "evidence": "documented",
+  "sources": [
+   {
+    "title": "How bamboo bikes gave women a new future in Ghana",
+    "publisher": "World Economic Forum",
+    "author": "Bernice Dapaah",
+    "date": "2014-03-12",
+    "url": "https://weforum.org/agenda/2014/03/bamboo-bikes-ghanas-women-riding-high",
+    "type": "organisational",
+    "claim": "Founder's own account: 2010 start as a student with two classmates; 30-person mostly female team; 60–100 bikes a month; labour and funding challenges"
+   },
+   {
+    "title": "Christiana Figueres and Ban Ki-moon celebrate SGP's innovative Ghanaian bamboo bikes at the UNFCCC COP 19",
+    "publisher": "Global Environment Facility",
+    "author": "GEF Small Grants Programme",
+    "date": "2013-11",
+    "url": "https://thegef.org/newsroom/news/christiana-figueres-and-ban-ki-moon-celebrate-sgps-innovative-ghanaian-bamboo-bikes",
+    "type": "un-agency",
+    "claim": "SGP support via Bright Generation Community Foundation; training centre; ten bike builders; 1 ha / 1,500 seedlings planted by 25 youth; replication in two communities; awards"
+   },
+   {
+    "title": "Ghana Bamboo Bikes in high demand",
+    "publisher": "MyJoyOnline / Luv FM",
+    "author": "Kofi Adu Domfeh",
+    "date": "2011-03-21",
+    "url": "https://myjoyonline.com/ghana-bamboo-bikes-in-high-demand",
+    "type": "reputable-journalism",
+    "claim": "Kumasi base; aim to employ street children and people with disabilities; 2010 UNEP SEED Award; export focus"
+   },
+   {
+    "title": "Ghana Bamboo Bikes Initiative (Momentum for Change Lighthouse Activity)",
+    "publisher": "UNFCCC",
+    "author": "UN Climate Change secretariat",
+    "date": "2013",
+    "url": "https://unfccc.int/files/secretariat/momentum_for_change/application/pdf/ghana_bamboo_bikes.pdf",
+    "type": "un-agency",
+    "claim": "Recognition as Momentum for Change activity; aims on jobs for young women and lower-energy production"
+   },
+   {
+    "title": "How a strong brand is helping Ghana Bamboo Bikes ride further",
+    "publisher": "World Intellectual Property Organization",
+    "author": "WIPO",
+    "date": "2025-03-25",
+    "url": "https://www.wipo.int/web/videos/ghana-bamboo-bikes",
+    "type": "un-agency",
+    "claim": "Company still operating in 2025; Dapaah trains workers and grows her own bamboo"
+   }
+  ],
+  "editorial_status": "published",
+  "published": "2026-10-09",
+  "display_name": "Bernice Dapaah"
+ },
+ {
+  "slug": "mariama-sonko-niaguis-agroecology",
+  "title": "A Casamance farmer who organised women around seeds and soil",
+  "person": "Mariama Sonko and Nous Sommes la Solution",
+  "actor_type": "individual",
+  "country": "Senegal",
+  "country_code": "SN",
+  "region": "Africa",
+  "city": "Niaguis, Ziguinchor",
+  "lat": 12.56,
+  "lng": -16.18,
+  "started_year": 2011,
+  "status": "ongoing",
+  "status_note": "Active in 2026: in September 2026 Le Soleil reported her leading an international training camp on peasant agroecology in Niaguis.",
+  "scale": "international",
+  "occupation": "farmer and rural women's organiser",
+  "pillar": "people-making-change",
+  "topics": [
+   "agriculture",
+   "food-systems",
+   "soil",
+   "indigenous-knowledge",
+   "environmental-justice",
+   "community-action"
+  ],
+  "sdgs": [
+   2,
+   5,
+   15
+  ],
+  "problem": "soil-degradation",
+  "summary": "A woman farmer from Niaguis, Senegal, helped build a West African movement of rural women promoting agroecology, local seeds and women's access to land.",
+  "small_thing": "After moving to Niaguis on marriage, Mariama Sonko began growing vegetables and joined a women's farming association. With other women she leased a few hectares and worked the land together.",
+  "problem_text": "In Casamance, rising salinity, mangrove loss and drought have hurt rice paddies and fish catches, and women farmers often have insecure access to land. Sonko argues that reliance on bought inputs and imported seed threatens fertile soils and indigenous seed varieties.",
+  "why_started": "According to The Guardian, a landowner ordered Sonko's women's group off land they had farmed for five years, just as the trees began bearing fruit; she disputed it and was shunned in community meetings for almost two years. She went on to lead a federation of women's organisations in Ziguinchor and, in 2011, co-founded Nous Sommes la Solution with 12 rural women's organisations.",
+  "what_they_did": "Sonko farms around three hectares in Niaguis and trains women in agroecological methods. Women in the movement make bio-fertiliser from cow dung and sell it to other farmers, have developed a herbal seasoning as an alternative to stock cubes, and maintain seed stores to rebuild farmers' own seed stocks.\n\nThe movement campaigns for laws that favour local seed and production, and runs training camps; the fifth, in September 2026 in Niaguis, focused on low-cost poultry rearing.",
+  "what_changed": "According to the movement's own figures reported by Slow Food in 2024, Nous Sommes la Solution has over 800 member organisations and more than 185,000 members across West Africa (another 2024 account gives about 175,000 women farmers). The Guardian reported in 2021 that in Senegal the network had nearly 10,000 women in more than 100 local associations. Effects on yields, soils or incomes have not been independently measured in the sources found.",
+  "what_they_learned": "Sonko describes ecofeminism as respect for everything around us, and says women do much of the farming work without recognition.",
+  "quote": {
+   "text": "Ecofeminism for me is the respect for all that we have around us.",
+   "source": 0
+  },
+  "why_it_matters": "A network of women farmers cannot by itself change national seed laws or reverse soil decline. But it shows how sharing seeds, making fertiliser locally and training one another can lower farmers' costs and keep traditional knowledge in use, while giving women a stronger voice in decisions about land.",
+  "setbacks": "Sonko's group lost land it had farmed when the landowner ended the arrangement; she was then ostracised, silenced in town meetings for almost two years and, by one account, removed from a town council position. Limited access to land and resources remains a challenge for family farmers, according to the movement.",
+  "copy_this": {
+   "problem": "Costly inputs, declining soils and loss of local seed varieties",
+   "what": "Form a women's farming group to share seed, make organic fertiliser and learn agroecological methods together",
+   "materials": "Local seed, manure and crop residues, simple storage containers",
+   "cost": "Very low",
+   "skills": "Composting, seed selection and storage, group organisation",
+   "time": "One season to start; years to build a seed collection",
+   "people": "A small group, ideally linked to a wider network",
+   "difficulty": "Moderate",
+   "risks": "Insecure land tenure; poorly stored seed losing viability",
+   "adapt": "Start a seed swap or community compost heap in your neighbourhood or school",
+   "lessons": "Secure, written land agreements protect the work groups put into land"
+  },
+  "evidence": "documented",
+  "sources": [
+   {
+    "title": "'Ecofeminism is about respect': the activist working to revolutionise west African farming",
+    "publisher": "The Guardian (reproduced by the Pulitzer Center)",
+    "author": "Ricci Shryock",
+    "date": "2021-09-22",
+    "url": "https://www.theguardian.com/global-development/2021/sep/22/ecofeminism-is-about-respect-the-activist-working-to-revolutionise-west-african-farming",
+    "type": "reputable-journalism",
+    "claim": "Land eviction and two years of ostracism; bio-fertiliser and herbal seasoning; seed-law campaign; Senegal membership figures; quotes"
+   },
+   {
+    "title": "À Niaguis, des femmes rurales sèment les graines du changement",
+    "publisher": "Le Soleil (Senegal)",
+    "author": "Gaustin Diatta",
+    "date": "2026-09-15",
+    "url": "https://lesoleil.sn/agriculture/a-niaguis-des-femmes-rurales-sement-les-graines-du-changement/",
+    "type": "reputable-journalism",
+    "claim": "Current status: fifth international peasant agroecology training camp in Niaguis, September 2026, led by Sonko"
+   },
+   {
+    "title": "Rural Women are the Solution – Nous Sommes la Solution and Mariama Sonko Work for Food Sovereignty in West Africa",
+    "publisher": "Slow Food",
+    "author": "",
+    "date": "2024-09-24",
+    "url": "https://www.slowfood.com/blog-and-news/rural-women-are-the-solution-nous-sommes-la-solution-and-mariama-sonko-work-for-food-sovereignty-in-west-africa/",
+    "type": "organisational",
+    "claim": "Founded 2011 by twelve rural women's organisations; 800+ member organisations, 185,000+ members; seed huts; Sonko from Niaguis"
+   },
+   {
+    "title": "La lutte de Mariama Sonko pour l'agroécologie et les droits des paysannes",
+    "publisher": "Nous Sommes la Solution (reproducing El País, Planeta Futuro)",
+    "author": "",
+    "date": "2024-11-11",
+    "url": "https://wasafrica.org/en/la-lutte-de-mariama-sonko-pour-lagroecologie-et-les-droits-des-paysannes-ils-ont-essaye-de-me-faire-taire-mais-ils-nont-pas-reussi/",
+    "type": "organisational",
+    "claim": "Moved to Niaguis on marriage; joined women's association; leased land; led Ziguinchor federation; three-hectare farm; removal from council post"
+   }
+  ],
+  "editorial_status": "published",
+  "published": "2026-10-09",
+  "display_name": "Mariama Sonko"
+ },
+ {
+  "slug": "farmer-tantoh-spring-catchments-cameroon",
+  "title": "Protecting springs and planting trees in Cameroon's highlands",
+  "person": "Dieudonné Tantoh Nforba ('Farmer Tantoh') and Save Your Future Association",
+  "actor_type": "individual",
+  "country": "Cameroon",
+  "country_code": "CM",
+  "region": "Africa",
+  "city": "Bamenda",
+  "lat": 5.96,
+  "lng": 10.15,
+  "started_year": 2005,
+  "status": "ongoing",
+  "status_note": "Profiled as active in 2024 (Creative Bureaucracy Festival), leading a Safe Water For All Initiative in Cameroon's North West region. The association is now called The Farmer Tantoh Foundation. Sources differ on start dates: his own account says his movement began in 1996 when he was a teenager; FAO's partner page gives 2001 for founding and 2005 for registration. Evidence level: most information comes from Tantoh and his association; the main independent source is a 2008 newspaper report. We are seeking further independent evidence.",
+  "scale": "regional",
+  "occupation": "farmer and environmental educator",
+  "pillar": "people-making-change",
+  "topics": [
+   "water",
+   "forests",
+   "agriculture",
+   "environmental-education",
+   "community-action",
+   "environmental-health"
+  ],
+  "sdgs": [
+   6,
+   4,
+   15
+  ],
+  "problem": "water-scarcity",
+  "summary": "A farmer from north-west Cameroon works with villages to protect spring catchments, build water tanks, plant trees and teach organic farming.",
+  "small_thing": "After a high school biology lesson showed him how local streams connect to the wider landscape, Tantoh Nforba became interested in watersheds. He later ran a demonstration organic garden on the Chua Chua River to teach young people and farmers.",
+  "problem_text": "In Cameroon's North West, many people drink from streams polluted by human and animal waste, and some walk long distances for clean water. Deforestation, soil erosion and farming and grazing moving uphill damage the springs that villages rely on.",
+  "why_started": "The Christian Science Monitor reported in 2008 that he was drawn to watersheds by a school biology class and that clean water was scarce in his rural province. He said: 'The crisis is so high here that people are dying from it every day.'",
+  "what_they_did": "Through the Save Your Future Association (SYFA), he and local volunteers protect spring catchments with trees and fencing, build storage tanks and tap stands, and teach environmental programmes in schools, churches and prisons. Communities contribute labour and local materials.\n\nSYFA also promotes organic farming, agroforestry and tree planting, including training farmers in agroforestry in partnership with the World Agroforestry Centre from 2008.",
+  "what_changed": "According to SYFA's own report on the FAO Mountain Partnership website in 2017, it had built more than 20 spring water catchments, planted over 25,000 trees and worked with ten farming groups and more than 15 environmental clubs. Its 2020 submission to MIT Solve reported over 60 tanks or wells and about 60,000 people served. These are the organisation's own figures and have not been independently verified. His story is told in a children's book, 'I Am Farmer', used in some US schools.",
+  "what_they_learned": "SYFA's model depends on communities contributing labour and materials, and on protecting the land around a spring as well as building the tank.",
+  "quote": {
+   "text": "Water is life.",
+   "source": 0
+  },
+  "why_it_matters": "Protecting a handful of springs will not solve water access across Cameroon. But keeping catchment land planted and fenced is a low-technology way to keep water cleaner at source, and community labour helps people look after what they have built.",
+  "setbacks": "In his own account to MIT Solve (around 2020), the Anglophone crisis in the North West and South West regions slowed fieldwork, made travel to remote villages risky because of kidnapping, and reduced volunteers and grants; COVID-19, poor roads, lack of vehicles and requests for bribes also hampered work. SYFA has reported catchments being damaged by farmers and grazers, and projects stalling while waiting for funding.",
+  "copy_this": {
+   "problem": "Polluted or failing village water sources",
+   "what": "Protect the land around a spring with trees and fencing, and pipe water to a covered tank and tap",
+   "materials": "Native trees, fencing, pipe, a storage tank",
+   "cost": "Moderate",
+   "skills": "Basic water engineering and catchment management; seek local technical advice",
+   "time": "Weeks to build; years for trees to establish",
+   "people": "A village water committee and volunteers",
+   "difficulty": "Moderate",
+   "risks": "Contamination if catchments are not protected; disputes with farmers and herders over land use",
+   "adapt": "Start with tree planting and clean-up around a local spring or stream",
+   "lessons": "Agree catchment protection with nearby land users before building"
+  },
+  "evidence": "self-reported",
+  "sources": [
+   {
+    "title": "Cameroonian joins global quest for clean water",
+    "publisher": "The Christian Science Monitor",
+    "author": "Jesse Huffman",
+    "date": "2008-05-15",
+    "url": "https://www.csmonitor.com/Environment/Living-Green/2008/0515/cameroonian-joins-global-quest-for-clean-water",
+    "type": "reputable-journalism",
+    "claim": "School biology origin; SYFA education programmes; demonstration garden on Chua Chua River; World Agroforestry Centre partnership; water context; quotes"
+   },
+   {
+    "title": "Water catchments in the Cameroon highlands",
+    "publisher": "FAO Mountain Partnership (news supplied by SYFA)",
+    "author": "SYFA/Farmer Tantoh",
+    "date": "2017-06-22",
+    "url": "https://www.fao.org/mountain-partnership/news/newsroom/news-detail/Water-catchments-in-the-Cameroon-highlands/en",
+    "type": "organisational",
+    "claim": "Founding 2001/registration 2005; catchment protection methods; 20+ catchments, 25,000+ trees; damage by farmers and grazers"
+   },
+   {
+    "title": "Save Your Future Association (SYFA)",
+    "publisher": "MIT Solve",
+    "author": "Dieudonne Tantoh Nforba",
+    "date": "2020",
+    "url": "https://solve.mit.edu/solutions/29248",
+    "type": "organisational",
+    "claim": "Start as a teenager in 1996; 60+ tanks/wells; challenges from Anglophone crisis, COVID-19, roads, bribes"
+   },
+   {
+    "title": "Portrait of Farmer Tantoh Nforba",
+    "publisher": "Creative Bureaucracy Festival",
+    "author": "",
+    "date": "2024",
+    "url": "https://creativebureaucracy.org/foundation/people/farmer-tantoh-nforba",
+    "type": "organisational",
+    "claim": "Current work (Safe Water For All Initiative, Bamenda eco-village); SYFA renamed The Farmer Tantoh Foundation; Ashoka Fellow; 'I Am Farmer' book"
+   }
+  ],
+  "editorial_status": "published",
+  "published": "2026-10-09",
+  "display_name": "Farmer Tantoh"
+ },
+ {
+  "slug": "kgmc-concepcion-fishers-mangroves-philippines",
+  "title": "Small-scale fishers who replanted their own mangroves",
+  "person": "Roberto \"Ka Dodoy\" Ballon and the Kapunungan sa Gagmay'ng Mangingisda sa Concepcion (KGMC)",
+  "actor_type": "group",
+  "country": "Philippines",
+  "country_code": "PH",
+  "region": "Asia",
+  "city": "Concepcion, Kabasalan, Zamboanga Sibugay",
+  "lat": 7.8,
+  "lng": 122.76,
+  "started_year": 1986,
+  "status": "ongoing",
+  "status_note": "Ballon received the 2021 Ramon Magsaysay Award and KGMC was a 2023 UNDP Equator Prize winner. No news from 2024–2026 was found confirming his current activity, so 'ongoing' rests on the 2023 Equator Prize.",
+  "scale": "community",
+  "occupation": "fisherman",
+  "pillar": "people-making-change",
+  "topics": [
+   "oceans",
+   "restoration",
+   "conservation",
+   "biodiversity",
+   "community-action",
+   "food-systems",
+   "climate-adaptation"
+  ],
+  "sdgs": [
+   1,
+   2,
+   13,
+   14,
+   15
+  ],
+  "problem": "biodiversity-loss",
+  "summary": "A fishing association in Kabasalan, Philippines, replanted mangroves on abandoned fishponds and rebuilt the coastal fishery its families depend on.",
+  "small_thing": "In 1986 Roberto Ballon and fellow small-scale fishers in Concepcion formed an association and began planting mangroves along their shoreline.",
+  "problem_text": "By the mid-1980s mangroves along Sibuguey Bay were being cleared for fishponds and charcoal, and illegal practices such as dynamite fishing and fine-mesh nets were common. Fish became scarce and fishers had to travel further out to sea, spending more on fuel and time.",
+  "why_started": "Ballon told The ASEAN Magazine that he saw mangroves as the basis of marine life and of his community's food and livelihoods, and that by the mid-1980s those were disappearing. The Forest Foundation Philippines says KGMC was organised to address overfishing and mangrove destruction in the bay.",
+  "what_they_did": "The association planted mangroves on denuded shoreline and abandoned fishponds, set fish traps in the replanted areas and later moved into oyster and grouper culture. Ballon developed a seed propagation method for the mangrove species pagatpat (Sonneratia alba), which the Forest Foundation Philippines supported with technical advice.\n\nKGMC secured a co-management agreement with the national environment department and local government covering 47 hectares of mangroves, runs community sea patrols, and has a savings club for women and young people. In 2013 KGMC and 33 other fisherfolk groups formed a provincial coalition, which Ballon chairs, and the model has been shared with communities in other provinces.",
+  "what_changed": "According to the Philippine Daily Inquirer, citing the Ramon Magsaysay Award Foundation, members' catch rose from about 1.5 kg in an eight-hour trip to about 7 kg in three to five hours. A 2000 government assessment cited by The ASEAN Magazine credited the group with restoring about 50 hectares of mangrove cover, and the Forest Foundation Philippines reports about 71 hectares reforested under a 2007 project and at least 600 hectares managed across four municipalities with grant support from 2008 to 2015. UNDP, announcing the 2023 Equator Prize, gives a much larger figure of 10,000–12,000 hectares restored in the province; these figures cover different areas and are not independently reconciled. Ballon received the 2021 Ramon Magsaysay Award.",
+  "what_they_learned": "Ballon has said that fishers showed they could protect mangroves even without government support, and that change needs to be visible to keep people involved.",
+  "quote": {
+   "text": "We have demonstrated that we could protect our mangroves even without government support",
+   "source": 0
+  },
+  "why_it_matters": "One fishing association cannot reverse mangrove loss across Southeast Asia. But KGMC shows how people who depend on a coastline can restore it themselves, and how restored mangroves can support the catch and incomes of the families who look after them.",
+  "setbacks": "According to Ballon, early approaches to the environment department and local government cost members money for legal documents without bringing help, and membership fell from about 30 to five in 1997–1998, after which the remaining members restored mangroves on their own. He has said some former members wanted capital without doing the work, and that government support for small-scale fishers remains insufficient. A planned hatchery was intended to stop the group taking fingerlings from its own replanted mangroves.",
+  "copy_this": {
+   "problem": "Loss of coastal mangroves and declining near-shore fish catches.",
+   "what": "Organise local fishers to replant native mangroves, protect them with community patrols and build livelihoods around the restored area.",
+   "materials": "Locally collected propagules or seedlings of native mangrove species, a simple nursery, boats for patrols, record-keeping.",
+   "cost": "Low",
+   "skills": "Local knowledge of tides and species; nursery skills; group organising; working with local authorities on tenure or co-management.",
+   "time": "Years to decades; mangroves take several years to establish.",
+   "people": "A core group of committed fishers, ideally with family and youth involvement.",
+   "difficulty": "Moderate",
+   "risks": "Planting the wrong species or in the wrong zone; tenure disputes over fishponds; members leaving if benefits are slow; illegal cutting.",
+   "adapt": "Take advice from foresters or marine scientists on species and site; seek formal co-management rights before investing heavily.",
+   "lessons": "Small, visible gains help keep members involved; formal agreements with authorities can protect the work over time."
+  },
+  "evidence": "documented",
+  "sources": [
+   {
+    "title": "Roberto \"Ka Dodoy\" Ballon",
+    "publisher": "The ASEAN Magazine (ASEAN Secretariat)",
+    "author": "Joanne Agbisit",
+    "date": "2022-04-12",
+    "url": "https://theaseanmagazine.asean.org/article/roberto-ka-dodoy-ballon",
+    "type": "un-agency",
+    "claim": "Founding of KGMC in 1986, causes of decline, ~50 ha restored (2000 DENR assessment), 47 ha co-management, activities, setbacks (membership fall, lack of support), quote. Edited, translated interview."
+   },
+   {
+    "title": "Zambo Sibugay fisherfolk leader among five 2021 Magsaysay awardees",
+    "publisher": "Philippine Daily Inquirer",
+    "author": "",
+    "date": "2021-09-01",
+    "url": "https://newsinfo.inquirer.net/1481656/zambo-sibugay-fisherfolk-leader-among-five-2021-magsaysay-awardees",
+    "type": "reputable-journalism",
+    "claim": "2021 Ramon Magsaysay Award; catch rose from 1.5 kg in eight hours to 7 kg in three to five hours; mangroves restored on abandoned fishponds."
+   },
+   {
+    "title": "Roberto 'Ka Dodoy' Ballon, Forest Foundation partner, receives 2021 Ramon Magsaysay Award",
+    "publisher": "Forest Foundation Philippines",
+    "author": "",
+    "date": "2021-09-09",
+    "url": "https://www.forestfoundation.ph/news/roberto-ka-dodoy-ballon-forest-foundation-partner-receives-2021-ramon-magsaysay-award/",
+    "type": "organisational",
+    "claim": "71 ha reforested (2007 project); at least 600 ha managed 2008–2015; pagatpat propagation method; 2013 coalition of 34 fisherfolk associations (funder's own account)."
+   },
+   {
+    "title": "Ten countries to bag the 2023 Equator Prize",
+    "publisher": "UNDP",
+    "author": "",
+    "date": "2023-08-08",
+    "url": "https://www.undp.org/press-releases/ten-countries-bag-2023-equator-prize",
+    "type": "un-agency",
+    "claim": "KGMC named a 2023 Equator Prize winner; UNDP states 10,000–12,000 ha of mangroves restored in Zamboanga Sibugay."
+   },
+   {
+    "title": "Dream come true: Ramon Magsaysay awardee to get hatchery in Zamboanga Sibugay",
+    "publisher": "Ramon Magsaysay Award Foundation (from Rappler)",
+    "author": "",
+    "date": "2021-09-08",
+    "url": "https://rmaward.asia/dream-come-true-ramon-magsaysay-awardee-to-get-hatchery-in-zamboanga-sibugay/",
+    "type": "award-body",
+    "claim": "Planned hatchery so the group would stop taking fingerlings from its replanted mangroves."
+   }
+  ],
+  "editorial_status": "published",
+  "published": "2026-10-09",
+  "display_name": "Ka Dodoy and the KGMC fishers"
+ },
+ {
+  "slug": "nature-seekers-matura-leatherback-turtles",
+  "title": "The village that turned turtle poaching into turtle protection",
+  "person": "Suzan Lakhan-Baptiste and Nature Seekers, Matura",
+  "actor_type": "community",
+  "country": "Trinidad and Tobago",
+  "country_code": "TT",
+  "region": "Latin America & Caribbean",
+  "city": "Matura, Trinidad",
+  "lat": 10.67,
+  "lng": -61.07,
+  "started_year": 1990,
+  "status": "ongoing",
+  "status_note": "Oceanic Society's profile of Suzan Lakhan-Baptiste was updated in May 2026 and describes Nature Seekers as active.",
+  "scale": "community",
+  "occupation": "community conservationist (managing director of Nature Seekers)",
+  "pillar": "people-making-change",
+  "topics": [
+   "biodiversity",
+   "conservation",
+   "oceans",
+   "community-action",
+   "environmental-education",
+   "sustainable-business"
+  ],
+  "sdgs": [
+   8,
+   14,
+   15
+  ],
+  "problem": "biodiversity-loss",
+  "summary": "Villagers in Matura, Trinidad, began patrolling their beach in 1990 to stop leatherback turtles being killed, and built local guiding and tourism around protecting them.",
+  "small_thing": "After Matura Beach was declared a protected area in 1989, a handful of local volunteers began walking the beach at night to deter poachers. They formalised as Nature Seekers in 1990.",
+  "problem_text": "Matura Beach is one of the world's largest leatherback nesting sites, but turtles and eggs were being taken for meat and quick profit. UN News reports that up to 30% of the leatherbacks coming ashore were being maimed or killed by poachers.",
+  "why_started": "Suzan Lakhan-Baptiste grew up seeing nesting turtles killed and left on the sand, with no patrols or rules in place, and decided she had to help stop it, according to UN News and Oceanic Society. When the Forestry Division declared the beach protected in 1989, it asked local volunteers to help enforce the rules.",
+  "what_they_did": "Members patrolled the nesting beach at night through the season, held community meetings, visited schools and pressed officials for stronger enforcement. Residents were trained as guides who also tag, measure and weigh nesting turtles for research.\n\nThe group developed turtle-watching tourism, and later forest management, beach clean-ups and a jewellery line made from collected glass. With UNDP support it has explored turtle excluder devices to reduce bycatch in fishing nets.",
+  "what_changed": "According to Oceanic Society, poaching at Matura is now practically non-existent and the area has guest houses, nature tours and handicraft businesses. The National Wildlife Federation reported in 2006 that some guides were former poachers or from poaching families and that tourism officials from around the Caribbean came to study the model. Matura hosts more than 2,000 nesting leatherbacks a season, according to Oceanic Society.",
+  "what_they_learned": "The group's experience, as described by Oceanic Society, is that the community came to see a leatherback as worth more alive than dead once protection brought guiding and tourism income.",
+  "quote": {
+   "text": "I have to be a part of doing something and curbing this",
+   "source": 0
+  },
+  "why_it_matters": "One village beach is a small part of a leatherback's ocean-wide range. But Matura shows that conservation led by local residents, including former poachers, can end hunting on a major nesting site while creating local livelihoods.",
+  "setbacks": "Oceanic Society reports that early members were discouraged and mocked, with Lakhan-Baptiste called a 'crazy turtle woman', and that night patrols involved long walks through forest. Leatherbacks still face threats beyond the beach: UN News and Oceanic Society describe entanglement in fishing nets as the main current threat.",
+  "copy_this": {
+   "problem": "Hunting or disturbance of wildlife at a breeding or nesting site near a community.",
+   "what": "Form a local volunteer patrol, work with the wildlife authority, and build guided visits so protection brings income.",
+   "materials": "Torches with red light, notebooks or data sheets, basic first aid, agreed code of conduct for visitors.",
+   "cost": "Low",
+   "skills": "Wildlife-safe handling (with official training), guiding, record-keeping, community outreach.",
+   "time": "Nightly in season; years to build trust and income.",
+   "people": "A few committed residents at first; wider village involvement over time.",
+   "difficulty": "Moderate",
+   "risks": "Confrontation with poachers (leave enforcement to authorities); too many visitors disturbing animals.",
+   "adapt": "Work under the relevant wildlife authority's permits and rules; involve former hunters as guides.",
+   "lessons": "Protection lasts when local people benefit from it."
+  },
+  "evidence": "documented",
+  "sources": [
+   {
+    "title": "FEATURE: UN-backed projects in the Caribbean highlight connection between life on land and life below water",
+    "publisher": "UN News",
+    "author": "",
+    "date": "2017",
+    "url": "https://news.un.org/en/node/558252",
+    "type": "un-agency",
+    "claim": "Founded 1990; up to 30% of leatherbacks maimed or killed by poachers; patrols, guiding, tagging, ecotourism, glass jewellery; GEF Small Grants support; bycatch threat; quote."
+   },
+   {
+    "title": "From carnage to conservation: the inspiring story of Suzan Lakhan-Baptiste",
+    "publisher": "Oceanic Society",
+    "author": "Rosie Jeffrey",
+    "date": "2023-08-14",
+    "url": "https://oceanicsociety.org/trip-reports/from-carnage-to-conservation-the-inspiring-story-of-suzan-lakhan-baptiste",
+    "type": "organisational",
+    "claim": "1989 protected-area declaration and volunteers; night patrols, schools, advocacy; poaching now practically non-existent; 2,000+ nesting leatherbacks; early ridicule; updated May 2026."
+   },
+   {
+    "title": "The Secret to Saving Sea Turtles",
+    "publisher": "National Wildlife Federation (National Wildlife magazine)",
+    "author": "Michael Tennesen",
+    "date": "2006-06-01",
+    "url": "https://nwf.org/Magazines/National-Wildlife/2006/The-Secret-to-Saving-Sea-Turtles",
+    "type": "reputable-journalism",
+    "claim": "Nature Seekers founded 1990, mostly Matura residents; guides include former poachers; model studied across the Caribbean."
+   }
+  ],
+  "editorial_status": "published",
+  "published": "2026-10-09",
+  "display_name": "Nature Seekers"
+ },
+ {
+  "slug": "vuntut-gwitchin-old-crow-solar",
+  "title": "An Arctic First Nation switches off its diesel generators for summer",
+  "person": "Vuntut Gwitchin First Nation, Old Crow",
+  "actor_type": "community",
+  "country": "Canada",
+  "country_code": "CA",
+  "region": "North America",
+  "city": "Old Crow, Yukon",
+  "lat": 67.57,
+  "lng": -139.83,
+  "started_year": 2016,
+  "status": "ongoing",
+  "status_note": "The solar array was completed in August 2021 under a 25-year power purchase agreement. No 2024–2026 news reporting a change was found. Dana Tizya-Tramm is quoted as chief in 2020–2022 sources; check current leadership before naming him as chief.",
+  "scale": "community",
+  "occupation": "First Nation government and community members",
+  "pillar": "people-making-change",
+  "topics": [
+   "renewable-energy",
+   "energy",
+   "climate-mitigation",
+   "indigenous-knowledge",
+   "community-action"
+  ],
+  "sdgs": [
+   7,
+   11,
+   13
+  ],
+  "problem": "energy",
+  "summary": "The Vuntut Gwitchin First Nation in Old Crow, north of the Arctic Circle, built a solar array that lets the fly-in community run without diesel on sunny summer days.",
+  "small_thing": "Young community leaders in Old Crow pursued the idea of a community solar array for years before it reached a signed agreement, according to the then chief.",
+  "problem_text": "Old Crow is Yukon's only fly-in community and relied entirely on diesel generators for electricity, some dating from the 1970s. Fuel had to be flown or trucked in, and the community is already seeing climate impacts such as thawing permafrost and low river levels.",
+  "why_started": "The First Nation said it wanted to cut emissions in a community sensitive to warming, gain energy security and create economic opportunity (CBC). Chief Bruce Charlie credited young leaders with the vision in 2018.",
+  "what_they_did": "The First Nation proposed a solar array with batteries near the airport, took it through territorial environmental assessment, and in 2018 signed a 25-year agreement for the utility, ATCO Electric Yukon, to buy its electricity. At elders' request, rows of berry bushes on the site were kept and panels placed around them.\n\nThe array was installed from 2019 and completed in 2021 with 2,160 panels and battery storage, on adjustable footings designed to cope with permafrost movement. Revenue from selling power is intended to help fund further renewable projects.",
+  "what_changed": "According to APTN News and the Government of Canada, the 940 kW array is expected to displace about 189,000 litres of diesel and about 680 tonnes of CO2 a year, roughly a quarter of the community's annual diesel use. CBC reported the generators falling silent when the array was switched on; Chief Tizya-Tramm told APTN you could now hear a raven calling from across town. These are projected figures; no independent measurement of savings was found.",
+  "what_they_learned": "Community members linked the project to self-sufficiency, with one heritage interpreter telling CBC the community was becoming more self-sufficient like its ancestors. Leaders also stressed that winter darkness means diesel is still needed for part of the year.",
+  "quote": {
+   "text": "Our young leaders, you know, they've had this vision for years now,",
+   "source": 1
+  },
+  "why_it_matters": "One small solar farm will not decarbonise the North. But Old Crow shows that a remote Indigenous community can own a renewable energy project, cut its dependence on flown-in fuel and set terms that suit its land and people.",
+  "setbacks": "Funding and a power purchase agreement both had to be secured after the first proposal (CBC). The COVID-19 pandemic delayed construction and the battery delivery by air (CBC, 2020). Permafrost heaving required adjustable footings, and the array cannot meet winter demand, so diesel generators still run in the darker months (APTN).",
+  "copy_this": {
+   "problem": "Remote community dependent on diesel or other imported fuel for power.",
+   "what": "Develop a community-owned solar project with storage and an agreement to sell power to the local grid operator.",
+   "materials": "Feasibility study, solar panels, inverters, batteries, footings suited to local ground conditions.",
+   "cost": "High",
+   "skills": "Project management, engineering advice, grant writing, negotiation with utilities and regulators.",
+   "time": "Several years from idea to switch-on.",
+   "people": "Community leadership, youth and elders, plus technical partners.",
+   "difficulty": "Hard",
+   "risks": "Funding gaps, regulatory delays, ground movement, limited winter output.",
+   "adapt": "Start with a feasibility study and community consultation; keep elders' land-use priorities in the design.",
+   "lessons": "Persistence over years and a formal power purchase agreement made the project viable."
+  },
+  "evidence": "documented",
+  "sources": [
+   {
+    "title": "A 'large step forward': Arctic First Nation goes solar",
+    "publisher": "APTN News",
+    "author": "Sara Connors",
+    "date": "2021-09-02",
+    "url": "https://www.aptnnews.ca/national-news/a-large-step-forward-arctic-first-nation-goes-solar/",
+    "type": "reputable-journalism",
+    "claim": "Completion Aug 2021; 2,160 panels; 189,000 L diesel and 680 t CO2e a year; 24% cut; winter limits; climate impacts; raven quote."
+   },
+   {
+    "title": "Indigenous community in Northern Canada to offset diesel with solar panels",
+    "publisher": "Radio Canada International / CBC News",
+    "author": "Meagan Deuling",
+    "date": "2018-06-25",
+    "url": "https://www.rcinet.ca/eye-on-the-arctic/2018/06/25/yukon-north-panels-renewables-pollution/",
+    "type": "reputable-journalism",
+    "claim": "25-year agreement with ATCO; only fly-in community in Yukon; young leaders' vision; berry bushes kept at elders' request; Chief Charlie quote."
+   },
+   {
+    "title": "Old Crow looks to solar power to cut diesel use",
+    "publisher": "CBC News",
+    "author": "",
+    "date": "2016",
+    "url": "https://amp.cbc.ca/news/canada/north/old-crow-solar-power-proposal-yukon-1.3674277",
+    "type": "reputable-journalism",
+    "claim": "Original proposal to YESAB; reasons (emissions, energy security, economy); funding and agreement still needed."
+   },
+   {
+    "title": "Old Crow waiting to flip the switch on new solar array",
+    "publisher": "CBC News",
+    "author": "Mike Rudyk",
+    "date": "2020-07-20",
+    "url": "https://amp.cbc.ca/lite/story/1.5654514",
+    "type": "reputable-journalism",
+    "claim": "Pandemic delays; battery delivery by aircraft; permafrost heaving and adjustable footings."
+   },
+   {
+    "title": "Arctic solar farm brings light to clean energy challenge",
+    "publisher": "Crown-Indigenous Relations and Northern Affairs Canada",
+    "author": "",
+    "date": "2022",
+    "url": "https://www.rcaanc-cirnac.gc.ca/eng/1655146980722",
+    "type": "government",
+    "claim": "940 kW array with 616 kWh storage; $7.89 million federal contribution; 680 t CO2 a year expected."
+   },
+   {
+    "title": "Yukon Vuntut Gwitchin solar farm (CBC North report on switch-on)",
+    "publisher": "CBC News",
+    "author": "",
+    "date": "2021",
+    "url": "https://amp.cbc.ca/news/canada/north/yukon-vuntut-gwitchin-solar-farm-1.6015144",
+    "type": "reputable-journalism",
+    "claim": "Generators from the 1970s; ~25% diesel cut; ability to sell banked power to fund further renewables; self-sufficiency quote."
+   }
+  ],
+  "editorial_status": "published",
+  "published": "2026-10-09",
+  "display_name": "the Vuntut Gwitchin"
+ },
+ {
+  "slug": "brave-women-of-kruscica-river-bosnia",
+  "title": "The village women who guarded their river for 503 days",
+  "person": "The Brave Women of Kruščica (including Maida Bilal)",
+  "actor_type": "community",
+  "country": "Bosnia and Herzegovina",
+  "country_code": "BA",
+  "region": "Europe",
+  "city": "Kruščica, Vitez municipality",
+  "lat": 44.16,
+  "lng": 17.79,
+  "started_year": 2017,
+  "status": "ongoing",
+  "status_note": "The bridge blockade ended in December 2018 after a court upheld objections to the plants. In 2020 EuroNatur reported investors pursuing a new permit. In a 2024 interview (republished 2025) Maida Bilal said a 2022 Federation ban on small hydropower still needed real implementation. No source found confirms the plants were finally cancelled.",
+  "scale": "community",
+  "occupation": "village residents; Maida Bilal is president of the Krug Života (Circle of Life) foundation",
+  "pillar": "people-making-change",
+  "topics": [
+   "water",
+   "biodiversity",
+   "conservation",
+   "community-action",
+   "environmental-activism",
+   "environmental-justice"
+  ],
+  "sdgs": [
+   6,
+   15,
+   16
+  ],
+  "problem": "biodiversity-loss",
+  "summary": "Women in a Bosnian village held a round-the-clock blockade of a bridge for 503 days to stop two small hydropower plants on the river that supplies their water.",
+  "small_thing": "On 2 August 2017 women from Kruščica put up a tent by the bridge to their river and began taking turns, day and night, to keep construction machinery from passing.",
+  "problem_text": "Two small hydropower plants were planned on the Kruščica River, which residents depend on for drinking water. EuroNatur reports that around 3,000 new hydropower plants were planned or under construction across the Balkans.",
+  "why_started": "Residents opposed the plants to protect the river, their clean drinking water and the surrounding nature, according to Balkan Diskurs. EuroNatur reports they wanted to stop two planned plants on their river.",
+  "what_they_did": "The women occupied the bridge used by construction vehicles and guarded it in shifts, through a cold winter, for 503 days. Alongside the blockade, residents and supporting NGOs challenged the plants' permits in court.\n\nIn August 2018 about 200 villagers and neighbours turned back a renewed attempt to bring in workers and machinery (EuroNatur). After the blockade ended, Maida Bilal went on to found the Krug Života foundation in 2021 and to campaign on rivers across Bosnia and Herzegovina.",
+  "what_changed": "According to EuroNatur, a cantonal court revoked the environmental permit in June 2018 and, in late 2018, upheld objections to the plants, after which the women left the bridge. The group received the EuroNatur Award in 2019, and Maida Bilal received the 2021 Goldman Environmental Prize on their behalf. Balkan Diskurs reports that in June 2022 the Federation parliament adopted a decision banning construction of small hydropower plants; Bilal says it has yet to be properly implemented.",
+  "what_they_learned": "Bilal has said that a ban on paper is not enough without serious implementation, and that citizens and authorities share responsibility for protecting the environment.",
+  "quote": {
+   "text": "We defended the river for 503 days, 24 hours a day.",
+   "source": 2
+  },
+  "why_it_matters": "One village blockade cannot decide the future of all Balkan rivers. But Kruščica shows how ordinary residents, many of them women with no campaigning background, combined persistence on the ground with legal action to protect a local water source.",
+  "setbacks": "On 24 August 2017 police cleared the bridge; according to the Coalition for Rivers Protection, reported by Arnika, at least 27 women and two men needed medical care and more than 27 people were detained, while the cantonal interior ministry said officers used no inadequate force. The Bosnian Human Rights Ombudsman opened an investigation. Bilal has described sleepless nights, illness and inability to work during the protest. In 2020 EuroNatur reported investors seeking a new permit and residents barred from a public hearing.",
+  "copy_this": {
+   "problem": "A development that threatens a local river or water supply.",
+   "what": "Organise residents for peaceful, sustained presence, while working with lawyers and NGOs to test permits through official channels.",
+   "materials": "Shelter, a rota, documentation (photos, permit records), legal support contacts.",
+   "cost": "Low",
+   "skills": "Community organising, record-keeping, understanding planning and environmental permit law, media contact.",
+   "time": "Months to years.",
+   "people": "A committed core group with wider village backing and outside legal and NGO allies.",
+   "difficulty": "Hard",
+   "risks": "Arrest, physical harm, legal costs, burnout and lost income. Know your legal rights and stay non-violent.",
+   "adapt": "Start with legal and procedural routes; seek support from established environmental organisations before direct action.",
+   "lessons": "Legal challenges and visible local presence reinforced each other; victories may need defending again later."
+  },
+  "evidence": "documented",
+  "sources": [
+   {
+    "title": "Brave Women of Kruščica receive EuroNatur Award 2019",
+    "publisher": "EuroNatur",
+    "author": "",
+    "date": "2019-10",
+    "url": "https://euronatur.org/en/about-euronatur/press/press-releases/brave-women-of-kruscica-receive-euronatur-award-2019",
+    "type": "award-body",
+    "claim": "Blockade August 2017–December 2018; two planned plants; court upheld objections late 2018; ~3,000 Balkan hydropower plants planned; 2019 award."
+   },
+   {
+    "title": "Kruščica's Bridge of Brave Women",
+    "publisher": "Balkan Diskurs",
+    "author": "Amir Barleci",
+    "date": "2025-03-10",
+    "url": "https://balkandiskurs.com/en/2025/03/10/kruscicas-bridge-of-brave-women/",
+    "type": "reputable-journalism",
+    "claim": "Vitez municipality; motives; 505 days (other sources say 503); 22 women and one man arrested; Krug Života founded 2021; June 2022 ban; Bilal's personal costs and call for implementation."
+   },
+   {
+    "title": "Bosnian woman awarded 'Green Nobel'",
+    "publisher": "Yahoo News (wire video report)",
+    "author": "",
+    "date": "2021-06",
+    "url": "https://news.yahoo.com/bosnian-woman-awarded-green-nobel-141029449.html",
+    "type": "reputable-journalism",
+    "claim": "Blockade began 2 August 2017, tent and shifts, 503 days; 2021 Goldman Prize; quote."
+   },
+   {
+    "title": "Another victory for the 'Brave Women of Kruščica'",
+    "publisher": "EuroNatur",
+    "author": "",
+    "date": "2018-08-23",
+    "url": "https://www.euronatur.org/en/what-we-do/news/another-victory-for-the-brave-women-of-kruscica",
+    "type": "organisational",
+    "claim": "June 2018 court revoked environmental permit; ~200 villagers turned back machinery 17 August 2018."
+   },
+   {
+    "title": "Police violence in Kruščica investigated by the Ombudsmen of B&H",
+    "publisher": "Arnika",
+    "author": "",
+    "date": "2017-08",
+    "url": "https://arnika.org/en/news/police-violence-in-kruscica-investigated-by-the-ombudsmen-of-b-h",
+    "type": "organisational",
+    "claim": "24 August 2017 police clearance, reported injuries and detentions (Coalition for Rivers Protection account), ministry denial, Ombudsman investigation."
+   },
+   {
+    "title": "The 'Brave Women of Kruščica' must fight again",
+    "publisher": "EuroNatur",
+    "author": "",
+    "date": "2020-06-19",
+    "url": "https://www.euronatur.org/en/about-euronatur/press/press-releases/the-brave-women-of-kruscica-must-fight-again",
+    "type": "organisational",
+    "claim": "Investors pursuing new permit in 2020; residents barred from hearing."
+   },
+   {
+    "title": "Bosnian women win award after occupying bridge for 503 days to prevent hydropower plant construction",
+    "publisher": "Exit News",
+    "author": "",
+    "date": "2021-06-19",
+    "url": "https://exit.al/en/bosnian-women-win-award-after-occupying-bridge-for-503-days-to-prevent-hydropower-plant-construction",
+    "type": "reputable-journalism",
+    "claim": "2021 Goldman Prize to Maida Bilal on behalf of the women; 503 days; violent eviction attempts."
+   }
+  ],
+  "editorial_status": "published",
+  "published": "2026-10-09",
+  "display_name": "the Brave Women of Kruščica"
  }
 ]
