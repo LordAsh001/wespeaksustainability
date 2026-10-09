@@ -73,6 +73,8 @@ def initials(name):
 
 
 def first_name(s):
+    if s.get("display_name"):
+        return s["display_name"]
     p = s["person"]
     if s.get("actor_type") in ("community", "organisation") or " and " in p or "," in p:
         return p
@@ -190,7 +192,7 @@ LOGO = ('<svg class="brand-mark" viewBox="0 0 40 40" aria-hidden="true"><circle 
         '<circle cx="20" cy="12" r="2.6" fill="#b9871f"/><path d="M12 28c3 2 13 2 16 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>')
 
 NAV = [("/stories/", "Stories"), ("/map/", "Map"), ("/copy-this/", "Copy This"),
-       ("/solutions/", "Solutions"), ("/legacy/", "Legacy"), ("/about/", "About")]
+       ("/solutions/", "Solutions"), ("/legacy/", "Legacy"), ("/insights/", "Insights"), ("/about/", "About")]
 
 
 def _asset_version():
@@ -276,13 +278,14 @@ def footer():
    <div><h4>Explore</h4><ul>
     <li><a href="/stories/">All stories</a></li><li><a href="/map/">World map</a></li>
     <li><a href="/solutions/">One problem, many solutions</a></li><li><a href="/copy-this/">Copy This</a></li>
-    <li><a href="/what-didnt-work/">What didn't work?</a></li><li><a href="/people/">People</a></li></ul></div>
+    <li><a href="/what-didnt-work/">What didn't work?</a></li><li><a href="/people/">People</a></li></ul>
+    <h4 style="margin-top:18px">Research</h4><ul><li><a href="/insights/">Insights</a></li><li><a href="/data/">Open data</a></li><li><a href="/methodology/">Methodology</a></li><li><a href="/for-institutions/">For institutions</a></li></ul></div>
    <div><h4>Remember</h4><ul>
     <li><a href="/legacy/">Legacy</a></li><li><a href="/environmental-defenders/">Environmental defenders</a></li>
     <li><a href="/footprints/">They left a footprint</a></li><li><a href="/1000-small-things/">The 1,000 Small Things Project</a></li></ul></div>
    <div><h4>Take part</h4><ul>
     <li><a href="/submit/">Tell your story</a></li><li><a href="/corrections/">Report a correction</a></li>
-    <li><a href="/editorial-policy/">Editorial &amp; verification policy</a></li><li><a href="/about/">About</a></li></ul></div>
+    <li><a href="/editorial-policy/">Editorial &amp; verification policy</a></li><li><a href="/about/">About</a></li><li><a href="/founder/">Founder &amp; talks</a></li></ul></div>
   </div>
   <div class="foot-note">
    <span>Stories are published with sources. Spotted an error? <a href="/corrections/">Tell us</a>.</span>
@@ -363,7 +366,8 @@ def sdg_list(sdgs):
 
 
 def write(path, content):
-    fp = os.path.join(OUT, path.strip("/"), "index.html") if not path.endswith(".html") and not path.endswith(".xml") and not path.endswith(".txt") and not path.endswith(".json") else os.path.join(OUT, path.strip("/"))
+    is_file = "." in path.rstrip("/").split("/")[-1]
+    fp = os.path.join(OUT, path.strip("/")) if is_file else os.path.join(OUT, path.strip("/"), "index.html")
     os.makedirs(os.path.dirname(fp), exist_ok=True)
     with open(fp, "w", encoding="utf-8") as f:
         f.write(content)
@@ -509,6 +513,17 @@ def page_home():
  </div>
 </div></section>
 
+<section class="block"><div class="wrap">
+ <div class="block-head"><div><span class="eyebrow">For researchers and policymakers</span><h2>The missing evidence on community action</h2></div>
+ <p>Global sustainability data rarely sees what households, farmers, fishers and neighbourhoods actually do. This archive makes it searchable, citable and open.</p></div>
+ <div class="grid">
+  <a class="problem" href="/insights/"><h3>Insights</h3><p style="margin:0">What {ST['stories']} documented actions show about scale, cost, setbacks and gaps.</p></a>
+  <a class="problem" href="/data/"><h3>Open data</h3><p style="margin:0">Download the archive as CSV or JSON under CC BY 4.0.</p></a>
+  <a class="problem" href="/methodology/"><h3>Methodology</h3><p style="margin:0">Inclusion rules, evidence levels, classification and limitations.</p></a>
+  <a class="problem" href="/for-institutions/"><h3>For institutions</h3><p style="margin:0">How governments, UN agencies and NGOs can use and contribute.</p></a>
+ </div>
+</div></section>
+
 <section class="block" style="background:var(--paper-2)"><div class="wrap narrow" style="text-align:center">
  <span class="eyebrow">Join the movement</span>
  <h2>Are you doing something small to make your community better?</h2>
@@ -559,6 +574,7 @@ def page_story(s):
   <section><h2>What they learned</h2>{paras(s['what_they_learned'])}{quote_html}</section>
   {copy_html}
   <section style="margin-top:34px"><h2>Why it matters</h2><div class="why">{paras(s['why_it_matters'])}</div></section>
+  {frameworks_html(s['problem'])}
   {f'<section id="setbacks"><h2>What didn\'t work</h2>{paras(s["setbacks"])}</section>' if s.get("setbacks") else ""}
   {f'<section><h2>Editor\'s note</h2><p class="note">{e(s["status_note"])}</p></section>' if s.get("status_note") else ""}
   <section class="sources" id="sources"><h2>Sources: how do we know?</h2>
@@ -575,6 +591,7 @@ def page_story(s):
     <dt>Scale</dt><dd>{e(s['scale'].title())}</dd><dt>Type</dt><dd>{e(s['actor_type'].title())}</dd></dl></div>
    <div class="aside-box"><h3>Sustainability connection</h3>{topic_chips(s['topics'])}</div>
    <div class="aside-box"><h3>Sustainable Development Goals</h3>{sdg_list(s.get('sdgs', []))}</div>
+   {cite_box(s['title'], BASE + '/stories/' + s['slug'] + '/')}
    <div class="aside-box"><h3>Share</h3><p style="margin:0">
     <a href="https://www.linkedin.com/sharing/share-offsite/?url={BASE}/stories/{s['slug']}/" rel="noopener">LinkedIn</a> ·
     <a href="https://www.facebook.com/sharer/sharer.php?u={BASE}/stories/{s['slug']}/" rel="noopener">Facebook</a> ·
@@ -689,7 +706,8 @@ def page_solutions():
 <h2 style="font-size:1.3rem;margin-top:28px">Side by side</h2>
 <div class="table-wrap"><table><caption class="sr-only">Approaches to {e(info['label'])}</caption><thead><tr><th scope="col">Who</th><th scope="col">Where</th><th scope="col">How it started</th><th scope="col">Scale</th><th scope="col">Evidence</th></tr></thead><tbody>{rows}</tbody></table></div>
 <div class="grid" style="margin-top:32px">{"".join(story_card(s) for s in items)}</div>
-<p style="margin-top:28px"><strong>What can they learn from one another?</strong> Read the "Copy this" section of each story to compare materials, costs and risks.</p></div>"""
+<p style="margin-top:28px"><strong>What can they learn from one another?</strong> Read the "Copy this" section of each story to compare materials, costs and risks.</p>
+<div class="narrow story-body" style="margin-top:28px">{frameworks_html(p)}</div></div>"""
         else:
             b += '<div class="wrap" style="padding-bottom:72px"><p class="empty">No stories on this problem yet. <a href="/submit/">If you are working on it, tell us your story.</a></p></div>'
         write(f"/solutions/{p}/", layout(f"/solutions/{p}/", f"{info['label']}: many solutions", f"How people in different countries are tackling {info['label'].lower()}.", b))
@@ -734,6 +752,7 @@ def mem_page(m):
  </div>
  <aside><div class="sticky">
   <div class="aside-box"><h3>Life</h3><dl><dt>Born</dt><dd>{e(fmt_date(m['born']))}</dd><dt>Died</dt><dd>{e(fmt_date(m['died']))}</dd><dt>Country</dt><dd>{e(m['country'])}</dd><dt>Work</dt><dd>{e(m['occupation'])}</dd></dl></div>
+  {cite_box(m['name'], BASE + '/legacy/' + m['slug'] + '/', 'profile')}
   <div class="aside-box"><h3>Connected topics</h3><ul class="chips">{"".join(f'<li><span class="chip">{e(TOPICS.get(t, t))}</span></li>' for t in m.get('topics', []) if t in TOPICS)}</ul></div>
  </div></aside>
 </div>
@@ -767,7 +786,8 @@ def page_legacy():
 <div class="wrap" style="padding-bottom:40px"><div class="grid">{"".join(mem_card(m) for m in defs)}</div></div>
 <section class="block"><div class="wrap narrow" id="labels"><h2>How we describe how someone died</h2><p>Each profile carries exactly one label, chosen from what the sources support, with legal outcomes described in the text:</p>
 <ul>{"".join(f"<li><strong>{e(l)}</strong></li>" for l in labels)}</ul>
-<p>We never say someone was "killed for environmental activism" unless reliable sources substantiate it. Labels are reviewed when new court rulings or investigations are published.</p></div></section>"""
+<p>We never say someone was "killed for environmental activism" unless reliable sources substantiate it. Labels are reviewed when new court rulings or investigations are published.</p>
+<h2>The protections that exist</h2><ul>{"".join(f"<li><strong>{e(a)}</strong>: {e(b)}</li>" for a, b in DEFENDER_FRAMEWORKS)}</ul></div></section>"""
     write("/environmental-defenders/", layout("/environmental-defenders/", "Environmental defenders", "Respectful, sourced profiles of environmental defenders who lost their lives, with careful labels for how they died.", b, zone="memorial-zone"))
     b = f"""<div class="wrap story-head"><nav class="breadcrumb"><a href="/legacy/">Legacy</a></nav><span class="eyebrow">Those who left their footprint</span><h1>What did they leave behind?</h1>
 <p class="lede">People who died of natural or other causes, whose science, teaching, farming, writing or organising still influences how humanity understands and protects Earth.</p></div>
@@ -960,6 +980,268 @@ def extras():
     write("/data/stories.json", json.dumps(ds, ensure_ascii=False, indent=1))
 
 
+# ---------- institutional & research layer ----------
+FRAMEWORKS = {
+    "plastic-waste": [("SDG 12.5", "Substantially reduce waste generation through prevention, reduction, recycling and reuse."),
+                      ("SDG 14.1", "Prevent and significantly reduce marine pollution of all kinds."),
+                      ("UNEA Resolution 5/14 (2022)", "Launched negotiations on an international legally binding instrument on plastic pollution.")],
+    "food-waste": [("SDG 12.3", "Halve per capita global food waste at the retail and consumer levels and reduce food losses.")],
+    "water-scarcity": [("SDG 6.1 and 6.4", "Safe and affordable drinking water for all; increase water-use efficiency and address scarcity."),
+                       ("Paris Agreement, Article 7", "Enhancing adaptive capacity, strengthening resilience and reducing vulnerability to climate change.")],
+    "deforestation": [("SDG 15.2", "Halt deforestation, restore degraded forests and increase afforestation and reforestation."),
+                      ("Kunming-Montreal Global Biodiversity Framework, Targets 2 and 3", "Restore at least 30% of degraded ecosystems and conserve 30% of land and sea by 2030.")],
+    "biodiversity-loss": [("Kunming-Montreal Global Biodiversity Framework, Targets 2, 3 and 22", "Restoration, area-based conservation, and full participation of Indigenous peoples and local communities, including protection of environmental human rights defenders."),
+                          ("SDG 14 and SDG 15", "Life below water and life on land.")],
+    "soil-degradation": [("SDG 15.3", "Combat desertification, restore degraded land and soil, and strive for a land-degradation-neutral world."),
+                         ("UNCCD Land Degradation Neutrality", "The framework countries use to set voluntary land restoration targets.")],
+    "air-pollution": [("SDG 3.9 and 11.6", "Reduce deaths and illnesses from air pollution; reduce the environmental impact of cities, including air quality.")],
+    "energy": [("SDG 7.1 and 7.2", "Universal access to affordable, reliable and modern energy; increase the share of renewable energy.")],
+    "agricultural-waste": [("SDG 12.5", "Reduce waste through prevention, reduction, recycling and reuse.")],
+    "ocean-pollution": [("SDG 14.1", "Prevent and significantly reduce marine pollution of all kinds.")],
+    "fast-fashion": [("SDG 12", "Sustainable consumption and production patterns.")],
+    "urban-waste": [("SDG 11.6 and 12.5", "Improve municipal waste management; reduce waste through prevention, recycling and reuse."),
+                    ("SDG 8.3", "Support decent job creation, including formalisation of informal work.")],
+    "climate-adaptation": [("Paris Agreement, Article 7", "The global goal on adaptation: enhancing adaptive capacity and resilience."),
+                           ("SDG 13.1", "Strengthen resilience and adaptive capacity to climate-related hazards and natural disasters.")],
+}
+DEFENDER_FRAMEWORKS = [("Escazú Agreement, Article 9", "Latin America and the Caribbean's regional treaty obliging states to guarantee a safe environment for human rights defenders in environmental matters."),
+                       ("Kunming-Montreal Global Biodiversity Framework, Target 22", "Includes full protection for environmental human rights defenders."),
+                       ("UN Declaration on Human Rights Defenders (1998)", "Recognises everyone's right to promote and strive for the protection of human rights; the UN applies it to environmental human rights defenders.")]
+
+FOUNDER = {
+    "name": "Shagbaor Hycent Amool",
+    "role": "Founder and editor",
+    "bio": [
+        "Shagbaor Hycent Amool is an environmental engineer and doctoral researcher in Environmental Engineering at the University of Northern British Columbia (UNBC), Canada. His research studies aerobic granular sludge treating brewery wastewater, and whether valuable biopolymers such as curdlan can be recovered from it, turning a waste stream into a resource.",
+        "He holds an MSc in Global Sustainability Engineering (Distinction) from Heriot-Watt University, UK, funded by a Petroleum Technology Development Fund (PTDF) Overseas Scholarship, and a first-class BEng in Agricultural and Environmental Engineering from the University of Agriculture Makurdi (now Joseph Sarwuan Tarka University Makurdi), Nigeria.",
+        "He is a Lecturer at the Federal Polytechnic Wannune, Nigeria (on study leave), where he has taught agricultural technology, sustainable design and engineering materials, and the founder of Via Scholaris, an online learning platform. He is a member of the Council for the Regulation of Engineering in Nigeria (COREN), the Nigerian Society of Engineers and the International Association of Engineers.",
+        "He started We Speak Sustainability because the people doing the most practical sustainability work are often the least visible in the evidence that shapes policy.",
+    ],
+    "topics": [
+        ("What grassroots action can teach climate and development policy", "Evidence from the archive on what communities actually do, what it costs, and what makes ideas travel."),
+        ("Replication, not just inspiration", "How small, documented actions can be adapted across countries, and what gets lost when they are scaled carelessly."),
+        ("Remembering environmental defenders responsibly", "How to document lives lost in environmental defence with care, evidence and respect."),
+        ("Wastewater as a resource", "Circular-economy engineering: recovering value from industrial wastewater."),
+    ],
+}
+
+
+def cite_box(title, url, kind="story"):
+    yr = TODAY.year
+    return (f'<div class="aside-box cite"><h3>Cite this {kind}</h3>'
+            f'<p style="margin:0;font-size:.88rem">We Speak Sustainability ({yr}). <em>{e(title)}</em>. {e(url)} (accessed {TODAY.day} {MONTHS[TODAY.month - 1]} {yr}).</p>'
+            f'<p style="margin:.6em 0 0"><button type="button" class="linkbtn" data-copy="We Speak Sustainability ({yr}). {e(title)}. {e(url)}">Copy citation</button> · '
+            f'<button type="button" class="linkbtn" data-print>Print or save as PDF</button></p></div>')
+
+
+def frameworks_html(problem):
+    fw = FRAMEWORKS.get(problem, [])
+    if not fw:
+        return ""
+    items = "".join(f"<li><strong>{e(a)}</strong>: {e(b)}</li>" for a, b in fw)
+    return (f'<section class="policy"><h2>Policy connection</h2><p class="muted" style="font-size:.9rem">International commitments this kind of action contributes to. '
+            f'Listing a framework does not mean the person or group was working towards it.</p><ul>{items}</ul></section>')
+
+
+def page_data():
+    import csv
+    import io
+    cols = ["id", "title", "person_or_group", "actor_type", "country", "country_code", "region", "location", "latitude", "longitude",
+            "started_year", "status", "scale", "pillar", "problem", "topics", "sdgs", "evidence_level", "copy_this_difficulty",
+            "copy_this_cost", "has_documented_setbacks", "number_of_sources", "url"]
+    buf = io.StringIO()
+    w = csv.writer(buf)
+    w.writerow(cols)
+    for s in STORIES:
+        ct = s.get("copy_this") or {}
+        w.writerow([s["slug"], s["title"], s["person"], s["actor_type"], s["country"], s["country_code"], s["region"], s["city"], s["lat"], s["lng"],
+                    s["started_year"], s["status"], s["scale"], s["pillar"], s["problem"], ";".join(s["topics"]), ";".join(str(x) for x in s.get("sdgs", [])),
+                    s["evidence"], ct.get("difficulty", ""), ct.get("cost", ""), "yes" if s.get("setbacks") else "no", len(s["sources"]), f"{BASE}/stories/{s['slug']}/"])
+    write("/data/stories.csv", buf.getvalue())
+    mbuf = io.StringIO()
+    mw = csv.writer(mbuf)
+    mw.writerow(["id", "name", "category", "country", "born", "died", "death_label", "issue", "number_of_sources", "url"])
+    for m in LEGACY:
+        mw.writerow([m["slug"], m["name"], m["category"], m["country"], m["born"], m["died"], m.get("death_label", ""), m["earth"], len(m["sources"]), f"{BASE}/legacy/{m['slug']}/"])
+    write("/data/legacy.csv", mbuf.getvalue())
+    dictionary = [("id", "Permanent identifier, also the page address"), ("actor_type", "individual, group, community or organisation"),
+                  ("location", "Town or community; never a home address"), ("latitude / longitude", "Town centre, rounded to two decimals for safety"),
+                  ("started_year", "Year the action began, from sources (conflicts explained on the story page)"), ("scale", "household to international"),
+                  ("problem", "One of 13 problems in our taxonomy"), ("topics", "Semicolon-separated tags from a controlled list of 33 topics"),
+                  ("sdgs", "Only goals that clearly apply"), ("evidence_level", "verified, documented, self-reported or insufficient (see methodology)"),
+                  ("copy_this_difficulty / cost", "Editorial judgement for someone replicating the idea; cost is qualitative"),
+                  ("has_documented_setbacks", "Whether sources describe something that did not work"), ("number_of_sources", "Count of cited sources")]
+    rows = "".join(f"<tr><th scope=row>{e(a)}</th><td>{e(b)}</td></tr>" for a, b in dictionary)
+    body = head("Open data", "The archive as open data",
+                "Every published story and profile, as structured data you can download, analyse and reuse. No private contributor information is ever included.")
+    body += f"""<div class="wrap narrow prose" style="padding-bottom:72px">
+<div class="stats" style="margin-bottom:28px"><div class="stat"><b>{ST['stories']}</b><span>stories</span></div><div class="stat"><b>{ST['countries']}</b><span>countries</span></div><div class="stat"><b>{ST['memorials']}</b><span>legacy profiles</span></div><div class="stat"><b>{sum(len(s['sources']) for s in STORIES) + sum(len(m['sources']) for m in LEGACY)}</b><span>cited sources</span></div></div>
+<h2>Download</h2>
+<ul class="downloads">
+<li><a class="btn" href="/data/stories.csv" download>Stories (CSV)</a> <a class="btn ghost" href="/data/stories.json">Stories (JSON)</a></li>
+<li><a class="btn ghost" href="/data/legacy.csv" download>Legacy profiles (CSV)</a> <a class="btn ghost" href="/map-data.json">Map points (JSON)</a></li>
+</ul>
+<p class="muted">Version {TODAY.isoformat()}. Updated automatically whenever a story is published or corrected.</p>
+<h2>Licence and citation</h2>
+<p>Our written summaries and the dataset are released under <a href="https://creativecommons.org/licenses/by/4.0/" rel="license">Creative Commons Attribution 4.0 (CC BY 4.0)</a>. Photographs keep their own licences, shown under each image. Please cite:</p>
+<p class="note">Amool, S. H. (ed.) ({TODAY.year}). <em>We Speak Sustainability: a living archive of grassroots sustainability action</em> [Dataset, version {TODAY.isoformat()}]. {BASE}/data/</p>
+<h2>Data dictionary</h2>
+<div class="table-wrap"><table><caption class="sr-only">Fields in the stories dataset</caption><tbody>{rows}</tbody></table></div>
+<h2>Limitations</h2>
+<ul><li>The archive is small and not a random sample. It reflects what has been documented in reliable sources, which over-represents award winners and English-language coverage.</li>
+<li>Impact figures are not included as fields, because most are self-reported or measured in incompatible ways. They are attributed in each story's text.</li>
+<li>Coordinates are deliberately imprecise.</li></ul>
+<p>Read the full <a href="/methodology/">methodology</a> or see what the data shows so far in <a href="/insights/">Insights</a>.</p>
+</div>"""
+    ld = {"@context": "https://schema.org", "@type": "Dataset", "name": "We Speak Sustainability: grassroots sustainability action archive",
+          "description": "Structured records of documented grassroots sustainability actions worldwide, with location, problem, topics, SDGs, evidence level and replication attributes.",
+          "url": f"{BASE}/data/", "license": "https://creativecommons.org/licenses/by/4.0/", "version": TODAY.isoformat(),
+          "creator": {"@type": "Person", "name": FOUNDER["name"]}, "spatialCoverage": "Global",
+          "distribution": [{"@type": "DataDownload", "encodingFormat": "text/csv", "contentUrl": f"{BASE}/data/stories.csv"},
+                           {"@type": "DataDownload", "encodingFormat": "application/json", "contentUrl": f"{BASE}/data/stories.json"}]}
+    write("/data/", layout("/data/", "Open data", "Download the We Speak Sustainability archive as open data (CSV and JSON, CC BY 4.0).", body, jsonld=ld))
+
+
+def page_methodology():
+    body = head("Methodology", "How the archive is built",
+                "A transparent account of what we include, how we check it, and how we classify it, so researchers and institutions can judge how far to rely on it.")
+    body += f"""<div class="wrap narrow prose" style="padding-bottom:72px">
+<h2>1. What counts as a story</h2>
+<p>A story documents a real action, by identifiable people or a community, that addresses an environmental or sustainability problem in a specific place. We prioritise actions that began small, that are led by people outside large institutions, and that others could adapt. Scale is never the main test.</p>
+<h2>2. Sources and evidence</h2>
+<p>Each story needs at least two sources independent of the people involved: UN agencies, award foundations, government bodies, peer-reviewed research or reputable journalism. Organisations' own materials may be used, but claims drawn from them are attributed. Every source is listed with the specific claim it supports. Legacy profiles need at least three sources, including one institutional source.</p>
+<h2>3. Evidence levels</h2>
+<ul>{"".join(f"<li><strong>{e(v['label'])}</strong>: {e(v['text'])}</li>" for v in EVID.values())}</ul>
+<p>At launch, stories are rated <em>Documented</em> or <em>Self-reported</em>. <em>Verified</em> is reserved for stories our editors have checked directly, usually through an interview and supporting evidence.</p>
+<h2>4. Handling numbers</h2>
+<p>We never estimate or aggregate environmental impact. Figures appear only when a source states them, with that source named. Where sources disagree, we give each figure and its source, and explain the conflict in an editor's note.</p>
+<h2>5. Classification</h2>
+<ul><li><strong>Problems:</strong> 13 recurring problems (for example plastic waste, water, soil degradation) so similar actions can be compared across countries.</li>
+<li><strong>Topics:</strong> a controlled list of {len(TOPICS)} topics; stories can carry several.</li>
+<li><strong>SDGs:</strong> added only where the link is direct. We do not label every story with every plausible goal.</li>
+<li><strong>Scale and actor type:</strong> household to international; individual, group, community or organisation.</li></ul>
+<h2>6. Replication guidance</h2>
+<p>"Copy this" sections are editorial guidance written from the sources: materials, skills, time, people, difficulty, qualitative cost, risks and how to adapt. They are a starting point, not engineering advice.</p>
+<h2>7. Memorial profiles</h2>
+<p>Deaths connected with environmental defence carry exactly one label: confirmed killing, alleged killing, death during environmental conflict, death while engaged in environmental defence, cause of death disputed, circumstances under investigation, or executed by the state. Court findings are separated from allegations.</p>
+<h2>8. Safety and privacy</h2>
+<p>Locations are shown at town level only. Contributors may be anonymous. We take extra care with defenders, Indigenous communities, children and land disputes.</p>
+<h2>9. Known limitations</h2>
+<ul><li>Coverage is shaped by what reliable sources have already reported, which favours English-language media and award winners.</li>
+<li>Some stories rely on sources several years old; current status is noted where it could not be confirmed.</li>
+<li>Classification involves editorial judgement. The full data is open so others can check and re-code it.</li></ul>
+<h2>10. Corrections and versions</h2>
+<p>Anyone can <a href="/corrections/">report an error</a>. Corrections are noted on the story with a date. The <a href="/data/">dataset</a> is versioned by date.</p>
+</div>"""
+    write("/methodology/", layout("/methodology/", "Methodology", "Inclusion criteria, evidence standards, classification and limitations of the We Speak Sustainability archive.", body))
+
+
+def page_insights():
+    n = len(STORIES)
+
+    def table(counter, label, total=n):
+        mx = max(counter.values()) if counter else 1
+        rows = "".join(f'<div class="bar"><span>{e(k)}</span><i style="width:{v / mx * 100:.0f}%" aria-hidden="true"></i><b>{v}</b></div>' for k, v in counter.most_common())
+        return f'<figure class="chart"><figcaption>{e(label)}</figcaption><div class="bars">{rows}</div></figure>'
+    region = Counter(s["region"] for s in STORIES)
+    problem = Counter(PROBLEMS[s["problem"]]["label"] for s in STORIES)
+    scale = Counter(s["scale"].title() for s in STORIES)
+    actor = Counter(s["actor_type"].title() for s in STORIES)
+    decade = Counter(f"{(int(year(s['started_year'])) // 10) * 10}s" for s in STORIES if year(s["started_year"]).isdigit())
+    diff = Counter((s.get("copy_this") or {}).get("difficulty", "n/a") for s in STORIES)
+    cost = Counter((s.get("copy_this") or {}).get("cost", "n/a") for s in STORIES)
+    setb = sum(1 for s in STORIES if s.get("setbacks"))
+    low_cost = sum(1 for s in STORIES if (s.get("copy_this") or {}).get("cost") in ("Very low", "Low"))
+    ongoing = sum(1 for s in STORIES if s["status"] == "ongoing")
+    small = sum(1 for s in STORIES if s["scale"] in ("household", "neighbourhood", "community"))
+    sdg = Counter(f"SDG {x}" for s in STORIES for x in s.get("sdgs", []))
+    srcs = Counter(src.get("type", "other").replace("-", " ") for s in STORIES for src in s["sources"])
+    pct = lambda k: f"{k / n * 100:.0f}%"
+    body = head("Insights · working paper", "What the archive shows so far",
+                f"A descriptive analysis of the {n} published stories. These are patterns in a small, curated collection, not global estimates. The numbers update automatically as the archive grows.")
+    body += f"""<div class="wrap" style="padding-bottom:72px">
+<div class="stats" style="margin-bottom:32px">
+ <div class="stat"><b>{pct(small)}</b><span>operate at household, neighbourhood or community scale</span></div>
+ <div class="stat"><b>{pct(low_cost)}</b><span>rated very low or low cost to replicate</span></div>
+ <div class="stat"><b>{pct(setb)}</b><span>have documented setbacks</span></div>
+ <div class="stat"><b>{ST['countries']}</b><span>countries represented</span></div>
+</div>
+<div class="narrow prose">
+<h2>Key observations</h2>
+<ol>
+<li><strong>Small beginnings, varied reach.</strong> {small} of {n} actions still operate at household, neighbourhood or community scale. Many of the others grew to city, regional or wider scale from a small first step, described in "The small thing" on each story.</li>
+<li><strong>Replication rarely needs capital.</strong> {low_cost} of {n} ideas are rated very low or low cost to copy. Reading the stories, the scarce inputs are more often time, organisation and local knowledge than money.</li>
+<li><strong>Setbacks are the norm, and informative.</strong> Sources describe setbacks for {setb} of {n} stories: funding gaps, conflict, climate shocks, regulation and the difficulty of selling recycled products. These are collected in <a href="/what-didnt-work/">What didn't work?</a></li>
+<li><strong>The evidence base is thin where action is thickest.</strong> Few stories in the archive report independently measured impact; most figures come from the people or organisations involved. Investment in simple, community-owned monitoring would make local action far more visible to policy.</li>
+<li><strong>Coverage is uneven.</strong> Some regions and problems are barely represented, which says more about where reporting happens than where action happens. See the gaps below.</li>
+</ol>
+</div>
+<div class="charts">
+{table(region, "Stories by region")}
+{table(problem, "Stories by problem")}
+{table(scale, "Scale at which the action operates")}
+{table(actor, "Who leads the action")}
+{table(decade, "Decade the action began")}
+{table(sdg, "SDGs directly linked (stories can have several)")}
+{table(diff, "Difficulty to replicate (editorial rating)")}
+{table(cost, "Cost to replicate (qualitative)")}
+{table(srcs, "Types of sources cited")}
+</div>
+<div class="narrow prose">
+<h2>Gaps we are working to fill</h2>
+<p>Problems with no stories yet: {e(", ".join(PROBLEMS[p]["label"] for p in PROBLEMS if not PROBLEM_STORIES.get(p)) or "none")}. Under-represented: actions led by children, informal workers in Asia, and the Middle East and Central Asia. <a href="/submit/">Know a story that fills a gap?</a></p>
+<h2>Method and data</h2>
+<p>All figures are computed directly from the <a href="/data/">open dataset</a> using the rules in the <a href="/methodology/">methodology</a>. Cite as: Amool, S. H. (ed.) ({TODAY.year}). <em>What the archive shows so far</em>. We Speak Sustainability. {BASE}/insights/</p>
+</div></div>"""
+    write("/insights/", layout("/insights/", "Insights: what the archive shows", f"Descriptive analysis of {n} documented grassroots sustainability actions: scale, cost to replicate, setbacks and gaps.", body))
+
+
+def page_founder():
+    form = tally_embed(SITE.get("tally_talk_form"), "Request a talk or briefing")
+    topics = "".join(f"<li><strong>{e(a)}</strong>: {e(b)}</li>" for a, b in FOUNDER["topics"])
+    body = head("Founder", FOUNDER["name"], "Founder and editor of We Speak Sustainability. Environmental engineer and doctoral researcher.")
+    body += f"""<div class="wrap narrow prose" style="padding-bottom:72px">
+{"".join(f"<p>{e(p)}</p>" for p in FOUNDER["bio"])}
+<h2 id="talks">Talks and briefings</h2>
+<p>Shagbaor is available to speak with governments, international organisations, universities and community groups about what grassroots sustainability action can teach policy and practice. Possible topics:</p>
+<ul>{topics}</ul>
+<h2 id="contact">Request a talk, briefing or interview</h2>
+{form or '<p class="note">The request form is being connected. Please check back shortly.</p>'}
+</div>"""
+    ld = {"@context": "https://schema.org", "@type": "Person", "name": FOUNDER["name"], "jobTitle": "Founder and editor, We Speak Sustainability",
+          "affiliation": {"@type": "CollegeOrUniversity", "name": "University of Northern British Columbia"},
+          "alumniOf": [{"@type": "CollegeOrUniversity", "name": "Heriot-Watt University"}, {"@type": "CollegeOrUniversity", "name": "University of Agriculture Makurdi"}],
+          "url": f"{BASE}/founder/"}
+    write("/founder/", layout("/founder/", f"{FOUNDER['name']}, founder", "About the founder of We Speak Sustainability, and how to request a talk or briefing.", body, jsonld=ld))
+
+
+def page_institutions():
+    body = head("For institutions", "Using the archive in policy, programmes and research",
+                "For governments, UN agencies, development banks, NGOs, universities and journalists.")
+    body += f"""<div class="wrap narrow prose" style="padding-bottom:72px">
+<h2>The gap this fills</h2>
+<p>Global sustainability evidence is dominated by national statistics, large projects and peer-reviewed studies. The actions of households, farmers, fishers, waste pickers and community groups are mostly missing, or appear only as anecdotes. Solution databases tend to feature organisations and funded projects; award programmes celebrate individuals but rarely explain how to replicate their work, or what failed.</p>
+<p>We Speak Sustainability brings these together in one open, sourced and structured archive. Each action is classified by problem, topic, SDG, scale and evidence level, and comes with a replication guide and documented setbacks.</p>
+<h2>How institutions can use it</h2>
+<ul>
+<li><strong>Case studies and country evidence:</strong> filter <a href="/stories/">stories</a> by country, problem or SDG for reports, voluntary national reviews and programme design.</li>
+<li><strong>Locally led adaptation and community engagement:</strong> see how communities organise, what they need, and what has failed, in their own context.</li>
+<li><strong>Open data:</strong> <a href="/data/">download the dataset</a> under CC BY 4.0 and combine it with your own.</li>
+<li><strong>Teaching and training:</strong> each story is a ready-made, cited case with a one-page printable brief.</li>
+</ul>
+<h2>How to contribute</h2>
+<ul>
+<li><strong>Refer stories:</strong> field staff and partners can <a href="/submit/">submit community actions</a> they know of. We verify and credit them.</li>
+<li><strong>Share evidence:</strong> if you hold monitoring data or evaluations for an action in the archive, help us move it from <em>Documented</em> to <em>Verified</em>.</li>
+<li><strong>Correct us:</strong> <a href="/corrections/">report errors</a>; corrections are logged publicly.</li>
+<li><strong>Invite us:</strong> to present findings, run a workshop or brief a delegation, <a href="/founder/#contact">get in touch</a>.</li>
+</ul>
+<h2>Standards</h2>
+<p>Read our <a href="/methodology/">methodology</a>, <a href="/editorial-policy/">editorial and verification policy</a> and anti-greenwashing rules. We publish no sponsored content.</p>
+</div>"""
+    write("/for-institutions/", layout("/for-institutions/", "For institutions", "How governments, UN agencies, NGOs and researchers can use and contribute to the We Speak Sustainability archive.", body))
+
+
 def validate():
     errs = []
     for s in ALL_STORIES:
@@ -1009,6 +1291,11 @@ def main():
     page_policy()
     page_corrections()
     page_404()
+    page_data()
+    page_methodology()
+    page_insights()
+    page_founder()
+    page_institutions()
     extras()
     print(f"Built {len(PAGES)} pages: {len(STORIES)} stories, {len(LEGACY)} legacy profiles -> {OUT}")
 
