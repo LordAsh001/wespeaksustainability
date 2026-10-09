@@ -289,3 +289,21 @@ img.portrait{object-fit:cover;padding:0;border:2px solid #5a554e}
 .mem-photo.o-portrait img{aspect-ratio:4/5}
 .mem-photo.o-landscape img{aspect-ratio:3/2}
 .memorial-zone .place{color:var(--stone-ink)}
+/* research layer */
+.linkbtn{background:none;border:0;padding:0;font:inherit;color:var(--clay-2);text-decoration:underline;cursor:pointer;font-size:.88rem}
+.memorial-zone .linkbtn{color:var(--candle)}
+.policy{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px 20px}
+.policy ul{padding-left:1.2em;margin:0} .policy li{margin-bottom:.5em;font-size:.95rem}
+.charts{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:28px;margin:36px 0}
+.chart{margin:0;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:18px}
+.chart figcaption{font:600 .78rem/1.2 var(--sans);letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+.downloads{list-style:none;padding:0} .downloads li{margin-bottom:10px;display:flex;gap:10px;flex-wrap:wrap}
+.nav a{padding:.5em .55em}
+@media print{
+  body{background:#fff;color:#000;font-size:11pt}
+  .site-head,.site-foot,aside,.cta-row,.block,.skip,.breadcrumb{display:none!important}
+  .story-layout{display:block;padding:0} .story-head{padding:0 0 12px}
+  .memorial-zone{background:#fff;color:#000} .memorial-zone *{color:#000!important}
+  .photo.hero{max-width:60%} a{color:#000}
+  .copy{border:1px solid #999;background:#fff} .story-body section{break-inside:avoid}
+}
